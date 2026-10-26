@@ -1,0 +1,161 @@
+S|First steps|
+
+U|Greetings|နှုတ်ဆက်ခြင်း|chat|Add ပါ (ba) to sound polite. It softens almost any sentence.|hnoke-seq-chin
+G|မင်္ဂလာပါ (mingalaba) works at any time of day and in any setting. It literally means "it is auspicious."
+G|Burmese sentences end in small particles that set the tone. ပါ (ba) makes a sentence polite, တယ် (deh) marks a plain statement, and လား (la) turns it into a yes/no question.
+X|နေကောင်းလား|Are you well?|nay-kaung-la
+X|နေကောင်းပါတယ်|I'm well.|nay-kaung-ba-deh
+G|To make a verb negative, wrap it: မ (ma) goes in front and ဘူး (bu) goes at the end.
+X|နားလည်တယ်|I understand.|na-leh-deh
+X|နားမလည်ဘူး|I don't understand.|na-ma-leh-bu
+L|Hello
+w|မင်္ဂလာပါ|hello|Literally “it is auspicious.” Use it at any time of day.||mingalaba
+w|ကျေးဇူးတင်ပါတယ်|thank you|The ending ပါတယ် (ba-deh) makes a sentence polite.||kyay-zu tin-ba-deh
+w|ဟုတ်ကဲ့|yes|The polite “yes,” also used to mean “OK, got it.”||hoke-keh
+w|မဟုတ်ဘူး|no|Literally “it is not so.” မ … ဘူး wraps a verb to make it negative.||ma-hoke-bu
+s|ဟုတ်ကဲ့=hoke-keh + ကျေးဇူးတင်ပါတယ်=kyay-zu tin-ba-deh|Yes, thank you.|||မဟုတ်ဘူး=ma-hoke-bu + မင်္ဂလာပါ=mingalaba
+L|How are you?
+w|နေကောင်းလား|how are you?|နေ (stay) + ကောင်း (good) + လား (yes/no question).||nay-kaung-la
+w|နေကောင်းပါတယ်|I’m well|Swap the question ending လား for ပါတယ် and the question becomes an answer.||nay-kaung-ba-deh
+w|တွေ့ရတာ ဝမ်းသာပါတယ်|nice to meet you|Roughly “meeting you, I am glad.”||tweh-ya-da wun-tha-ba-deh
+w|တောင်းပန်ပါတယ်|I’m sorry|||taung-ban-ba-deh
+w|ရပါတယ်|it’s OK|Also works as “you’re welcome” or “no problem.”||ya-ba-deh
+s|နေ=nay + ကောင်း=kaung + လား=la|How are you?|||ပါတယ်=ba-deh + ဘူး=bu
+s|နေ=nay + ကောင်း=kaung + ပါတယ်=ba-deh|I’m well.|||လား=la + မ=ma
+L|Getting by
+w|နားမလည်ဘူး|I don’t understand|Drop မ and ဘူး to say “I understand”: နားလည်တယ်.||na-ma-leh-bu
+w|ဖြည်းဖြည်း ပြောပါ|please speak slowly|Doubling is common: ဖြည်း (slow) becomes ဖြည်းဖြည်း (slowly).||pyay-pyay pyaw-ba
+w|နည်းနည်း|a little|Another doubled word: နည်း (few) becomes နည်းနည်း.||neh-neh
+w|သွားတော့မယ်|bye, I’m off|Literally “I’ll go now.” The everyday way to say goodbye.||thwa-dau-meh
+s|နား=na + လည်=leh + တယ်=deh|I understand.|||မ=ma + ဘူး=bu
+s|နား=na + မ=ma + လည်=leh + ဘူး=bu|I don’t understand.|||တယ်=deh + လား=la
+
+U|Letters|အက္ခရာ|text:က|Letters come in pairs: plain က and breathy ခ. The breathy one adds a puff of air.|eq-kha-ya
+G|Burmese script has 33 consonants, and each one carries a built-in "a" sound. Vowel signs sit above, below, before, or after a consonant to change that vowel.
+G|Many consonants come in pairs: a plain one and a breathy one with a puff of air. က (ka) and ခ (kha), တ (ta) and ထ (hta), ပ (pa) and ဖ (hpa). They sound alike to English ears at first, so listen for the breath.
+G|အ is a silent carrier for a vowel at the start of a word, as in အမေ (a-may, mother).
+G|Words run together with no spaces. A space usually marks the end of a phrase, much like a comma.
+L|k, g, ng, s|script
+w|က|ka|Plain k with no puff of air, like the k in “skin.”||ka
+w|ခ|kha|k with a puff of air, like the k in “kit.”||kha
+w|ဂ|ga|g as in “go.”||ga
+w|င|nga|ng as in “sing,” but it can start a word.||nga
+w|စ|sa|Plain s.||sa
+w|ဆ|hsa|s with a puff of air.||hsa
+L|t, n, p, m|script
+w|တ|ta|Plain t, like the t in “stop.”||ta
+w|ထ|hta|t with a puff of air, like the t in “top.”||hta
+w|န|na|n as in “no.”||na
+w|ပ|pa|Plain p, like the p in “spin.”||pa
+w|ဖ|hpa|p with a puff of air, like the p in “pin.”||hpa
+w|မ|ma|m as in “me.” You already know it from မ … ဘူး.||ma
+L|l, y, w, th, h|script
+w|လ|la|l as in “love.”||la
+w|ယ|ya|y as in “yes.”||ya
+w|ဝ|wa|A perfect circle. It’s the shape of Wa, your guide.||wa
+w|သ|tha|th as in “thin.”||tha
+w|ဟ|ha|h as in “hat.”||ha
+w|အ|a|A silent carrier. Words that start with a vowel are written with အ.||a
+
+U|Food & drink|အစားအသောက်|cup|Verbs come last. Order by naming the item, then the amount, then ပေးပါ.|a-sa a-thauk
+G|The verb comes last. ထမင်း စား is literally "rice eat." Objects, places, and times all come before the verb.
+G|To order, name the item, then the amount with its counting word, then ပေးပါ (pay-ba, please give).
+X|လက်ဖက်ရည် တစ်ခွက် ပေးပါ|One tea, please.|laq-pheq-yay ta-khweq pay-ba
+X|ရေ ပေးပါ|Water, please.|yay pay-ba
+G|ထမင်းစားပြီးပြီလား (have you eaten?) is a greeting more than a question. The usual reply is စားပြီးပါပြီ (sa-pyi-ba-bi, I've eaten).
+L|At the teashop
+w|လက်ဖက်ရည်|tea|Myanmar milk tea: strong, sweet, made with condensed milk.||laq-pheq-yay
+w|ရေ|water|||yay
+w|ကော်ဖီ|coffee|Borrowed from English.||kaw-phi
+w|တစ်ခွက်|one cup|တစ် (one) + ခွက် (cup). The counting word comes after the number.||ta-khweq
+w|ပေးပါ|please give|Put it after any item to ask for it: ရေ ပေးပါ.||pay-ba
+s|လက်ဖက်ရည်=laq-pheq-yay + တစ်ခွက်=ta-khweq + ပေးပါ=pay-ba|One tea, please.|||ရေ=yay + ကော်ဖီ=kaw-phi
+s|ရေ=yay + ပေးပါ=pay-ba|Water, please.|||ကော်ဖီ=kaw-phi + လား=la
+L|Mealtime
+w|ထမင်း|rice, a meal|Cooked rice, and by extension a whole meal.||hta-min
+w|စား|eat|Verbs go last: ထမင်း စား is “rice eat.”||sa
+w|မုန့်ဟင်းခါး|mohinga (fish noodle soup)|Fish broth with rice noodles. Often called the national dish, and eaten for breakfast.||mohinga
+w|စားလို့ကောင်းတယ်|it’s delicious|Literally “good to eat.”||sa-lo kaung-deh
+w|ထမင်းစားပြီးပြီလား|have you eaten?|A friendly greeting, much like “how’s it going?”||hta-min sa pyi-bi-la
+s|ထမင်း=hta-min + စား=sa + ပြီးပြီ=pyi-bi + လား=la|Have you eaten?|||ပါတယ်=ba-deh + ရေ=yay
+s|စား=sa + ပြီးပြီ=pyi-bi|I’ve eaten.|||လား=la + ဘူး=bu
+L|Spicy or not
+w|စပ်တယ်|it’s spicy|||saq-teh
+w|ကြက်သား|chicken|ကြက် (chicken) + သား (meat).||kyeq-tha
+w|ငါး|fish|Spelled the same as “five.” Context tells them apart.||nga
+w|အစပ် မထည့်ပါနဲ့|no chili, please|အစပ် (the spicy stuff) + မထည့်ပါနဲ့ (please don’t add).||a-saq ma-hteh-ba-neh
+w|မလိုချင်ဘူး|I don’t want it|Negative again: မ + လိုချင် (want) + ဘူး.||ma-lo-chin-bu
+s|မ=ma + စပ်=saq + ဘူး=bu|It’s not spicy.|||တယ်=teh + လား=la
+s|စပ်=saq + လား=la|Is it spicy?|||ဘူး=bu + မ=ma
+
+S|Out and about|
+
+U|Numbers & money|ဂဏန်းနဲ့ ငွေ|text:၁၂၃|Burmese has its own digits. You’ll see ၁ ၂ ၃ on prices and bus numbers.|ga-nan neh ngway
+G|Burmese has its own digits, ၀ ၁ ၂ ၃ ၄ ၅ ၆ ၇ ၈ ၉, and they work just like 0 to 9: ၂၅ is 25. You'll see them on prices, buses, and license plates.
+G|When counting things, the number comes after the noun, followed by a counting word: လက်ဖက်ရည် တစ်ခွက် is "tea, one cup."
+G|Some numbers shorten inside bigger ones. တစ် (tit, one) becomes "ta" in တစ်ဆယ် (ta-seh, ten) and တစ်ထောင် (ta-htaung, one thousand).
+X|ဘယ်လောက်လဲ|How much is it?|beh-lauk-leh
+X|ငါးထောင် ကျပ်|5,000 kyat|nga-htaung kyat
+L|One to five
+w|တစ်|one|Burmese has its own digits. ၁ is 1.||tit|၁
+w|နှစ်|two|||hnit|၂
+w|သုံး|three|||thone|၃
+w|လေး|four|||lay|၄
+w|ငါး|five|Spelled the same as “fish.”||nga|၅
+L|Six to ten
+w|ခြောက်|six|||chauk|၆
+w|ခုနစ်|seven|||khun-nit|၇
+w|ရှစ်|eight|||shit|၈
+w|ကိုး|nine|||ko|၉
+w|တစ်ဆယ်|ten|တစ် (one) + ဆယ် (ten).||ta-seh|၁၀
+L|How much?
+w|ဘယ်လောက်လဲ|how much?|Wh-questions end in လဲ (leh). Yes/no questions end in လား (la).||beh-lauk-leh
+w|ကျပ်|kyat (money)|Myanmar’s currency.||kyat
+w|တစ်ထောင်|one thousand|Prices are often in thousands: ၅၀၀၀ ကျပ်.||ta-htaung
+w|ဈေးကြီးတယ်|it’s expensive|Literally “the price is big.”||zay kyi-deh
+w|ဈေးလျှော့ပေးပါ|a lower price, please|Bargaining is normal at markets.||zay shaw pay-ba
+w|ဒါ|this|||da
+s|ဒါ=da + ဘယ်လောက်လဲ=beh-lauk-leh|How much is this?|||ကျပ်=kyat + ဘယ်မှာလဲ=beh-hma-leh
+s|တစ်ထောင်=ta-htaung + ကျပ်=kyat|1,000 kyat|||ငါး=nga + တစ်ခွက်=ta-khweq
+s|ဈေး=zay + ကြီး=kyi + တယ်=deh|It’s expensive.|||မ=ma + လား=la
+
+U|Getting around|ခရီးသွား|pin|ဈေး (zay) means both “market” and “price.”|kha-yi-thwa
+G|The place comes first and the question word last: ဈေး ဘယ်မှာလဲ is "market where?"
+G|There are two question endings. လဲ (leh) goes with question words like ဘယ် (which, where), and လား (la) makes a yes/no question.
+X|ဘယ်မှာလဲ|Where is it?|beh-hma-leh
+X|ဝေးလား|Is it far?|way-la
+G|Take off your shoes and socks before entering a pagoda (ဘုရား) or someone's home.
+L|Where is it?
+w|ဘယ်မှာလဲ|where is it?|Put the place first: ဈေး ဘယ်မှာလဲ is “market where?”||beh-hma-leh
+w|အိမ်သာ|toilet|||ein-tha
+w|ဈေး|market|The same word also means “price.”||zay
+w|ဘုရား|pagoda|Also means the Buddha. Take your shoes off at the entrance.||hpa-ya
+s|အိမ်သာ=ein-tha + ဘယ်မှာလဲ=beh-hma-leh|Where is the toilet?|||ဈေး=zay + ဘယ်လောက်လဲ=beh-lauk-leh
+s|ဈေး=zay + ဘယ်မှာလဲ=beh-hma-leh|Where is the market?|||ဘုရား=hpa-ya + လား=la
+L|Directions
+w|ညာဘက်|right side|ဘက် (beq) means “side.”||nya-beq
+w|ဘယ်ဘက်|left side|ဘယ် also means “which,” as in ဘယ်မှာလဲ.||beh-beq
+w|တည့်တည့်သွားပါ|go straight|||teh-deh thwa-ba
+w|ဒီမှာ ရပ်ပါ|stop here, please|Handy in a taxi.||di-hma yaq-pa
+w|သွား|go|Add ပါ for a polite request: သွားပါ.||thwa
+s|ညာဘက်=nya-beq + ကို=ko + သွားပါ=thwa-ba|Go to the right.|||ဘယ်ဘက်=beh-beq + ရပ်ပါ=yaq-pa
+s|ဒီမှာ=di-hma + ရပ်ပါ=yaq-pa|Stop here, please.|||သွားပါ=thwa-ba + ညာဘက်=nya-beq
+
+U|About you|ကိုယ့်အကြောင်း|person|Pick “I” by who is speaking: ကျွန်တော် for men, ကျွန်မ for women.|ko-ah-kyaung
+G|The word for "I" depends on who's speaking. Men say ကျွန်တော် (kya-naw) and women say ကျွန်မ (kya-ma). The polite "you" also follows the speaker: men say ခင်ဗျား (khin-bya) and women say ရှင် (shin).
+G|People are addressed with a title before their name: ဦး (U) for an older man, ဒေါ် (Daw) for an older woman, ကို (Ko) for a young man, and မ (Ma) for a young woman.
+G|Polite sentences from men often end with ခင်ဗျာ (khin-bya), and from women with ရှင် (shin), a bit like adding "sir" or "ma'am."
+L|I and you
+w|ကျွန်တော်|I (man speaking)|Used by men.||kya-naw
+w|ကျွန်မ|I (woman speaking)|Used by women.||kya-ma
+w|ခင်ဗျား|you (man speaking)|The polite “you” when a man is talking.||khin-bya
+w|ရှင်|you (woman speaking)|The polite “you” when a woman is talking.||shin
+w|နာမည်|name|||nan-meh
+s|နာမည်=nan-meh + ဘယ်လို=beh-lo + ခေါ်လဲ=khaw-leh|What’s your name?|||ဘယ်မှာလဲ=beh-hma-leh + လား=la
+L|Where from?
+w|ဘယ်က လာတာလဲ|where are you from?|Literally “from where did you come?”||beh-ga la-da-leh
+w|အမေရိကန်|America|||a-may-ri-kan
+w|မြန်မာစကား|Burmese (language)|မြန်မာ (Myanmar) + စကား (speech).||myan-ma za-ga
+w|ပြောတတ်တယ်|can speak|တတ် means “know how to.”||pyaw-taq-teh
+s|မြန်မာစကား=myan-ma za-ga + နည်းနည်း=neh-neh + ပြောတတ်တယ်=pyaw-taq-teh|I speak a little Burmese.|||နားမလည်ဘူး=na-ma-leh-bu + ဖြည်းဖြည်း=pyay-pyay
+s|အမေရိကန်=a-may-ri-kan + က=ga + လာတာပါ=la-da-ba|I’m from America.|||ဘယ်=beh + လား=la

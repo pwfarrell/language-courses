@@ -1,0 +1,61 @@
+/* Layout: one narrow app column. Skills sit in rows of one and two like an old-style skill tree, separated by checkpoints; lessons and tips open as full-screen sheets. Palette from batik dyes: indigo, soga brown, turmeric. */
+:root{
+  --ground:#EFF1F6; --surface:#FFFFFF; --sunk:#E1E4EE; --line:#D1D5E2;
+  --ink:#1B1E33; --muted:#585E78;
+  --brand:#3A4BC4; --brand-deep:#27328A; --on-brand:#FFFFFF;
+  --sun:#EFB21E; --sun-deep:#B07F0A; --sun-text:#8F6500; --on-sun:#2B1F02;
+  --ok:#2B8A4B; --ok-deep:#1D6136; --ok-soft:#DCF1E3; --on-ok:#FFFFFF;
+  --bad:#D33E2C; --bad-deep:#962A1D; --bad-soft:#F9E0DB; --on-bad:#FFFFFF;
+  --sel:#0E7C86; --sel-deep:#095A61; --sel-soft:#D8EFF0;
+  --flame:#E8622A;
+  --locked:#D6D9E3; --locked-deep:#BCC0CE; --locked-ink:#7F849A;
+  --scrim:rgba(15,17,35,.5);
+  --deer:#B8763E; --deer-inner:#EBC296; --deer-muzzle:#F7E8D0; --deer-ink:#2A1C12;
+  --u1:#8A5A2B; --u1d:#5F3D1C;
+  --u2:#3446A0; --u2d:#222F6E;
+  --u3:#0F7A73; --u3d:#0A5450;
+  --u4:#9C2F45; --u4d:#6D1F2F;
+  --u5:#5E7A1E; --u5d:#415514;
+  --u6:#6E3F8F; --u6d:#4C2B63;
+  --f-display:"Gabarito","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --f-body:"Lexend","Segoe UI",system-ui,-apple-system,sans-serif;
+  --f-target:"Gabarito","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --t-weight:600; --t-weight-bold:800; --t-lh:1.25;
+  --t-xl:2.5rem; --t-lg:1.6rem; --t-opt:1.15rem; --t-tile:1.12rem; --t-row:1.08rem; --t-fb:1.12rem; --t-ex:1.05rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#12141F; --surface:#1C1F2E; --sunk:#272B3C; --line:#343A4E;
+    --ink:#EEF0F8; --muted:#A3A8C0;
+    --brand:#8390F2; --brand-deep:#4652B8; --on-brand:#0E1230;
+    --sun:#F2BC3A; --sun-deep:#9A700E; --sun-text:#F2BC3A; --on-sun:#2B1F02;
+    --ok:#4FBF78; --ok-deep:#2C7D4B; --ok-soft:#163020; --on-ok:#08200F;
+    --bad:#EE6B58; --bad-deep:#A53D2E; --bad-soft:#3A1D1A; --on-bad:#2B0B06;
+    --sel:#4FC1CB; --sel-deep:#2E8E97; --sel-soft:#14303A;
+    --flame:#F48A4E;
+    --locked:#343849; --locked-deep:#262A38; --locked-ink:#7F849A;
+    --scrim:rgba(0,0,0,.6);
+    --deer:#C98A52; --deer-inner:#E7B987; --deer-muzzle:#EBD6B4; --deer-ink:#22160D;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#12141F; --surface:#1C1F2E; --sunk:#272B3C; --line:#343A4E;
+  --ink:#EEF0F8; --muted:#A3A8C0;
+  --brand:#8390F2; --brand-deep:#4652B8; --on-brand:#0E1230;
+  --sun:#F2BC3A; --sun-deep:#9A700E; --sun-text:#F2BC3A; --on-sun:#2B1F02;
+  --ok:#4FBF78; --ok-deep:#2C7D4B; --ok-soft:#163020; --on-ok:#08200F;
+  --bad:#EE6B58; --bad-deep:#A53D2E; --bad-soft:#3A1D1A; --on-bad:#2B0B06;
+  --sel:#4FC1CB; --sel-deep:#2E8E97; --sel-soft:#14303A;
+  --flame:#F48A4E;
+  --locked:#343849; --locked-deep:#262A38; --locked-ink:#7F849A;
+  --scrim:rgba(0,0,0,.6);
+  --deer:#C98A52; --deer-inner:#E7B987; --deer-muzzle:#EBD6B4; --deer-ink:#22160D;
+  color-scheme:dark;
+}
+.mascot .coat{fill:var(--deer)}
+.mascot .inner{fill:var(--deer-inner)}
+.mascot .muzzle{fill:var(--deer-muzzle)}
+.mascot .ink{fill:var(--deer-ink)}
+.mascot .shine{fill:#fff}
+.mascot .line{fill:none;stroke:var(--deer-ink);stroke-width:3.2;stroke-linecap:round}

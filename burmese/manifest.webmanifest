@@ -1,0 +1,23 @@
+{
+  "name": "Zaga Burmese",
+  "short_name": "Zaga",
+  "description": "Learn Burmese in short daily lessons: a skill tree with crowns, tips, script practice, and sentence building.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#EEF1EA",
+  "theme_color": "#EEF1EA",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

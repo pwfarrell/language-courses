@@ -1,0 +1,2500 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Kancil Indonesian</title>
+<meta name="description" content="Learn Indonesian in short daily lessons: a skill tree with crowns, tips, typing, listening, and sentence building.">
+<meta name="theme-color" content="#EFF1F6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#12141F" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" type="image/png" href="icon-192.png">
+<meta name="apple-mobile-web-app-title" content="Kancil">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;600;700;800;900&family=Lexend:wght@400;500;600;700&display=swap">
+<style>
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+img{max-width:100%}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{height:100%}
+body{margin:0;background:var(--ground);color:var(--ink);font:400 16px/1.55 var(--f-body);-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+body.locked{overflow:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--ground)}
+button{font:inherit;color:inherit;cursor:pointer;-webkit-appearance:none;appearance:none}
+button:disabled{cursor:default}
+:focus-visible{outline:3px solid var(--sel);outline-offset:3px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.gutter{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.t{font-family:var(--f-target);font-weight:var(--t-weight)}
+.t.em{font-weight:var(--t-weight-bold)}
+.rom{display:block;font-family:var(--f-body);font-style:italic;font-weight:400;color:var(--muted);font-size:.88rem;line-height:1.3}
+.eyebrow{font:700 .72rem/1.2 var(--f-body);letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+
+/* ---------- top bar ---------- */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--ground);border-bottom:2px solid var(--line)}
+.top-in{max-width:600px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:10px;padding-block:10px}
+.brand{display:flex;align-items:baseline;gap:8px;min-width:0;font:800 1.5rem/1 var(--f-display);letter-spacing:-.03em;white-space:nowrap}
+.brand-sub{font-size:.9rem;color:var(--muted);letter-spacing:0;line-height:1;overflow:hidden;text-overflow:ellipsis}
+.chips{display:flex;gap:5px;flex:none}
+.chip{display:inline-flex;align-items:center;gap:4px;padding:5px 9px 5px 6px;border-radius:999px;background:var(--surface);border:2px solid var(--line);font:800 .92rem/1 var(--f-display);font-variant-numeric:tabular-nums}
+.chip svg{width:18px;height:18px}
+.chip-streak svg{color:var(--locked-ink)}
+.chip-streak.is-lit svg{color:var(--flame)}
+.chip-crown svg{color:var(--sun)}
+.chip-xp svg{color:var(--brand)}
+@media (max-width:400px){.brand-sub{display:none}}
+
+main{max-width:600px;margin:0 auto;padding-block:18px calc(110px + env(safe-area-inset-bottom,0px))}
+
+/* ---------- today card ---------- */
+.today{display:flex;gap:14px;align-items:center;padding:14px 16px;background:var(--surface);border:2px solid var(--line);border-radius:20px}
+.today .mascot{flex:none}
+.today-main{flex:1;min-width:0;display:flex;flex-direction:column;gap:9px}
+.row-between{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.num{font:800 .95rem/1 var(--f-display);font-variant-numeric:tabular-nums}
+.bar{height:12px;border-radius:999px;background:var(--sunk);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--sun);border-radius:inherit;transition:width .5s ease}
+.week{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(7,1fr);gap:2px}
+.week li{display:flex;flex-direction:column;align-items:center;gap:3px;font:700 .68rem/1 var(--f-body);color:var(--muted)}
+.week .dot{width:18px;height:18px;border-radius:50%;background:var(--sunk);display:grid;place-items:center;color:var(--surface)}
+.week .dot svg{width:12px;height:12px}
+.week .on .dot{background:var(--flame)}
+.week .is-today{color:var(--ink)}
+.week .is-today .dot{box-shadow:0 0 0 2px var(--surface),0 0 0 4px var(--ink)}
+.practice-row{margin-top:10px;width:100%;display:flex;align-items:center;gap:12px;padding:12px 16px;border:2px solid var(--line);border-bottom-width:4px;border-radius:16px;background:var(--surface);text-align:left}
+.practice-row > svg{flex:none;width:28px;height:28px;color:var(--brand)}
+.practice-row div{flex:1;min-width:0;display:flex;flex-direction:column}
+.practice-row strong{font:800 1rem/1.25 var(--f-display)}
+.practice-row div span{color:var(--muted);font-size:.86rem}
+.practice-row .go{flex:none;color:var(--brand);font:800 .82rem/1 var(--f-display);letter-spacing:.07em;text-transform:uppercase}
+
+/* ---------- skill tree ---------- */
+.sec-label{margin-top:30px;display:flex;align-items:baseline;justify-content:center;gap:10px;font:800 1.05rem/1.2 var(--f-display);text-align:center}
+.tree{display:flex;flex-direction:column;align-items:center;gap:22px;padding-block:22px 6px}
+.tree-row{display:flex;justify-content:center;gap:44px}
+.skill{width:120px;display:flex;flex-direction:column;align-items:center;gap:8px;padding:0;border:0;background:none;border-radius:16px}
+.medal{position:relative;width:104px;height:104px;display:grid;place-items:center}
+.ring{position:absolute;inset:0;width:100%;height:100%;transform:rotate(-90deg)}
+.ring circle{fill:none;stroke-width:8}
+.ring-bg{stroke:var(--sunk)}
+.ring-fg{stroke:var(--sun);stroke-linecap:round;transition:stroke-dasharray .6s ease}
+.disc{width:80px;height:80px;border-radius:50%;background:var(--uc);color:#fff;display:grid;place-items:center;box-shadow:inset 0 -6px 0 var(--ud);transition:transform .08s ease}
+.skill:active .disc{transform:scale(.95)}
+.disc-svg{width:38px;height:38px;margin-top:-4px}
+.disc-text{font-size:1.75rem;line-height:1;margin-top:-4px;font-weight:var(--t-weight-bold);letter-spacing:-.02em}
+.disc > svg:not(.disc-svg){width:30px;height:30px}
+.skill.is-locked .disc{background:var(--locked);color:var(--locked-ink);box-shadow:inset 0 -6px 0 var(--locked-deep)}
+.skill.is-max .disc{background:var(--sun);color:var(--on-sun);box-shadow:inset 0 -6px 0 var(--sun-deep)}
+.skill.is-sel .medal::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:3px solid var(--uc)}
+.crown{position:absolute;right:-2px;bottom:2px;display:flex;align-items:center;justify-content:center;width:38px;height:38px;color:var(--sun)}
+.crown svg{position:absolute;inset:0;width:100%;height:100%;filter:drop-shadow(0 0 0 var(--ground)) drop-shadow(0 2px 0 var(--ground))}
+.crown b{position:relative;margin-top:7px;font:800 .82rem/1 var(--f-display);color:var(--on-sun)}
+.skill-name{font:700 .95rem/1.2 var(--f-display);text-align:center;color:var(--ink);text-wrap:balance}
+.skill.is-locked .skill-name{color:var(--muted)}
+@media (max-width:360px){.tree-row{gap:20px}}
+
+.skill-pop{position:relative;width:100%;max-width:420px;margin-top:-6px;padding:16px 18px 18px;background:var(--uc);color:#fff;border-radius:20px;display:flex;flex-direction:column;gap:6px;animation:rise .18s ease}
+.skill-pop::before{content:"";position:absolute;top:-9px;left:calc(50% + var(--ax));width:20px;height:20px;background:var(--uc);border-radius:4px;transform:translateX(-50%) rotate(45deg)}
+.skill-pop .pop-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px}
+.skill-pop .pop-head h3{margin:0;font:800 1.3rem/1.2 var(--f-display)}
+.skill-pop .pop-head .t{font-size:1rem;opacity:.85}
+.pop-sub,.pop-meta,.pop-next{margin:0;font-size:.92rem}
+.pop-sub{opacity:.8}
+.pop-meta{font-weight:700}
+.pop-bar{height:10px;border-radius:999px;background:rgba(0,0,0,.22);overflow:hidden}
+.pop-bar i{display:block;height:100%;background:#fff;border-radius:inherit}
+.pop-btns{display:flex;gap:10px;margin-top:8px}
+.pop-btns .btn{flex:1}
+.skill-pop .btn-brand{background:#fff;color:var(--uc);box-shadow:0 4px 0 rgba(0,0,0,.25)}
+.skill-pop .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.55);box-shadow:none;display:inline-flex;align-items:center;justify-content:center;gap:6px;flex:0 0 auto}
+.skill-pop .btn-ghost svg{width:20px;height:20px}
+.checkpoint{margin-top:20px;display:flex;gap:14px;align-items:center;padding:14px 16px;border:2px dashed var(--line);border-radius:18px}
+.checkpoint > div{display:flex;flex-direction:column;min-width:0}
+.checkpoint strong{font:800 1.05rem/1.25 var(--f-display)}
+.cp-meta{color:var(--muted);font-size:.88rem}
+.cp-icon{flex:none;width:46px;height:46px;border-radius:14px;background:var(--sunk);color:var(--muted);display:grid;place-items:center}
+.cp-icon svg{width:26px;height:26px}
+.checkpoint.is-done{border-style:solid;border-color:var(--sun);background-color:var(--surface)}
+.checkpoint.is-done .cp-icon{background:var(--sun);color:var(--on-sun)}
+
+/* ---------- words ---------- */
+.page-title{margin:0;font:800 2.1rem/1.05 var(--f-display);letter-spacing:-.025em}
+.lede{margin:6px 0 0;color:var(--muted);max-width:52ch}
+.wtools{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.search{flex:1 1 220px;min-width:0;font:inherit;color:var(--ink);background:var(--surface);border:2px solid var(--line);border-radius:14px;padding:11px 14px}
+.search:focus{outline:none;border-color:var(--sel)}
+.seg{display:flex;padding:3px;border-radius:14px;background:var(--sunk);gap:3px}
+.seg button{border:0;background:none;padding:8px 12px;border-radius:11px;font:700 .88rem/1 var(--f-body);color:var(--muted)}
+.seg button.is-on{background:var(--surface);color:var(--ink);box-shadow:0 1px 2px var(--scrim)}
+.wgroup{margin-top:24px}
+.wgroup h2{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;margin:0 0 10px;font:800 1.12rem/1.3 var(--f-display)}
+.wgroup h2 .t{font-size:.98rem;color:var(--muted);font-weight:var(--t-weight)}
+.wlist{list-style:none;margin:0;padding:0;background:var(--surface);border:2px solid var(--line);border-radius:18px;overflow:hidden}
+.wrow{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) auto;gap:12px;align-items:center;padding:9px 14px;border-top:1px solid var(--line)}
+.wrow:first-child{border-top:0}
+.w-t{display:flex;align-items:center;gap:6px;min-width:0}
+.w-t > div{min-width:0;display:flex;flex-direction:column}
+.w-t .t{font-size:var(--t-row);line-height:var(--t-lh);overflow-wrap:anywhere}
+.w-t .rom{font-size:.8rem}
+.w-en{min-width:0;font-size:.93rem;overflow-wrap:anywhere}
+.wrow.is-new .w-t .t,.wrow.is-new .w-en{color:var(--muted)}
+.w-unit{font-size:.75rem;color:var(--muted);white-space:nowrap}
+.meter{display:flex;gap:3px}
+.meter i{width:6px;height:16px;border-radius:3px;background:var(--sunk)}
+.meter i.on{background:var(--sun)}
+.empty{margin-top:22px;display:flex;gap:14px;align-items:center;padding:18px;border:2px dashed var(--line);border-radius:20px}
+.empty p,.empty-line{margin:0}
+.empty-line{margin-top:22px;color:var(--muted)}
+.settings{margin-top:32px;display:grid;gap:14px;padding:16px;background:var(--surface);border:2px solid var(--line);border-radius:18px}
+.set-title{margin:0;font:800 1.15rem/1.2 var(--f-display)}
+.set-sub{display:block;color:var(--muted);font-size:.86rem}
+.switch{display:flex;align-items:center;justify-content:space-between;gap:14px;cursor:pointer}
+.switch input{position:absolute;opacity:0;width:1px;height:1px}
+.switch .track{flex:none;width:50px;height:30px;border-radius:999px;background:var(--sunk);position:relative;transition:background .2s}
+.switch .track::after{content:"";position:absolute;top:3px;left:3px;width:24px;height:24px;border-radius:50%;background:var(--surface);box-shadow:0 1px 3px var(--scrim);transition:transform .2s}
+.switch input:checked + .track{background:var(--ok)}
+.switch input:checked + .track::after{transform:translateX(20px)}
+.switch input:focus-visible + .track{outline:3px solid var(--sel);outline-offset:2px}
+.tts-only{display:none}
+body.has-tts .tts-only{display:flex}
+.sync{font-size:.86rem;color:var(--muted);margin:0}
+.reset-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.reset-row p{margin:0;flex:1 1 200px;font-size:.92rem}
+.btn-text{border:0;background:none;padding:8px 4px;font:700 .9rem/1 var(--f-body);color:var(--bad);text-decoration:underline;text-underline-offset:3px}
+
+/* ---------- tabs + toast ---------- */
+.tabs{position:fixed;left:0;right:0;bottom:0;z-index:6;background:var(--surface);border-top:2px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px)}
+.tabs-in{max-width:600px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:10px;padding-block:8px}
+.tab{display:flex;align-items:center;justify-content:center;gap:8px;padding:10px;border:2px solid transparent;border-radius:14px;background:none;font:800 .82rem/1 var(--f-display);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.tab svg{width:24px;height:24px}
+.tab.is-on{color:var(--sel);background:var(--sel-soft);border-color:var(--sel)}
+.toast{position:fixed;left:50%;bottom:calc(88px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:70;max-width:calc(100% - 32px);background:var(--ink);color:var(--ground);padding:11px 16px;border-radius:12px;font-weight:700;font-size:.92rem;text-align:center}
+
+/* ---------- buttons ---------- */
+.btn{border:0;border-radius:16px;padding:15px 22px;font:800 1rem/1 var(--f-display);letter-spacing:.07em;text-transform:uppercase;transition:transform .07s ease,box-shadow .07s ease}
+.btn:active:not(:disabled){transform:translateY(4px);box-shadow:none}
+.btn-brand{background:var(--brand);color:var(--on-brand);box-shadow:0 4px 0 var(--brand-deep)}
+.btn-ok{background:var(--ok);color:var(--on-ok);box-shadow:0 4px 0 var(--ok-deep)}
+.btn-bad{background:var(--bad);color:var(--on-bad);box-shadow:0 4px 0 var(--bad-deep)}
+.btn-ghost{background:var(--surface);color:var(--ink);border:2px solid var(--line);box-shadow:0 4px 0 var(--line)}
+.btn:disabled{background:var(--sunk);color:var(--muted);box-shadow:0 4px 0 var(--line)}
+.tts{display:none;flex:none;width:40px;height:40px;border-radius:12px;border:2px solid var(--line);background:var(--surface);color:var(--sel);place-items:center;padding:0}
+.tts svg{width:22px;height:22px}
+body.has-tts .tts{display:inline-grid}
+
+/* ---------- full-screen sheets: lesson and tips ---------- */
+.overlay{position:fixed;inset:0;z-index:50;background:var(--ground);display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0px)}
+#guide{z-index:55}
+.l-head{flex:none;width:100%;max-width:660px;margin:0 auto;display:flex;align-items:center;gap:14px;padding-block:14px 10px}
+.icon-btn{flex:none;border:0;background:none;padding:6px;color:var(--muted);display:grid;place-items:center;border-radius:10px}
+.icon-btn svg{width:26px;height:26px}
+.l-bar{flex:1;height:16px;border-radius:999px;background:var(--sunk);overflow:hidden}
+.l-bar i{display:block;height:100%;background:var(--sun);border-radius:inherit;transition:width .4s ease}
+.hearts{flex:none;display:flex;align-items:center;gap:5px;color:var(--bad);font:800 1.15rem/1 var(--f-display);font-variant-numeric:tabular-nums}
+.hearts svg{width:24px;height:24px}
+.l-body{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.l-body-in{max-width:660px;margin:0 auto;padding-block:10px 28px;display:flex;flex-direction:column;gap:20px}
+.ex-label{margin:0;font:800 1.45rem/1.2 var(--f-display);letter-spacing:-.01em;text-wrap:balance}
+.tag{display:inline-block;margin-bottom:8px;padding:5px 9px;border-radius:8px;background:var(--sel-soft);color:var(--sel);font:800 .72rem/1 var(--f-body);letter-spacing:.09em;text-transform:uppercase}
+.prompt{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.prompt > div{min-width:0}
+.t-xl{display:block;font-size:var(--t-xl);line-height:var(--t-lh);font-weight:var(--t-weight-bold);overflow-wrap:anywhere}
+.t-lg{display:block;font-size:var(--t-lg);line-height:var(--t-lh);overflow-wrap:anywhere}
+.digit-xl{font-size:4rem;line-height:1.4;font-weight:700}
+.prompt-en{margin:0;font:700 1.55rem/1.3 var(--f-display);text-wrap:balance}
+.intro{display:grid;gap:6px;padding:22px 20px;background:var(--surface);border:2px solid var(--line);border-radius:22px}
+.intro .head{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.intro .head > .t-xl{display:inline-block}
+.intro .digit{font-size:2.4rem;line-height:1.4;color:var(--muted);padding-right:14px;border-right:2px solid var(--line)}
+.rom-lg{font-size:1.05rem}
+.intro .mean{font:700 1.3rem/1.3 var(--f-display)}
+.intro .note{margin:8px 0 0;padding-top:12px;border-top:2px solid var(--line);color:var(--muted);font-size:.97rem;max-width:58ch}
+.intro .note .t{color:var(--ink)}
+.opts{display:grid;gap:10px}
+.opt{display:flex;align-items:center;gap:12px;width:100%;text-align:left;padding:12px 14px;background:var(--surface);border:2px solid var(--line);border-bottom-width:4px;border-radius:16px;font-size:1.06rem;line-height:1.35;transition:border-color .12s,background .12s}
+.opt .key{flex:none;width:26px;height:26px;border-radius:8px;border:2px solid var(--line);display:grid;place-items:center;font:700 .8rem/1 var(--f-body);color:var(--muted)}
+@media (pointer:coarse){.opt .key{display:none}}
+.opt .stack{display:flex;flex-direction:column;min-width:0}
+.opt .t{font-size:var(--t-opt);line-height:var(--t-lh)}
+.opt.is-sel{border-color:var(--sel);background:var(--sel-soft)}
+.opt.is-sel .key{border-color:var(--sel);color:var(--sel)}
+.opt.is-right{border-color:var(--ok);background:var(--ok-soft)}
+.opt.is-wrong{border-color:var(--bad);background:var(--bad-soft)}
+.opt:disabled{color:inherit}
+.opts-letters{grid-template-columns:repeat(2,minmax(0,1fr))}
+.opts-letters .opt{justify-content:center;position:relative}
+.opts-letters .opt .key{position:absolute;left:10px;top:10px}
+.opts-letters .opt .t{font-size:2.8rem;line-height:1.5}
+.match{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.mcol{display:grid;gap:10px;align-content:start}
+.mbtn{min-height:68px;padding:8px 10px;background:var(--surface);border:2px solid var(--line);border-bottom-width:4px;border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;line-height:1.25;overflow-wrap:anywhere;transition:border-color .12s,background .12s,opacity .3s}
+.mbtn .t{font-size:var(--t-tile);line-height:var(--t-lh)}
+.mbtn .rom{font-size:.76rem}
+.mbtn.is-letter .t{font-size:2rem}
+.mbtn.is-sel{border-color:var(--sel);background:var(--sel-soft)}
+.mbtn.is-wrong{border-color:var(--bad);background:var(--bad-soft);animation:shake .35s}
+.mbtn.is-done{border-color:var(--ok);background:var(--ok-soft);opacity:.45}
+.answer-line{min-height:128px;display:flex;flex-wrap:wrap;align-content:flex-start;gap:8px;padding-top:6px;background:repeating-linear-gradient(to bottom,transparent 0,transparent 62px,var(--line) 62px,var(--line) 64px)}
+.bank{display:flex;flex-wrap:wrap;justify-content:center;gap:9px}
+.tile{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;min-height:54px;padding:4px 13px 6px;background:var(--surface);border:2px solid var(--line);border-bottom-width:4px;border-radius:12px;min-width:46px;font-size:1.05rem}
+.tile .t{font-size:var(--t-tile);line-height:var(--t-lh)}
+.tile .rom{font-size:.72rem;line-height:1.1}
+.tile.ghost{background:var(--sunk);border-color:var(--sunk)}
+.tile.ghost > *{visibility:hidden}
+.type-in{width:100%;font-size:1.3rem;color:var(--ink);background:var(--surface);border:2px solid var(--line);border-bottom-width:4px;border-radius:16px;padding:16px 16px}
+.type-in:focus{outline:none;border-color:var(--sel)}
+.type-in.is-right{border-color:var(--ok);background:var(--ok-soft)}
+.type-in.is-wrong{border-color:var(--bad);background:var(--bad-soft)}
+.type-in:disabled{color:var(--ink);opacity:1;-webkit-text-fill-color:var(--ink)}
+.listen{display:flex;align-items:flex-end;gap:14px}
+.say-big{width:96px;height:96px;border-radius:24px;border:0;background:var(--sel);color:var(--surface);display:grid;place-items:center;box-shadow:0 5px 0 var(--sel-deep)}
+.say-big svg{width:50px;height:50px}
+.say-big:active{transform:translateY(4px);box-shadow:none}
+.say-slow{border:2px solid var(--line);background:var(--surface);color:var(--sel);border-radius:14px;padding:10px 14px;font:700 .9rem/1 var(--f-body)}
+.shake{animation:shake .4s}
+.intro{animation:popin .35s ease}
+.l-foot{flex:none;border-top:2px solid var(--line);background:var(--ground);padding-bottom:env(safe-area-inset-bottom,0px);transition:background .15s}
+.l-foot.ok{background:var(--ok-soft);border-color:transparent}
+.l-foot.bad{background:var(--bad-soft);border-color:transparent}
+.l-foot-in{max-width:660px;margin:0 auto;padding-block:16px;display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:14px}
+.l-foot-in .btn{flex:0 1 220px}
+.btn-skip{margin-right:auto;color:var(--muted);text-decoration:none;letter-spacing:.06em;text-transform:uppercase;font-size:.8rem}
+.foot-hint{margin:0;flex:1;color:var(--muted);font-weight:700}
+.fb{display:flex;gap:12px;align-items:flex-start;min-width:0;flex:1 1 280px}
+.fb > svg{flex:none;width:38px;height:38px}
+.fb .mk{stroke:var(--ground)}
+.ok .fb{color:var(--ok)}
+.bad .fb{color:var(--bad)}
+.fb-title{font:800 1.3rem/1.25 var(--f-display)}
+.fb-title .t{font-weight:var(--t-weight-bold)}
+.fb-detail{margin-top:4px;color:var(--ink);font-size:.98rem;overflow-wrap:anywhere}
+.fb-detail .t{font-size:var(--t-fb);line-height:var(--t-lh)}
+.fb-detail .rom{display:inline;color:var(--ink);opacity:.75}
+@media (max-width:520px){.l-foot-in .btn{flex:1 1 100%}}
+
+.end{flex:1;overflow-y:auto;display:flex}
+.end-in{margin:auto;width:100%;max-width:520px;padding-block:24px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px}
+.end-title{margin:6px 0 0;font:800 2.1rem/1.08 var(--f-display);letter-spacing:-.025em;color:var(--sun-text);text-wrap:balance}
+.end-title.sad{color:var(--bad)}
+.end-sub{margin:0;color:var(--muted);max-width:42ch}
+.end-sub .t{color:var(--ink);font-size:1.15rem}
+.end-sub .rom{display:inline}
+.end-note{margin:0;font-weight:700}
+.crown-big{position:relative;width:132px;height:132px;color:var(--sun);display:grid;place-items:center;animation:popin .5s ease}
+.crown-big svg{position:absolute;inset:0;width:100%;height:100%}
+.crown-big b{position:relative;margin-top:24px;font:800 2.2rem/1 var(--f-display);color:var(--on-sun)}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;width:100%;margin-top:14px}
+.stat{border:2px solid var(--c);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;background:var(--surface)}
+.stat-k{background:var(--c);color:var(--on);font:800 .7rem/1 var(--f-body);letter-spacing:.09em;text-transform:uppercase;padding:8px 4px}
+.stat-v{padding:14px 4px;font:800 1.5rem/1 var(--f-display);font-variant-numeric:tabular-nums;color:var(--tc)}
+.st-sun{--c:var(--sun);--on:var(--on-sun);--tc:var(--sun-text)}
+.st-ok{--c:var(--ok);--on:var(--on-ok);--tc:var(--ok)}
+.st-sel{--c:var(--sel);--on:var(--surface);--tc:var(--sel)}
+.streak-note{display:flex;align-items:center;gap:6px;margin:6px 0 0;font:800 1.05rem/1 var(--f-display);color:var(--flame)}
+.streak-note svg{width:22px;height:22px}
+.end-btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:flex-end}
+
+.scrim{position:fixed;inset:0;z-index:60;background:var(--scrim);border:0;padding:0;cursor:default}
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:61;background:var(--surface);border-radius:24px 24px 0 0;padding-block:22px calc(22px + env(safe-area-inset-bottom,0px));animation:rise .2s ease}
+.sheet-in{max-width:480px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center}
+.sheet h2{margin:4px 0 0;font:800 1.4rem/1.2 var(--f-display)}
+.sheet p{margin:0;color:var(--muted)}
+.sheet .btn{width:100%;margin-top:10px}
+
+/* tips */
+.guide-in{gap:16px}
+.guide-in p{margin:0;max-width:62ch}
+.guide-title{margin:0;font:800 2.1rem/1.08 var(--f-display);letter-spacing:-.025em;text-wrap:balance}
+.guide-native{display:flex;flex-direction:column;margin-top:2px}
+.guide-native .t{font-size:1.2rem;color:var(--muted);line-height:var(--t-lh)}
+.guide-tip{padding:14px 16px;border-radius:16px;background:var(--sel-soft);font-weight:700}
+.ex-list{border:2px solid var(--line);border-radius:16px;background:var(--surface);overflow:hidden}
+.ex-row{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:12px;align-items:center;padding:10px 14px;border-top:1px solid var(--line)}
+.ex-row:first-child{border-top:0}
+.ex-t{display:flex;align-items:center;gap:8px;min-width:0}
+.ex-t > div{min-width:0;display:flex;flex-direction:column}
+.ex-t .t{font-size:var(--t-ex);line-height:var(--t-lh);overflow-wrap:anywhere}
+.ex-en{color:var(--muted);font-size:.95rem;min-width:0;overflow-wrap:anywhere}
+.guide-sub{margin:12px 0 0;font:800 1.15rem/1.2 var(--f-display)}
+.guide-lessons{margin:0;padding-left:1.4em;display:grid;gap:8px}
+.guide-lessons li{padding-left:4px}
+.guide-lessons strong{display:block;font-family:var(--f-display)}
+.guide-lessons span{display:block;font-family:var(--f-target);color:var(--muted);font-size:.95rem;line-height:var(--t-lh)}
+@media (max-width:480px){.ex-row{grid-template-columns:1fr;gap:2px}}
+
+@keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-7px)}40%{transform:translateX(6px)}60%{transform:translateX(-4px)}80%{transform:translateX(3px)}}
+@keyframes popin{0%{transform:scale(.9);opacity:.4}60%{transform:scale(1.04);opacity:1}100%{transform:scale(1)}}
+@keyframes rise{from{transform:translateY(12px);opacity:0}to{transform:none;opacity:1}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+
+/* sync settings */
+.sync-box{display:grid;gap:10px;padding:14px;border-radius:14px;background:var(--sunk)}
+.sync-box strong{display:block}
+.sync-box code{font:600 .85em/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;background:var(--surface);padding:2px 6px;border-radius:6px;overflow-wrap:anywhere}
+.field{display:grid;gap:4px;font-weight:700;font-size:.88rem}
+.field input{font:400 1rem/1.3 var(--f-body);color:var(--ink);background:var(--surface);border:2px solid var(--line);border-radius:12px;padding:10px 12px;min-width:0;width:100%}
+.field input:focus{outline:none;border-color:var(--sel)}
+.sync.is-ok{color:var(--ok)}
+.sync.is-bad{color:var(--bad)}
+.sync:empty{display:none}
+.sync-btns{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+/* Layout: one narrow app column. Skills sit in rows of one and two like an old-style skill tree, separated by checkpoints; lessons and tips open as full-screen sheets. Palette from batik dyes: indigo, soga brown, turmeric. */
+:root{
+  --ground:#EFF1F6; --surface:#FFFFFF; --sunk:#E1E4EE; --line:#D1D5E2;
+  --ink:#1B1E33; --muted:#585E78;
+  --brand:#3A4BC4; --brand-deep:#27328A; --on-brand:#FFFFFF;
+  --sun:#EFB21E; --sun-deep:#B07F0A; --sun-text:#8F6500; --on-sun:#2B1F02;
+  --ok:#2B8A4B; --ok-deep:#1D6136; --ok-soft:#DCF1E3; --on-ok:#FFFFFF;
+  --bad:#D33E2C; --bad-deep:#962A1D; --bad-soft:#F9E0DB; --on-bad:#FFFFFF;
+  --sel:#0E7C86; --sel-deep:#095A61; --sel-soft:#D8EFF0;
+  --flame:#E8622A;
+  --locked:#D6D9E3; --locked-deep:#BCC0CE; --locked-ink:#7F849A;
+  --scrim:rgba(15,17,35,.5);
+  --deer:#B8763E; --deer-inner:#EBC296; --deer-muzzle:#F7E8D0; --deer-ink:#2A1C12;
+  --u1:#8A5A2B; --u1d:#5F3D1C;
+  --u2:#3446A0; --u2d:#222F6E;
+  --u3:#0F7A73; --u3d:#0A5450;
+  --u4:#9C2F45; --u4d:#6D1F2F;
+  --u5:#5E7A1E; --u5d:#415514;
+  --u6:#6E3F8F; --u6d:#4C2B63;
+  --f-display:"Gabarito","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --f-body:"Lexend","Segoe UI",system-ui,-apple-system,sans-serif;
+  --f-target:"Gabarito","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --t-weight:600; --t-weight-bold:800; --t-lh:1.25;
+  --t-xl:2.5rem; --t-lg:1.6rem; --t-opt:1.15rem; --t-tile:1.12rem; --t-row:1.08rem; --t-fb:1.12rem; --t-ex:1.05rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#12141F; --surface:#1C1F2E; --sunk:#272B3C; --line:#343A4E;
+    --ink:#EEF0F8; --muted:#A3A8C0;
+    --brand:#8390F2; --brand-deep:#4652B8; --on-brand:#0E1230;
+    --sun:#F2BC3A; --sun-deep:#9A700E; --sun-text:#F2BC3A; --on-sun:#2B1F02;
+    --ok:#4FBF78; --ok-deep:#2C7D4B; --ok-soft:#163020; --on-ok:#08200F;
+    --bad:#EE6B58; --bad-deep:#A53D2E; --bad-soft:#3A1D1A; --on-bad:#2B0B06;
+    --sel:#4FC1CB; --sel-deep:#2E8E97; --sel-soft:#14303A;
+    --flame:#F48A4E;
+    --locked:#343849; --locked-deep:#262A38; --locked-ink:#7F849A;
+    --scrim:rgba(0,0,0,.6);
+    --deer:#C98A52; --deer-inner:#E7B987; --deer-muzzle:#EBD6B4; --deer-ink:#22160D;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#12141F; --surface:#1C1F2E; --sunk:#272B3C; --line:#343A4E;
+  --ink:#EEF0F8; --muted:#A3A8C0;
+  --brand:#8390F2; --brand-deep:#4652B8; --on-brand:#0E1230;
+  --sun:#F2BC3A; --sun-deep:#9A700E; --sun-text:#F2BC3A; --on-sun:#2B1F02;
+  --ok:#4FBF78; --ok-deep:#2C7D4B; --ok-soft:#163020; --on-ok:#08200F;
+  --bad:#EE6B58; --bad-deep:#A53D2E; --bad-soft:#3A1D1A; --on-bad:#2B0B06;
+  --sel:#4FC1CB; --sel-deep:#2E8E97; --sel-soft:#14303A;
+  --flame:#F48A4E;
+  --locked:#343849; --locked-deep:#262A38; --locked-ink:#7F849A;
+  --scrim:rgba(0,0,0,.6);
+  --deer:#C98A52; --deer-inner:#E7B987; --deer-muzzle:#EBD6B4; --deer-ink:#22160D;
+  color-scheme:dark;
+}
+.mascot .coat{fill:var(--deer)}
+.mascot .inner{fill:var(--deer-inner)}
+.mascot .muzzle{fill:var(--deer-muzzle)}
+.mascot .ink{fill:var(--deer-ink)}
+.mascot .shine{fill:#fff}
+.mascot .line{fill:none;stroke:var(--deer-ink);stroke-width:3.2;stroke-linecap:round}
+</style>
+</head>
+<body>
+<div id="app">
+  <header class="top"><div class="top-in gutter" id="topbar"></div></header>
+  <main id="main" class="gutter"></main>
+  <nav class="tabs gutter" aria-label="Sections"><div class="tabs-in" id="tabs"></div></nav>
+  <div id="toast" class="toast" role="status" hidden></div>
+</div>
+<section id="lesson" class="overlay" aria-label="Lesson" hidden></section>
+<section id="guide" class="overlay" aria-label="Tips" hidden></section>
+<script>
+const CFG = {
+  key: 'kancil-indonesian-v1',
+  target: 'Indonesian',
+  brand: 'Kancil',
+  brandSub: 'bahasa Indonesia',
+  voiceRe: /^(id|in)([-_]|$)/i,
+  typing: true,
+  romanization: false,
+  scriptRe: null,
+  properBase: ['Anda', 'Pak', 'Bu', 'Bapak', 'Ibu', 'Mas', 'Mbak', 'Kak', 'Dik'],
+  syn: [
+    ['saya', 'aku', 'gue'], ['kamu', 'anda', 'lo', 'kalian'], ['kami', 'kita'],
+    ['tidak', 'nggak', 'bukan', 'belum', 'jangan'], ['sudah', 'udah'], ['saja', 'aja', 'cuma'],
+    ['mau', 'ingin', 'akan'], ['bisa', 'boleh'], ['sekali', 'banget'], ['bagaimana', 'gimana'],
+    ['pak', 'bu', 'mas', 'mbak', 'kak', 'dik', 'bapak', 'ibu'], ['tapi', 'tetapi'], ['kenapa', 'mengapa'],
+    ['sedang', 'lagi'], ['sama', 'dengan'], ['tunggu', 'nunggu', 'menunggu'], ['cari', 'nyari', 'mencari'],
+    ['kirim', 'mengirim', 'dikirim'], ['bantu', 'membantu'], ['beli', 'membeli'], ['jual', 'menjual'],
+    ['ada', 'punya'],
+  ],
+  praise: [['Bagus!', 'Nice work.'], ['Benar!', 'That’s right.'], ['Hebat!', 'Great job.'], ['Mantap!', 'Excellent.']],
+  endWord: ['Kerja bagus!', 'Good work.', ''],
+  mascot(mood, size) {
+    const mouth = mood === 'sad' ? '<path class="line" d="M44 79 Q50 74 56 79"/>'
+      : mood === 'wow' ? '<ellipse class="ink" cx="50" cy="77" rx="3.6" ry="4.4"/>'
+      : '<path class="line" d="M43 75 Q50 81 57 75"/>';
+    const brows = mood === 'sad' ? '<path class="line" d="M31 43l9 3.5M69 43l-9 3.5"/>' : '';
+    return `<svg class="mascot" width="${size}" height="${size}" viewBox="0 0 100 100" aria-hidden="true">
+      <ellipse class="coat" cx="27" cy="28" rx="9.5" ry="18" transform="rotate(-30 27 28)"/>
+      <ellipse class="inner" cx="27.6" cy="29" rx="4.6" ry="11" transform="rotate(-30 27.6 29)"/>
+      <ellipse class="coat" cx="73" cy="28" rx="9.5" ry="18" transform="rotate(30 73 28)"/>
+      <ellipse class="inner" cx="72.4" cy="29" rx="4.6" ry="11" transform="rotate(30 72.4 29)"/>
+      <ellipse class="coat" cx="50" cy="58" rx="31" ry="29"/>
+      <ellipse class="muzzle" cx="50" cy="73" rx="17" ry="12.5"/>
+      <circle class="ink" cx="38" cy="53" r="5.2"/><circle class="ink" cx="62" cy="53" r="5.2"/>
+      <circle class="shine" cx="39.8" cy="51.2" r="1.7"/><circle class="shine" cx="63.8" cy="51.2" r="1.7"/>
+      <ellipse class="ink" cx="50" cy="67.5" rx="4.6" ry="3.3"/>${brows}${mouth}</svg>`;
+  },
+};
+CFG.syncFile = "indonesian.json";
+CFG.progressRepo = "";
+const COURSE = `
+S|Everyday basics|Dasar-dasar
+
+U|Greetings|Salam|chat|Add *Pak* (sir) or *Bu* (ma'am) when you greet anyone older or more senior than you.
+G|Greetings follow the time of day. *Pagi* runs until about 11 a.m., *siang* until about 3 p.m., *sore* until dusk, and *malam* after dark.
+X|Selamat pagi.|Good morning.
+X|Selamat siang.|Good afternoon (around midday).
+X|Selamat sore.|Good afternoon (late in the day).
+X|Selamat malam.|Good evening.
+G|*Bapak* (short form *Pak*) and *Ibu* (*Bu*) literally mean father and mother. They're the everyday words for sir and ma'am, and they double as a respectful "you."
+X|Terima kasih, Pak.|Thank you, sir.
+X|Ibu mau ke mana?|Where are you going, ma'am?
+G|For people about your age or younger, use *Mas* for men and *Mbak* for women. In shops and cafés, staff and customers often call each other *Kak*.
+L|Hello
+w|halo|hello|Casual, and also how people answer the phone.|hai
+w|selamat pagi|good morning|Until about 11 a.m.
+w|selamat siang|good afternoon (midday)|From late morning until about 3 p.m.
+w|selamat sore|good afternoon (late)|From about 3 p.m. until dusk.
+w|selamat malam|good evening|After dark. Also works as "good night."
+w|Pak|sir|Short for *Bapak*. Use it for any man older or more senior than you.|bapak
+w|Bu|ma'am|Short for *Ibu*. Use it for any woman older or more senior than you.|ibu
+s|Selamat pagi, Pak.|Good morning, sir.
+s|Halo, selamat malam.|Hello, good evening.
+s|Selamat sore, Bu.|Good afternoon, ma'am.
+L|How are you?
+w|apa kabar|how are you?|Literally "what news?"
+w|baik|good, well|The usual answer to *apa kabar*.
+w|terima kasih|thank you|Literally "receive love." Casual: *makasih*.|makasih
+w|sama-sama|you're welcome|Literally "same-same."
+w|saya|I, me|The neutral, polite "I." Safe in every situation.
+w|juga|also, too
+w|Anda|you (formal)|Polite and neutral. Common in business, service, and writing.
+s|Apa kabar, Bu?|How are you, ma'am?
+s|Baik, terima kasih.|Fine, thank you.
+s|Saya juga baik.|I am also fine.
+L|Polite words
+w|permisi|excuse me|For passing someone, getting attention, or entering a room.
+w|maaf|sorry|Also opens a polite question: *Maaf, Pak, ...*
+w|tolong|please (help me)|For requests: *Tolong tunggu.* (Please wait.)
+w|silakan|please (go ahead)|For offers: *Silakan duduk.* (Please have a seat.)|silahkan
+w|ya|yes|Also a soft "OK?" or "right?" at the end of a sentence.|iya
+w|tidak|no, not|Negates verbs and adjectives.|tak
+w|tidak apa-apa|no problem|The usual reply to *maaf*.|nggak apa-apa/gak apa-apa/enggak apa-apa
+s|Maaf, Pak.|Sorry, sir.
+s|Tidak apa-apa, Bu.|No problem, ma'am.
+s|Permisi, Pak.|Excuse me, sir.
+L|Nice to meet you
+w|nama|name
+w|siapa|who|*Siapa nama Anda?* is literally "who is your name?"
+w|senang|glad, happy
+w|bertemu|to meet|Casual: *ketemu*.|ketemu
+w|dengan|with|Casual: *sama*.
+w|sampai jumpa|see you|Literally "until we meet."
+w|selamat datang|welcome
+s|Nama saya Rina.|My name is Rina.
+s|Siapa nama Anda?|What is your name?
+s|Senang bertemu dengan Anda.|Nice to meet you.
+s|Selamat datang di Jakarta.|Welcome to Jakarta.
+L|Mas, Mbak, Kak
+w|Mas|young man (polite address)|Javanese for "older brother." Friendly and polite for men around your age.
+w|Mbak|young woman (polite address)|Javanese for "older sister." Friendly and polite for women around your age.
+w|Kak|friend (casual address)|From *kakak* (older sibling). Common in shops, cafés, and online.
+w|Dik|kid (to someone younger)|From *adik* (younger sibling). For children and teenagers.
+s|Terima kasih, Mas.|Thank you, Mas.
+s|Permisi, Mbak.|Excuse me, Mbak.
+
+U|People|Orang|people|There's usually no "to be": *Saya guru* means "I am a teacher."
+G|Indonesian usually skips "to be." Put the subject next to the noun or adjective and the sentence is complete.
+X|Saya guru.|I am a teacher.
+X|Dia sibuk.|She is busy. / He is busy.
+G|*Dia* means both he and she. Gender rarely shows up in Indonesian grammar.
+G|There are two words for "we." *Kita* includes the person you're talking to, and *kami* leaves them out. Talking to a client about your own team, say *kami*.
+X|Kita makan sekarang?|Shall we eat now? (you and me)
+X|Kami dari Amerika.|We're from America. (not you)
+G|Possessives come after the noun: *rumah saya* is "my house." The ending *-nya* means his, her, its, or simply "the."
+X|teman saya|my friend
+X|rumahnya|his house / her house / the house
+G|Negate nouns with *bukan* and everything else with *tidak*.
+X|Saya bukan dokter.|I'm not a doctor.
+X|Saya tidak sibuk.|I'm not busy.
+L|I, you, she
+w|aku|I (casual)|With friends and family. *Saya* is safer with people you don't know.
+w|kamu|you (casual)|For friends, or people younger than you.
+w|dia|he, she|One word for both.|ia
+w|ini|this
+w|itu|that|Also works like "the": *orang itu* (that person, the person).
+w|orang|person
+s|Ini Pak Budi.|This is Mr. Budi.
+s|Dia orang Indonesia.|She is Indonesian.
+L|We and they
+w|kami|we (not including you)
+w|kita|we (including you)
+w|mereka|they
+w|kalian|you all|Casual plural "you." In a formal speech: *Bapak-bapak dan Ibu-ibu*.
+w|teman|friend|Also *kawan*.|kawan
+w|tamu|guest
+s|Mereka teman saya.|They are my friends.
+s|Kami tamu.|We are guests.
+s|Kita teman.|We are friends.
+L|Not a teacher
+w|bukan|not (for nouns)|Also a tag like "isn't it?": *Ini kopi, bukan?*
+w|adalah|is, are (formal)|Optional. Mostly used in writing and definitions.
+w|guru|teacher
+w|dokter|doctor
+w|mahasiswa|university student
+w|sibuk|busy
+s|Saya bukan guru.|I am not a teacher.
+s|Dia tidak sibuk.|He is not busy.
+s|Mereka mahasiswa.|They are university students.
+L|My and your
+w|rumah|house, home
+w|suami|husband
+w|istri|wife||isteri
+w|anak|child
+w|punya|to have, own
+w|-nya|his, her, its, the|Attach it to a noun: *rumahnya* is "his house" or "the house."|nya
+s|Ini rumah saya.|This is my house.
+s|Itu suami saya.|That is my husband.
+s|Istrinya guru.|His wife is a teacher.
+
+U|Numbers|Angka|text:123|Learn 1 to 10 plus three patterns: *belas* for teens, *puluh* for tens, and *se-* for "one."
+G|Teens add *belas*, tens add *puluh*, hundreds *ratus*, and thousands *ribu*. The prefix *se-* replaces *satu* (one) in front of them: *sepuluh* (10), *sebelas* (11), *seratus* (100), *seribu* (1,000).
+X|dua belas|12
+X|tiga puluh lima|35
+X|seratus dua puluh|120
+X|dua ribu lima ratus|2,500
+G|Prices in rupiah run into the thousands, so *ribu* is the number word you'll hear most. At a food stall people often drop it: *dua puluh lima* means Rp25.000.
+G|Indonesian writes a period where English uses a comma, and a comma for decimals. Rp25.000 is twenty-five thousand rupiah, and 2,5 is two and a half.
+L|One to five
+w|nol|zero|Also *kosong* (empty) when reading out phone numbers.|kosong
+w|satu|one (1)
+w|dua|two (2)
+w|tiga|three (3)
+w|empat|four (4)
+w|lima|five (5)
+s|Saya punya dua anak.|I have two children.
+s|Tiga orang.|Three people.
+L|Six to ten
+w|enam|six (6)
+w|tujuh|seven (7)
+w|delapan|eight (8)
+w|sembilan|nine (9)
+w|sepuluh|ten (10)
+s|Kami tujuh orang.|There are seven of us.
+s|Dia punya lima anak.|She has five children.
+L|Teens and tens
+w|sebelas|eleven (11)
+w|dua belas|twelve (12)
+w|lima belas|fifteen (15)
+w|dua puluh|twenty (20)
+w|lima puluh|fifty (50)
+w|seratus|one hundred (100)
+s|Tamunya lima belas orang.|There are fifteen guests.
+s|Teman saya dua puluh orang.|I have twenty friends.
+L|Thousands and millions
+w|ribu|thousand|*Seribu* is one thousand; *dua ribu* is two thousand.
+w|seribu|one thousand (1,000)
+w|juta|million
+w|miliar|billion||milyar
+w|berapa|how many, how much
+w|nomor|number (in a series)|For phone, room, and house numbers.
+w|rupiah|rupiah|Indonesia's currency, written Rp.
+s|Berapa orang?|How many people?
+s|Dua ribu rupiah.|Two thousand rupiah.
+s|Lima juta rupiah.|Five million rupiah.
+
+U|Getting around|Jalan|pin|Three little words do most of the work: *di* (at), *ke* (to), and *dari* (from).
+G|*Di*, *ke*, and *dari* go in front of a place. Add *mana* (where) to make a question.
+X|Di mana?|Where (at)?
+X|Ke mana?|Where to?
+X|Dari mana?|Where from?
+G|*Ke mana?* is also a casual greeting, like "where are you headed?" A vague answer is fine: *Jalan-jalan.* (Just out and about.)
+G|*Mau* (want) often stands in for a verb of motion: *Saya mau ke bandara* is "I want to go to the airport."
+G|In Jakarta, *macet* (jammed) is the word you'll hear most. Leave more time than the map says, and expect drivers to ask *Lewat tol?* (Take the toll road?)
+L|Where is it?
+w|di|at, in, on
+w|di mana|where (location)|Often at the end in speech: *Hotelnya di mana?*
+w|ada|there is, to be present|*Pak Budi ada?* asks whether Mr. Budi is in.
+w|kamar kecil|restroom|Literally "small room." *Toilet* works too.|toilet/wc
+w|sini|here|Usually with *di*: *di sini*.
+w|sana|over there|Usually with *di*: *di sana*.
+s|Kamar kecil di mana?|Where is the restroom?|Di mana kamar kecil?
+s|Pak Budi ada?|Is Mr. Budi in?
+s|Hotel saya di sana.|My hotel is over there.
+L|Coming and going
+w|ke|to (a place)
+w|dari|from
+w|pergi|to go
+w|datang|to come
+w|pulang|to go home|Also "go back," as in back to your hotel or your country.
+w|mau|to want, be going to
+w|ke mana|where to
+s|Saya mau ke hotel.|I want to go to the hotel.
+s|Anda dari mana?|Where are you from?|Dari mana Anda?
+s|Saya dari Amerika.|I am from America.
+L|Left and right
+w|kiri|left
+w|kanan|right (direction)
+w|lurus|straight
+w|belok|to turn
+w|terus|keep going, continue|Also "and then."
+w|berhenti|to stop|In a car, people also just say *stop* or *kiri*.
+s|Belok kiri, Pak.|Turn left, sir.
+s|Berhenti di sini.|Stop here.
+s|Lurus terus.|Keep going straight.
+L|Taking a ride
+w|naik|to ride, take (transport); to go up
+w|mobil|car
+w|taksi|taxi
+w|ojek|motorbike taxi|Booked by app, it's an *ojol* (*ojek online*).
+w|bandara|airport
+w|stasiun|train station
+s|Saya naik taksi ke bandara.|I take a taxi to the airport.
+s|Stasiunnya di mana?|Where is the station?|Di mana stasiunnya?
+L|Traffic and distance
+w|jalan|street, road; to walk
+w|macet|jammed (traffic)
+w|dekat|near, close
+w|jauh|far
+w|berapa lama|how long (time)
+w|sampai|to arrive; until
+s|Jalannya macet.|The road is jammed.
+s|Hotelnya dekat.|The hotel is close.
+s|Berapa lama ke bandara?|How long to the airport?
+
+U|Time and days|Waktu|clock|*Jam* before a number is a time of day; after a number it's a length: *jam dua* is 2 o'clock, *dua jam* is two hours.
+G|Word order changes the meaning. *Jam tiga* is three o'clock and *tiga jam* is three hours. Days work the same way: *hari Senin* is Monday, *dua hari* is two days.
+G|Half hours count toward the next hour: *setengah tiga* is 2:30 ("half to three"). Use *lewat* (past) and *kurang* (to) for minutes.
+X|jam tujuh pagi|7:00 a.m.
+X|jam setengah sembilan|8:30
+X|jam empat lewat sepuluh|4:10
+X|jam lima kurang seperempat|4:45
+G|*Tadi* is earlier today and *nanti* is later today. You'll hear both constantly: *Nanti saya telepon* (I'll call you later).
+G|*Jam karet* ("rubber time") is the running joke about flexible timing. Business meetings in Jakarta usually start on time; social plans often don't.
+L|What time is it?
+w|jam|hour, o'clock; clock
+w|jam berapa|what time
+w|menit|minute
+w|setengah|half
+w|lewat|past (the hour); via
+w|kurang|less; to (the hour)
+w|sekarang|now
+s|Jam berapa sekarang?|What time is it now?|Sekarang jam berapa?
+s|Sekarang jam tiga.|It is three o'clock now.||Now it is three o'clock.
+s|Jam setengah sepuluh.|Half past nine.
+L|Monday to Friday
+w|hari|day
+w|hari ini|today
+w|Senin|Monday
+w|Selasa|Tuesday
+w|Rabu|Wednesday
+w|Kamis|Thursday
+w|Jumat|Friday||jum'at
+s|Hari ini hari Senin.|Today is Monday.
+s|Saya sibuk hari Jumat.|I am busy on Friday.|Hari Jumat saya sibuk.|On Friday I am busy.
+L|Weeks and months
+w|Sabtu|Saturday
+w|Minggu|Sunday
+w|minggu|week|Same word as Sunday, written lowercase.
+w|bulan|month; moon
+w|tahun|year
+w|depan|next; front|*Minggu depan* is next week.
+w|lalu|last, ago|*Tahun lalu* is last year.
+s|Saya sibuk minggu depan.|I am busy next week.|Minggu depan saya sibuk.|Next week I am busy.
+s|Tahun lalu saya di Bali.|I was in Bali last year.|Saya di Bali tahun lalu.|Last year I was in Bali.
+L|Yesterday and tomorrow
+w|kemarin|yesterday
+w|besok|tomorrow
+w|lusa|the day after tomorrow
+w|tadi|earlier (today)|*Tadi pagi* is this morning, said later in the day.
+w|nanti|later (today)|*Nanti malam* is tonight.
+w|pagi|morning
+w|malam|night, evening
+s|Sampai jumpa besok.|See you tomorrow.
+s|Nanti malam saya sibuk.|I am busy tonight.|Saya sibuk nanti malam.|Tonight I am busy.
+s|Kemarin jalannya macet.|Yesterday the road was jammed.||The road was jammed yesterday.
+
+U|Food and drink|Makan|bowl|Order with *Saya mau...* (I'd like...) and put the number after the dish: *sate ayam dua*.
+G|Ordering is simple: *Saya mau...* (I'd like...) or *Saya pesan...* (I'll order...). Put the number after the dish: *sate ayam dua* (two chicken satay).
+X|Es teh manis satu.|One sweet iced tea.
+X|Tidak pakai sambal.|No chili sauce.
+X|Makan di sini atau dibungkus?|Eat here or take away?
+G|Ask for *tidak pedas* (not spicy) or *jangan terlalu pedas* (not too spicy). When a cook says something is *pedas*, believe them.
+G|*Makan* covers having a meal as well as eating. *Sudah makan?* (Have you eaten?) is a friendly check-in, not an invitation.
+G|*Minta* (ask for) is the polite way to request things: *Minta bonnya, Mas* (The bill, please).
+L|Hungry and thirsty
+w|makan|to eat
+w|minum|to drink
+w|nasi|cooked rice
+w|air|water
+w|lapar|hungry
+w|haus|thirsty
+s|Saya lapar.|I am hungry.
+s|Saya mau minum air.|I want to drink water.
+s|Anda mau makan?|Do you want to eat?
+L|Ordering
+w|pesan|to order; a message
+w|minta|to ask for
+w|lagi|more, again|Also "currently" in casual speech: *lagi makan* (eating right now).
+w|saja|just, only|Casual: *aja*.
+w|enak|delicious, tasty
+w|goreng|fried
+s|Saya pesan nasi goreng.|I will order fried rice.
+s|Minta air satu lagi.|One more water, please.
+s|Nasi gorengnya enak.|The fried rice is delicious.
+s|Ini saja.|Just this.
+L|On the menu
+w|ayam|chicken
+w|ikan|fish
+w|sate|satay|Grilled skewers, usually with peanut sauce.
+w|mi|noodles||mie
+w|sayur|vegetables
+w|telur|egg
+w|daging sapi|beef|*Daging* is meat and *sapi* is cow.
+s|Saya mau sate ayam.|I want chicken satay.
+s|Saya tidak makan daging sapi.|I do not eat beef.
+L|Coffee and tea
+w|kopi|coffee
+w|teh|tea
+w|es|ice; iced|*Es teh* is iced tea.
+w|manis|sweet
+w|susu|milk
+w|gula|sugar
+w|tanpa|without
+s|Es teh manis satu.|One sweet iced tea.
+s|Kopi susu tanpa gula.|Milk coffee without sugar.
+s|Saya minum teh.|I drink tea.
+L|Spicy, and the bill
+w|pedas|spicy
+w|sambal|chili sauce
+w|jangan|don't
+w|terlalu|too (much)
+w|dibungkus|to take away (food)|Literally "wrapped."|bungkus
+w|bayar|to pay
+w|atau|or
+s|Jangan terlalu pedas.|Not too spicy.
+s|Makan di sini atau dibungkus?|Eat here or take away?
+s|Bayar di mana?|Where do I pay?
+
+S|Grammar and daily life|Tata bahasa
+
+U|Sudah or belum?|Sudah atau belum?|hourglass|Verbs never change form. Small words like *sudah*, *sedang*, and *akan* carry the time.
+G|Indonesian verbs have no tenses. *Saya makan* can mean I eat, I ate, or I'm eating. When timing matters, add a marker before the verb or a time word like *kemarin* or *besok*.
+X|Saya sudah makan.|I've eaten. / I already ate.
+X|Saya belum makan.|I haven't eaten yet.
+X|Saya sedang makan.|I'm eating (right now).
+X|Saya akan makan.|I will eat.
+X|Saya pernah makan durian.|I've eaten durian (at some point).
+G|*Belum* (not yet) is the polite answer to *sudah* questions, even when the real answer is no: *Sudah menikah?* *Belum.* (Married? Not yet.)
+G|Question words can go first or, in conversation, right where the answer would be: *Anda pulang kapan?* (You go home when?) Yes/no questions just use rising intonation, or *apakah* at the start in formal speech.
+G|*Karena* (because), *tapi* (but), *kalau* (if), and *jadi* (so) join clauses just like their English equivalents.
+L|Already and not yet
+w|sudah|already|Casual: *udah*.
+w|belum|not yet
+w|selesai|finished, done
+w|mulai|to start
+w|tunggu|to wait|Formal: *menunggu*.|menunggu
+w|sebentar|a moment
+s|Saya sudah makan.|I already ate.
+s|Belum selesai.|It is not finished yet.
+s|Tolong tunggu sebentar.|Please wait a moment.
+L|Now and later
+w|sedang|in the middle of (doing)|Casual: *lagi*.
+w|akan|will
+w|masih|still
+w|baru|just (recently); new
+w|pernah|ever, have been|*Belum pernah* is "never (yet)."
+s|Saya sedang makan.|I am eating.
+s|Saya baru sampai.|I just arrived.
+s|Anda pernah ke Bali?|Have you ever been to Bali?
+s|Dia masih sibuk.|She is still busy.
+L|Question words
+w|apa|what|Also opens yes/no questions in speech: *Apa Anda sibuk?*
+w|kapan|when
+w|kenapa|why|Formal: *mengapa*.|mengapa
+w|bagaimana|how|Casual: *gimana*.
+w|yang mana|which one
+w|apakah|(formal yes/no question)|Opens a formal yes/no question. In speech, rising intonation does the job.
+s|Kapan Anda pulang?|When are you going home?|Anda pulang kapan?
+s|Apa ini?|What is this?|Ini apa?
+s|Yang mana?|Which one?
+s|Kenapa macet?|Why is it jammed?
+L|Must, need, like
+w|harus|must, have to
+w|ingin|to wish, want (formal)
+w|perlu|to need
+w|suka|to like
+w|mungkin|maybe
+w|tahu|to know|Casual: *tau*.|tau
+s|Saya harus pergi sekarang.|I have to go now.
+s|Saya suka kopi Indonesia.|I like Indonesian coffee.
+s|Saya tidak tahu.|I do not know.
+s|Mungkin besok.|Maybe tomorrow.
+L|Because, but, if
+w|karena|because
+w|tapi|but|Formal: *tetapi*.|tetapi
+w|kalau|if; as for
+w|jadi|so; to become
+w|terlambat|late|Casual: *telat*.|telat
+s|Maaf, saya terlambat karena macet.|Sorry, I am late because of the traffic.
+s|Pedas, tapi enak.|Spicy, but delicious.
+s|Kalau macet, saya naik ojek.|If there is traffic, I take a motorbike taxi.
+
+U|Shopping|Belanja|bag|Bargaining is normal at markets and with street vendors, but not in malls or minimarts.
+G|Ask the price with *Berapa harganya?* or just *Berapa?* Then try *Bisa kurang?* (Can it be less?) At markets, a friendly counteroffer well below the first price is a normal opening.
+X|Berapa harganya?|How much is it?
+X|Mahal sekali!|That's very expensive!
+X|Bisa kurang, Bu?|Can you go lower, ma'am?
+X|Harga pas.|Fixed price.
+G|*Ada* asks whether something is available: *Ada ukuran besar?* (Do you have a large size?) The answer is *ada* (yes, there is) or *tidak ada* (no, there isn't).
+G|*Yang* turns an adjective into "the one that's...": *yang merah* is "the red one," *yang murah* is "the cheap one."
+L|How much?
+w|harga|price
+w|mahal|expensive
+w|murah|cheap
+w|sekali|very; once|Comes after the adjective: *mahal sekali*.
+w|bisa|can, be able to
+w|uang|money
+w|bagus|good, nice (quality, looks)
+s|Berapa harganya?|How much is it?
+s|Mahal sekali!|That is very expensive.
+s|Bisa kurang?|Can it be less?
+s|Bagus sekali.|Very nice.
+L|Buying
+w|beli|to buy|Formal: *membeli*.|membeli
+w|jual|to sell|Formal: *menjual*.|menjual
+w|cari|to look for|Formal: *mencari*.|mencari
+w|ambil|to take
+w|coba|to try
+w|boleh|may, be allowed
+s|Saya mau beli dua.|I want to buy two.
+s|Boleh saya coba?|May I try it?
+s|Saya ambil ini.|I will take this.
+L|Clothes and sizes
+w|baju|clothes, shirt
+w|sepatu|shoes
+w|tas|bag
+w|ukuran|size
+w|warna|color
+w|besar|big
+w|kecil|small
+s|Ada ukuran besar?|Do you have a large size?
+s|Tas ini terlalu kecil.|This bag is too small.
+s|Sepatunya bagus.|The shoes are nice.
+L|Colors
+w|merah|red
+w|putih|white
+w|hitam|black
+w|biru|blue
+w|hijau|green
+w|kuning|yellow
+w|yang|the one that, which|*Yang merah* is "the red one."
+s|Saya mau yang merah.|I want the red one.
+s|Ada yang hitam?|Is there a black one?
+s|Bajunya biru.|The shirt is blue.
+L|Paying
+w|tunai|cash|People also say *cash*.
+w|kartu|card
+w|kembalian|change (money back)
+w|pas|exact, just right|*Uangnya pas* means you're paying the exact amount.
+w|habis|sold out, used up
+w|pakai|to use; with|*Bayar pakai kartu* is "pay by card." Formal: *memakai*.|memakai
+s|Bisa bayar pakai kartu?|Can I pay by card?
+s|Kopinya habis.|The coffee is sold out.
+s|Saya bayar tunai.|I will pay in cash.
+
+U|Hotel and phone|Hotel|phone|*Bisa minta...?* (Could I have...?) handles almost any request at a front desk.
+G|Hotel staff will usually call you *Bapak* or *Ibu*, or *Kak* in newer hotels. *Bisa minta...?* (Could I have...?) and *Tolong...* (Please...) cover most requests.
+X|Bisa minta handuk tambahan?|Could I have an extra towel?
+X|Tolong bersihkan kamarnya.|Please clean the room.
+X|AC-nya mati.|The air conditioning is off.
+G|WhatsApp is the default for everything from booking a driver to confirming a meeting. *Di-WA aja* ("just WhatsApp me") and *Siap!* ("Will do!") are worth knowing.
+X|Nanti saya kabari.|I'll let you know.
+X|Ditunggu, ya.|I'll be waiting. / Looking forward to it.
+L|Checking in
+w|kamar|room
+w|kunci|key
+w|sarapan|breakfast
+w|lantai|floor (level)
+w|AC|air conditioning|Said "ah-seh."
+w|mati|off (device); dead
+s|Saya sudah pesan kamar.|I have booked a room.
+s|Sarapan jam berapa?|What time is breakfast?
+s|AC-nya mati.|The air conditioning is off.
+s|Kamar saya di lantai lima.|My room is on the fifth floor.
+L|Requests
+w|handuk|towel
+w|tambahan|extra, additional
+w|ganti|to change, replace
+w|bersih|clean
+w|kotor|dirty
+w|bantal|pillow
+w|untuk|for
+s|Bisa minta handuk tambahan?|Could I have an extra towel?
+s|Kamarnya kotor.|The room is dirty.
+s|Tolong ganti bantalnya.|Please change the pillow.
+s|Ini untuk Anda.|This is for you.
+L|Phone and messages
+w|HP|cell phone|Said "hah-peh," from *handphone*.|handphone
+w|telepon|phone; to call|Formal verb: *menelepon*.|menelepon
+w|sinyal|signal
+w|WA|WhatsApp|Said "weh-ah." *Di-WA aja* is "just WhatsApp me."|whatsapp
+w|kata sandi|password|People also say *password*.
+w|kabari|to let (someone) know|From *kabar* (news).|kabarin
+s|Berapa nomor HP Anda?|What is your cell number?
+s|Kata sandi wifinya apa?|What is the wifi password?|Apa kata sandi wifinya?
+s|Nanti saya kabari lewat WA.|I will let you know on WhatsApp later.
+L|Quick replies
+w|siap|ready; will do|*Siap, Pak!* is a crisp "Will do, sir!"
+w|ditunggu|looking forward (to it)|Literally "being waited for."
+w|sebentar lagi|soon, in a moment
+w|otw|on the way|From English, said "oh-teh-weh."
+w|hati-hati|be careful, take care
+w|selamat jalan|have a safe trip|Said to someone who's leaving.
+s|Siap, Pak.|Will do, sir.
+s|Saya otw ke hotel.|I am on the way to the hotel.
+s|Hati-hati di jalan.|Take care on the road.
+
+U|Counting things|Berapa banyak?|stack|Counting words go between the number and the noun: *dua gelas teh* (two glasses of tea).
+G|Formal Indonesian puts a counting word between the number and the noun. *Orang* is for people, *ekor* ("tail") for animals, *buah* ("fruit") for most objects, and *lembar* ("sheet") for paper and other flat things. In speech, most people only keep *orang*.
+X|tiga orang karyawan|three employees
+X|dua ekor kucing|two cats
+X|sebuah mobil|a car
+X|lima lembar kertas|five sheets of paper
+G|Containers work like English: *dua gelas teh* (two glasses of tea), *sebotol air* (a bottle of water). In a warung you'll often hear the order flipped: *teh dua gelas*.
+G|Plurals are optional. *Buku* is book or books. Doubling (*buku-buku*) stresses that there are many, but you don't double after a number or *banyak*: *banyak buku*, not *banyak buku-buku*.
+L|Counting words
+w|buah|fruit; (counter for objects)|*Sebuah* means "one" or "a."
+w|ekor|tail; (counter for animals)
+w|lembar|sheet; (counter for paper)
+w|gelas|glass
+w|botol|bottle
+w|piring|plate
+s|Teh dua gelas.|Two glasses of tea.|Dua gelas teh.
+s|Air satu botol.|One bottle of water.|Satu botol air.
+s|Nasi goreng dua piring.|Two plates of fried rice.|Dua piring nasi goreng.
+L|How much, how many
+w|banyak|many, a lot
+w|sedikit|a little, a few
+w|semua|all, everyone
+w|beberapa|several, some
+w|setiap|every, each
+w|cukup|enough; fairly
+s|Semua orang di sini.|Everyone is here.
+s|Sedikit saja.|Just a little.
+s|Itu cukup, terima kasih.|That is enough, thank you.
+L|Things and plurals
+w|buku|book
+w|kertas|paper
+w|barang|goods, things
+w|meja|table, desk
+w|kursi|chair
+w|anak-anak|children|Doubling makes the plural clear.
+s|Barangnya banyak sekali.|There are so many things.
+s|Anak-anak di rumah.|The children are at home.
+s|Bukunya di meja.|The book is on the table.
+
+U|Verbs with ber- and me-|Kata kerja|blocks|Many verbs are a root plus a prefix. Learn the root and you can recognize the whole family.
+G|*Ber-* verbs usually describe an activity or a state with no object: *bekerja* (to work), *berbicara* (to speak). *Me-* verbs usually take an object: *membaca buku* (to read a book).
+G|*Me-* changes shape to fit the first sound of the root, and some first letters drop away. That's why you'll find *menulis* in the dictionary under *tulis*.
+X|me + baca → membaca|to read
+X|me + tulis → menulis|to write (the t drops)
+X|me + kirim → mengirim|to send
+X|me + pakai → memakai|to use (the p drops)
+X|me + sapu → menyapu|to sweep (the s drops)
+G|In casual speech the prefix often disappears: people say *Saya beli kopi* rather than *Saya membeli kopi*. Use the full forms when reading and in meetings.
+L|Ber- verbs
+w|bekerja|to work|From *kerja* (work).|kerja
+w|belajar|to study, learn|From *ajar* (teach).
+w|berbicara|to speak|From *bicara*. Casual: *ngomong*.|bicara
+w|bertanya|to ask (a question)|From *tanya*.|tanya
+w|berangkat|to depart, leave
+w|bahasa|language
+s|Saya bekerja di Jakarta.|I work in Jakarta.
+s|Saya belajar bahasa Indonesia.|I am learning Indonesian.
+s|Kami berangkat besok pagi.|We leave tomorrow morning.|Besok pagi kami berangkat.|Tomorrow morning we leave.
+L|Me- verbs
+w|membaca|to read|From *baca*.|baca
+w|menulis|to write|From *tulis*.|tulis
+w|mengirim|to send|From *kirim*.|kirim
+w|membuat|to make|From *buat*.|buat
+w|mengerti|to understand|Also *paham*.|ngerti/paham
+w|membantu|to help|From *bantu*.|bantu
+s|Dia sedang membaca buku.|She is reading a book.
+s|Saya akan mengirim email besok.|I will send the email tomorrow.|Besok saya akan mengirim email.|Tomorrow I will send the email.
+s|Saya tidak mengerti.|I do not understand.
+s|Bisa bantu saya?|Can you help me?
+L|More me- verbs
+w|melihat|to see, look at|From *lihat*.|lihat
+w|mendengar|to hear|From *dengar*.|dengar
+w|menjemput|to pick (someone) up|From *jemput*.|jemput
+w|mengantar|to take (someone) somewhere|From *antar*. Also "to deliver."|antar
+w|mengajar|to teach|Same root as *belajar*.|ajar
+w|sopir|driver||supir
+s|Saya akan menjemput Anda di hotel.|I will pick you up at the hotel.
+s|Sopir akan mengantar Anda.|The driver will take you.
+s|Dia mengajar bahasa Inggris.|She teaches English.
+
+U|More affixes|Imbuhan|puzzle|*Di-* makes a verb passive, and Indonesian uses the passive far more than English does.
+G|Put *di-* on a root to make a passive verb. Indonesian prefers the passive when the thing matters more than who did it, so you'll see it on signs, in emails, and in reports.
+X|Emailnya sudah dikirim.|The email has been sent.
+X|Pintu ini harus ditutup.|This door must be kept closed.
+X|Dilarang merokok.|No smoking.
+G|*-an* turns a root into a thing: *makan* → *makanan* (food), *minum* → *minuman* (drink), *lapor* → *laporan* (report). *Pe-* makes the person who does it: *pembeli* (buyer), *penjual* (seller), *pekerja* (worker).
+G|*Ke-...-an* wraps a root into an abstract noun: *sehat* (healthy) → *kesehatan* (health), *uang* (money) → *keuangan* (finance), *untung* (profit) → *keuntungan* (profit, gain).
+G|*-kan* often means "make it so" or "do it for someone": *jelas* (clear) → *menjelaskan* (to explain), *siap* (ready) → *menyiapkan* (to prepare).
+L|Passive di-
+w|dikirim|sent, to be sent
+w|dibuat|made, to be made
+w|ditutup|closed, to be closed
+w|dibuka|opened, to be opened
+w|dijual|for sale, to be sold
+w|dilarang|forbidden
+s|Emailnya sudah dikirim.|The email has been sent.
+s|Tokonya sudah ditutup.|The shop is already closed.
+s|Rumah ini dijual.|This house is for sale.
+s|Dilarang merokok.|No smoking.
+L|Things with -an
+w|makanan|food
+w|minuman|drink, beverage
+w|laporan|report|From *lapor* (report).
+w|pertanyaan|question|From *tanya* (ask).
+w|jawaban|answer|From *jawab* (answer).
+w|bantuan|help, assistance
+s|Makanan Indonesia enak.|Indonesian food is delicious.
+s|Saya punya satu pertanyaan.|I have one question.
+s|Terima kasih atas bantuannya.|Thank you for your help.
+L|People with pe-
+w|pembeli|buyer
+w|penjual|seller
+w|pekerja|worker
+w|pengusaha|businessperson
+w|pemilik|owner
+w|pelanggan|customer
+s|Pemiliknya ada?|Is the owner in?
+s|Dia pengusaha dari Surabaya.|He is a businessman from Surabaya.
+s|Pelanggannya banyak.|There are many customers.
+L|Ke-an and -kan
+w|kesehatan|health
+w|keuangan|finance
+w|keuntungan|profit, gain
+w|kesempatan|opportunity, chance
+w|menjelaskan|to explain|From *jelas* (clear).|jelaskan
+w|menyiapkan|to prepare|From *siap* (ready).|siapkan
+s|Bisa dijelaskan lagi?|Could you explain it again?
+s|Terima kasih atas kesempatannya.|Thank you for the opportunity.
+s|Saya akan menyiapkan laporannya.|I will prepare the report.
+
+S|Work and the city|Kerja dan kota
+
+U|Small talk|Ngobrol|chats|Personal questions about marriage and kids are normal small talk. *Belum* (not yet) is a graceful answer.
+G|Expect *Sudah menikah?* (Are you married?), *Sudah punya anak?* (Do you have kids?), and *Tinggal di mana?* (Where do you live?) early in a conversation. They're friendly, not nosy, so ask them back.
+X|Sudah menikah?|Are you married?
+X|Sudah, anak saya dua.|Yes, I have two kids.
+X|Belum.|Not yet.
+G|Compliments on the city and the food go a long way: *Kotanya bagus* (the city is nice), *Makanannya enak sekali* (the food is really good).
+L|Family
+w|keluarga|family
+w|menikah|to marry, be married
+w|orang tua|parents|Literally "old people."
+w|ayah|father|Casual: *bapak*, *papa*.
+w|kakak|older sibling
+w|adik|younger sibling
+s|Anda sudah menikah?|Are you married?
+s|Saya punya satu adik.|I have one younger sibling.
+s|Keluarga saya di Amerika.|My family is in America.
+L|Where you live
+w|tinggal|to live, stay
+w|asal|origin|*Asalnya dari mana?* is "Where are you from originally?"
+w|kota|city, town
+w|negara|country
+w|lahir|born
+w|luar negeri|abroad|Literally "outside the country."
+s|Anda tinggal di mana?|Where do you live?|Di mana Anda tinggal?
+s|Saya lahir di Amerika.|I was born in America.
+s|Kotanya bagus.|The city is nice.
+L|Weather
+w|cuaca|weather
+w|panas|hot
+w|hujan|rain; to rain
+w|dingin|cold
+w|cerah|sunny, clear
+w|banjir|flood
+w|musim|season|Indonesia has two: *musim hujan* (rainy season) and *musim kemarau* (dry season).
+s|Hari ini panas sekali.|It is very hot today.||Today it is very hot.
+s|Sekarang musim hujan.|It is the rainy season now.||Now it is the rainy season.
+s|Jalannya banjir.|The road is flooded.
+L|Free time
+w|hobi|hobby
+w|olahraga|sport, exercise
+w|jalan-jalan|to go out, travel around
+w|libur|holiday, day off
+w|main|to play; to hang out|*Main ke rumah* is "come over to my place."
+w|film|movie
+s|Hobi saya olahraga.|My hobby is sport.
+s|Kami mau jalan-jalan ke Bandung.|We want to take a trip to Bandung.
+s|Besok libur.|Tomorrow is a day off.
+
+U|Business meetings|Rapat|briefcase|Open and close with thanks: *Terima kasih atas waktunya* (thank you for your time) carries a lot of weight.
+G|Business Indonesian leans formal: *saya* for I, *Bapak* or *Ibu* for you, and *kami* for your side. Greet the most senior person first, and hand over business cards with your right hand or both hands.
+G|A flat "no" is rare in meetings. *Akan kami pertimbangkan* (we'll consider it) or *Mungkin agak sulit* (that may be a little difficult) often mean no. Listen for hesitation as much as for words.
+X|Mohon maaf atas keterlambatannya.|We apologize for the delay.
+X|Bagaimana menurut Bapak?|What do you think, sir?
+X|Akan kami pertimbangkan.|We'll consider it.
+G|*Mohon* is a formal "please" for requests in meetings and writing, usually with a passive verb: *Mohon dikirim hari ini* (please send it today).
+L|At the office
+w|kantor|office
+w|perusahaan|company
+w|rapat|meeting
+w|jadwal|schedule
+w|kartu nama|business card
+w|direktur|director
+w|manajer|manager
+s|Rapatnya jam sepuluh.|The meeting is at ten o'clock.
+s|Ini kartu nama saya.|This is my business card.
+s|Kantornya di lantai lima.|The office is on the fifth floor.
+L|Introductions
+w|perkenalkan|let me introduce|*Perkenalkan, nama saya...* opens a formal self-introduction.
+w|bagian|department; part
+w|mewakili|to represent
+w|kerja sama|cooperation; to work together|As a verb, formally: *bekerja sama*.|bekerja sama
+w|bertanggung jawab|to be responsible
+w|peneliti|researcher|From *teliti* (careful, thorough).
+s|Perkenalkan, nama saya Rina.|Let me introduce myself, my name is Rina.
+s|Saya mewakili perusahaan kami.|I represent our company.
+s|Saya peneliti dari universitas.|I am a researcher from a university.
+s|Kami ingin kerja sama.|We would like to work together.
+L|Formal requests
+w|mohon|please (formal)
+w|segera|soon, right away
+w|menurut|according to|*Menurut saya* is "in my opinion."
+w|setuju|to agree
+w|usul|proposal, suggestion
+w|terlampir|attached|For emails: *Terlampir laporannya.* (The report is attached.)
+s|Mohon segera dikirim.|Please send it soon.
+s|Saya setuju.|I agree.
+s|Bagaimana menurut Bapak?|What do you think, sir?
+s|Laporannya terlampir.|The report is attached.
+L|Deals
+w|kontrak|contract
+w|penawaran|offer, quote
+w|diskon|discount
+w|tanda tangan|signature; to sign
+w|sulit|difficult
+w|agak|somewhat, a bit
+w|mempertimbangkan|to consider|From *timbang* (weigh).|pertimbangkan
+s|Kami akan mempertimbangkan penawarannya.|We will consider the offer.
+s|Mungkin agak sulit.|It might be a bit difficult.
+s|Kontraknya sudah ditandatangani.|The contract has been signed.
+L|Wrapping up
+w|waktu|time; when|*Waktu itu* is "at that time."
+w|janji|appointment; promise
+w|menghubungi|to contact|From *hubung* (connect).|hubungi
+w|semoga|hopefully
+w|lancar|smooth, fluent|*Bahasa Indonesianya lancar!* is "Your Indonesian is fluent!"
+w|sampai bertemu lagi|until next time|More formal than *sampai jumpa*.
+s|Terima kasih atas waktunya.|Thank you for your time.
+s|Semoga lancar.|Hopefully it goes smoothly.
+s|Saya akan menghubungi Anda minggu depan.|I will contact you next week.|Minggu depan saya akan menghubungi Anda.|Next week I will contact you.
+
+U|On the factory floor|Pabrik|factory|Shop floors mix formal Indonesian with English loanwords: *target*, *sif* (shift), *QC*.
+G|Much of the manufacturing vocabulary is borrowed and respelled: *produksi* (production), *kualitas* (quality), *ekspor* (export), *mesin* (machine). If you know the English word, try it with Indonesian spelling and vowels.
+G|Pay is usually discussed per month (*per bulan*), and the minimum wage (*UMK* or *UMR*) is set by region. *Lembur* (overtime) and *borongan* (piece-rate pay) come up in almost any conversation about pay.
+X|Gajinya berapa per bulan?|What's the monthly wage?
+X|Ada lembur?|Is there overtime?
+X|Dibayar borongan.|Paid by the piece.
+L|The plant
+w|pabrik|factory
+w|mesin|machine
+w|produksi|production
+w|gudang|warehouse
+w|bahan baku|raw materials
+w|rusak|broken
+s|Pabriknya di Bekasi.|The factory is in Bekasi.
+s|Mesinnya rusak.|The machine is broken.
+s|Bahan bakunya dari mana?|Where do the raw materials come from?
+L|The workforce
+w|karyawan|employee
+w|buruh|laborer
+w|mandor|foreman
+w|atasan|supervisor, boss
+w|sif|shift||shift
+w|pelatihan|training
+s|Berapa karyawan di sini?|How many employees are here?
+s|Ada tiga sif.|There are three shifts.
+s|Mandornya sedang rapat.|The foreman is in a meeting.
+L|Pay
+w|gaji|salary, wage
+w|upah|pay (daily or hourly)|Often used for daily or hourly pay.
+w|lembur|overtime
+w|borongan|piece rate
+w|tunjangan|allowance, benefit
+w|sering|often
+w|turun|to go down, fall; to get off
+s|Gajinya naik tahun ini.|Wages went up this year.||This year wages went up.
+s|Mereka sering lembur.|They often work overtime.
+s|Upahnya turun.|Pay went down.
+L|Output and quality
+w|target|target
+w|kualitas|quality
+w|cacat|defective, defect
+w|hasil|result, output
+w|cepat|fast
+w|tinggi|high, tall
+w|rendah|low
+s|Kualitasnya bagus.|The quality is good.
+s|Targetnya terlalu tinggi.|The target is too high.
+s|Ada barang yang cacat.|There are defective goods.
+L|Supply chain
+w|pemasok|supplier
+w|ekspor|export
+w|impor|import
+w|pengiriman|shipment, delivery
+w|pesanan|order (from a customer)
+w|tepat waktu|on time
+s|Pesanannya sudah dikirim.|The order has been shipped.
+s|Pengirimannya tepat waktu.|The delivery is on time.
+s|Kami ekspor ke Jepang.|We export to Japan.
+
+U|Fieldwork interviews|Wawancara|clipboard|Ask permission first: *Boleh saya bertanya sedikit?* (May I ask a few questions?)
+G|Polite questions often start with *boleh* (may I) or *bisa* (could you). *Kira-kira* (roughly) softens a question and makes numbers easier to give: *Kira-kira berapa?* (About how many?)
+X|Boleh saya bertanya sedikit?|May I ask a few questions?
+X|Sudah berapa lama bekerja di sini?|How long have you worked here?
+X|Kira-kira berapa persen?|Roughly what percent?
+X|Menurut Bapak, apa masalah utamanya?|In your view, what's the main problem?
+G|Answers like *tergantung* (it depends) and *lumayan* (not bad, fairly) are common and deserve a follow-up: *Tergantung apa?* (Depends on what?)
+G|Promise confidentiality in plain words: *Datanya rahasia dan hanya untuk penelitian* (the data is confidential and only for research).
+L|Asking
+w|wawancara|interview
+w|survei|survey
+w|data|data
+w|rahasia|confidential; secret
+w|izin|permission|*Minta izin* is "ask permission."
+w|kira-kira|roughly, about
+w|penelitian|research
+s|Boleh saya bertanya sedikit?|May I ask a few questions?
+s|Datanya rahasia.|The data is confidential.
+s|Kira-kira berapa orang?|Roughly how many people?
+s|Ini untuk penelitian.|This is for research.
+L|How long, how often
+w|sudah berapa lama|how long (so far)
+w|sejak|since
+w|dulu|before, in the past; first|*Saya dulu...* is "I used to..."
+w|biasanya|usually
+w|persen|percent
+w|rata-rata|average, on average
+s|Sudah berapa lama bekerja di sini?|How long have you worked here?
+s|Biasanya jam tujuh pagi.|Usually at seven in the morning.
+s|Rata-rata sepuluh persen.|Ten percent on average.||On average ten percent.
+L|Problems
+w|masalah|problem
+w|biaya|cost
+w|listrik|electricity
+w|pesaing|competitor
+w|utama|main
+w|tergantung|it depends
+w|lumayan|not bad, fairly
+s|Apa masalah utamanya?|What is the main problem?
+s|Biaya listriknya naik.|The cost of electricity went up.
+s|Tergantung harganya.|It depends on the price.
+s|Lumayan bagus.|Pretty good.
+L|Sales and profit
+w|penjualan|sales
+w|untung|lucky; a profit|*Untung* alone also means "luckily."
+w|rugi|loss; to lose money
+w|modal|capital
+w|pasar|market
+w|permintaan|demand; request
+w|meningkat|to increase
+s|Penjualannya turun.|Sales went down.
+s|Tahun lalu kami rugi.|Last year we made a loss.|Kami rugi tahun lalu.|We made a loss last year.
+s|Permintaannya meningkat.|Demand is increasing.
+
+U|Jakarta slang|Bahasa gaul|spark|Among friends in Jakarta, *gue* and *lo* replace *saya* and *kamu*. Never use them with elders or clients.
+G|Jakarta's casual speech borrows from Betawi and is everywhere: in shops, on TV, and in WhatsApp chats. You'll hear it far more than you'll need to speak it, so aim to understand it first.
+X|Gue nggak tahu.|I don't know.
+X|Lo udah makan belum?|Have you eaten yet?
+X|Mahal banget!|So expensive!
+X|Gimana, dong?|So what do we do?
+G|Particles add tone more than meaning. *Dong* pushes ("come on"), *kok* signals surprise ("how come?"), *sih* softens or emphasizes, *deh* gives in ("fine, OK"), and *kan* asks for agreement ("right?").
+G|Casual verbs often swap the *me-* prefix for *n-*, *ng-*, or *ny-*: *nunggu* (wait), *ngomong* (talk), *nyari* (look for).
+L|Gue and lo
+w|gue|I (Jakarta slang)|Also spelled *gua* or *gw*.|gua/gw
+w|lo|you (Jakarta slang)|Also spelled *lu* or *loe*.|lu/loe
+w|nggak|no, not (casual)|Also *gak* or *enggak*.|gak/enggak/ga/ngga
+w|udah|already (casual)
+w|aja|just (casual)
+w|banget|very, really (casual)|Comes after the word: *enak banget*.
+s|Gue nggak tahu.|I do not know.
+s|Lo udah makan?|Have you eaten?
+s|Mahal banget!|So expensive!
+L|Little words with attitude
+w|sih|(softener or emphasis)|*Kenapa sih?* is "Why, though?"
+w|dong|(come on!)|*Ayo dong!* is "Come on!"
+w|kok|how come?|Shows surprise: *Kok mahal?*
+w|deh|(giving in: fine, OK)|*Oke deh* is "OK, fine."
+w|kan|right? (asking agreement)|*Enak, kan?* is "It's good, right?"
+w|ayo|come on, let's|Also *yuk*: *Makan yuk!* (Let's eat!)|yuk/yok/ayok
+s|Kok mahal?|How come it is expensive?
+s|Ayo dong!|Come on!
+s|Enak, kan?|It is good, right?
+s|Oke deh.|OK, fine.
+L|Casual verbs
+w|gimana|how (casual)
+w|ngapain|doing what|*Lagi ngapain?* is "What are you up to?"
+w|ngomong|to talk (casual)
+w|nunggu|to wait (casual)
+w|nyari|to look for (casual)
+w|emang|really, indeed (casual)|From *memang*. *Emang kenapa?* is "Why, what's up?"|memang
+s|Lagi ngapain?|What are you doing?
+s|Gue lagi nunggu teman.|I am waiting for a friend.
+s|Gimana kabarnya?|How are you doing?
+L|Everyday slang
+w|capek|tired||capai
+w|santai|relaxed; take it easy
+w|keren|cool
+w|seru|fun, exciting
+w|kayak|like, similar to|From *seperti*.|seperti
+w|cuma|only, just|Also *cuman*.|cuman
+w|mending|better to, might as well
+s|Santai aja.|Just relax.
+s|Capek banget.|I am so tired.
+s|Mending naik ojek.|Better to take a motorbike taxi.
+
+U|Health and emergencies|Darurat|cross|Learn *Tolong!* (Help!) and the emergency number, 112.
+G|*Sakit* means both sick and hurt: *Saya sakit* (I'm sick), *Kepala saya sakit* (my head hurts). Put the body part first, then *sakit*.
+X|Saya sakit.|I'm sick.
+X|Perut saya sakit.|My stomach hurts.
+X|Saya perlu dokter.|I need a doctor.
+G|Pharmacies (*apotek*) are everywhere, and pharmacists will often recommend something for common problems. For anything serious, ask for the nearest hospital: *Rumah sakit terdekat di mana?*
+G|The general emergency number is 112, and the police are 110.
+L|Feeling sick
+w|sakit|sick; to hurt
+w|pusing|dizzy; headache
+w|demam|fever
+w|batuk|cough
+w|obat|medicine
+w|perut|stomach
+s|Saya sakit perut.|I have a stomachache.
+s|Dia demam sejak kemarin.|She has had a fever since yesterday.
+s|Saya perlu obat.|I need medicine.
+L|Getting help
+w|rumah sakit|hospital|Literally "sick house."
+w|apotek|pharmacy||apotik
+w|darurat|emergency
+w|polisi|police
+w|hilang|lost, missing
+w|dompet|wallet
+w|panggil|to call (someone over)|Formal: *memanggil*.|memanggil
+s|Di mana apotek terdekat?|Where is the nearest pharmacy?|Apotek terdekat di mana?
+s|Dompet saya hilang.|My wallet is missing.
+s|Tolong panggil polisi!|Please call the police!
+L|Body and allergies
+w|kepala|head
+w|tangan|hand, arm
+w|kaki|foot, leg
+w|gigi|tooth
+w|alergi|allergy, allergic
+w|luka|wound, injured
+s|Kepala saya sakit.|My head hurts.
+s|Saya alergi kacang.|I am allergic to peanuts.
+s|Tangannya luka.|His hand is injured.
+`;
+</script>
+<script>
+'use strict';
+/* Progress sync through a private GitHub repo.
+   Each device stores a fine-grained token (Contents: read and write on the
+   progress repo only) in this browser. Each course keeps one JSON file there. */
+window.Sync = (() => {
+  const LS = 'language-courses:github';
+  let cfg = read();
+  let sha = null, busy = false, again = false, timer = 0, lastPull = 0;
+  let status = '', statusKind = '';
+
+  function read() {
+    try { const c = JSON.parse(localStorage.getItem(LS) || 'null'); return c && c.token && c.repo ? c : null; }
+    catch (e) { return null; }
+  }
+  function store(c) { try { if (c) localStorage.setItem(LS, JSON.stringify(c)); else localStorage.removeItem(LS); } catch (e) {} }
+  const enc = s => {
+    const b = new TextEncoder().encode(s); let bin = '';
+    for (let i = 0; i < b.length; i += 0x8000) bin += String.fromCharCode.apply(null, b.subarray(i, i + 0x8000));
+    return btoa(bin);
+  };
+  const dec = s => new TextDecoder().decode(Uint8Array.from(atob(s.replace(/\s/g, '')), c => c.charCodeAt(0)));
+  class SyncError extends Error {}
+
+  const headers = (c, json) => ({ Authorization: 'Bearer ' + c.token, Accept: 'application/vnd.github+json', ...(json ? { 'Content-Type': 'application/json' } : {}) });
+  const fileUrl = c => `https://api.github.com/repos/${c.repo}/contents/${encodeURIComponent(CFG.syncFile)}`;
+
+  async function pull(c) {
+    const r = await fetch(fileUrl(c), { cache: 'no-store', headers: headers(c) });
+    if (r.status === 404) { sha = null; return null; }
+    if (r.status === 401) throw new SyncError('auth');
+    if (r.status === 403) throw new SyncError('forbidden');
+    if (!r.ok) throw new SyncError('http');
+    const j = await r.json();
+    sha = j.sha;
+    try { return JSON.parse(dec(j.content)); } catch (e) { return null; }
+  }
+  async function put(c) {
+    const body = { message: `${CFG.brand}: ${state.xp} XP, ${crowns()} crowns`, content: enc(JSON.stringify(state, null, 1)) };
+    if (sha) body.sha = sha;
+    const r = await fetch(fileUrl(c), { method: 'PUT', cache: 'no-store', headers: headers(c, true), body: JSON.stringify(body) });
+    if (r.status === 409 || r.status === 422) return false;
+    if (r.status === 401) throw new SyncError('auth');
+    if (r.status === 403 || r.status === 404) throw new SyncError('forbidden');
+    if (!r.ok) throw new SyncError('http');
+    const j = await r.json();
+    sha = j.content && j.content.sha;
+    return true;
+  }
+
+  async function run() {
+    if (!cfg) return;
+    if (busy) { again = true; return; }
+    busy = true;
+    setStatus('Syncing…', '');
+    try {
+      let remote = await pull(cfg);
+      applyRemote(remote);
+      lastPull = Date.now();
+      const same = remote && stable(normalize(remote)) === stable(state);
+      if (!same && (remote || state.updatedAt)) {
+        let ok = await put(cfg);
+        if (!ok) { remote = await pull(cfg); applyRemote(remote); ok = await put(cfg); }
+        if (!ok) throw new SyncError('conflict');
+      }
+      setStatus('Synced at ' + new Date().toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' }) + '.', 'ok');
+    } catch (e) {
+      const k = e instanceof SyncError ? e.message : 'offline';
+      setStatus({
+        auth: 'GitHub rejected the token. It may have expired, so disconnect and paste a new one.',
+        forbidden: "This token can't write to that repo. It needs Contents: Read and write on the progress repo.",
+        conflict: 'Another device saved at the same moment. Tap Sync now to try again.',
+      }[k] || "Couldn't reach GitHub. Progress is saved on this device and will sync next time.", 'bad');
+    }
+    busy = false;
+    if (again) { again = false; run(); }
+  }
+  function push() { if (!cfg) return; clearTimeout(timer); timer = setTimeout(run, 1200); }
+
+  function setStatus(text, kind) { status = text; statusKind = kind; renderStatus(); }
+  function renderStatus() {
+    const el = document.getElementById('sync-status');
+    if (!el) return;
+    el.textContent = status || (cfg ? '' : 'Not connected. Progress is saved in this browser only.');
+    el.className = 'sync ' + (statusKind ? 'is-' + statusKind : '');
+  }
+  function settingsHTML() {
+    if (cfg) return `<div class="sync-box">
+      <div><strong>Sync across devices</strong><span class="set-sub">Saving to <code>${esc(cfg.repo)}</code> on GitHub. Both courses on this device use this connection.</span></div>
+      <p class="sync" id="sync-status" role="status"></p>
+      <div class="sync-btns"><button class="btn btn-ghost" data-a="sync-now">Sync now</button><button class="btn-text" data-a="sync-off">Disconnect this device</button></div></div>`;
+    return `<div class="sync-box">
+      <div><strong>Sync across devices</strong><span class="set-sub">Paste the GitHub token for your progress repo. You do this once on each device, and it covers both courses.</span></div>
+      <label class="field" for="sync-repo"><span>Progress repo</span><input id="sync-repo" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" value="${esc(CFG.progressRepo || '')}" placeholder="username/language-progress"></label>
+      <label class="field" for="sync-token"><span>GitHub token</span><input id="sync-token" type="password" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="github_pat_…"></label>
+      <p class="sync" id="sync-status" role="status"></p>
+      <button class="btn btn-brand" data-a="sync-connect">Connect</button></div>`;
+  }
+  async function action(a) {
+    if (a === 'sync-now') { run(); return; }
+    if (a === 'sync-off') { cfg = null; sha = null; store(null); status = ''; statusKind = ''; renderWords(); toast('This device is disconnected. Progress stays saved here.'); return; }
+    if (a === 'sync-connect') {
+      const repo = (document.getElementById('sync-repo').value || '').trim().replace(/^https?:\/\/github\.com\//, '').replace(/\.git$|\/$/g, '');
+      const token = (document.getElementById('sync-token').value || '').trim();
+      if (!/^[\w.-]+\/[\w.-]+$/.test(repo)) { setStatus('Enter the repo as username/repo-name.', 'bad'); return; }
+      if (!token) { setStatus('Paste the token first.', 'bad'); return; }
+      setStatus('Checking the token…', '');
+      try {
+        const r = await fetch('https://api.github.com/repos/' + repo, { cache: 'no-store', headers: headers({ token }) });
+        if (r.status === 401) { setStatus("GitHub didn't accept that token. Copy it again and paste the whole thing.", 'bad'); return; }
+        if (!r.ok) { setStatus("This token can't see that repo. Check the repo name and that the token includes it.", 'bad'); return; }
+      } catch (e) { setStatus("Couldn't reach GitHub. Check the connection and try again.", 'bad'); return; }
+      cfg = { repo, token }; store(cfg);
+      renderWords();
+      toast('Connected. Syncing now.');
+      run();
+    }
+  }
+  function init() {
+    if (cfg) run();
+    document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible' && Date.now() - lastPull > 15000) run(); });
+    window.addEventListener('online', () => run());
+  }
+  return { init, push, settingsHTML, renderStatus, action };
+})();
+</script>
+<script>
+'use strict';
+/* =========================================================
+   Shared course engine: skill tree, lessons, levels, review
+   Needs CFG (course config) and COURSE (course text) first.
+   ========================================================= */
+
+/* ---------- parse the course text ---------- */
+const SECTIONS = [], UNITS = [], LESSONS = [], ALLW = [], SENTS = [];
+const splitAlts = s => (s || '').split('/').map(x => x.trim()).filter(Boolean);
+const tok = s => s.replace(/[.,!?;:"“”()]/g, ' ').split(/\s+/).filter(Boolean);
+const parseTiles = src => src.split(' + ').map(p => {
+  const i = p.indexOf('=');
+  return i < 0 ? { t: p.trim(), rom: '' } : { t: p.slice(0, i).trim(), rom: p.slice(i + 1).trim() };
+});
+(() => {
+  let sec = null, u = null, l = null;
+  const keys = new Set();
+  COURSE.split('\n').forEach(raw => {
+    const line = raw.trim();
+    if (!line || line.startsWith('//')) return;
+    const f = line.split('|').map(x => x.trim());
+    const tag = f[0];
+    if (tag === 'S') { sec = { n: SECTIONS.length + 1, title: f[1], native: f[2] || '', units: [] }; SECTIONS.push(sec); }
+    else if (tag === 'U') {
+      u = { n: UNITS.length + 1, title: f[1], native: f[2] || '', icon: f[3] || 'chat', tip: f[4] || '', nativeRom: f[5] || '', guide: [], lessons: [], sec };
+      UNITS.push(u); sec.units.push(u);
+    }
+    else if (tag === 'G') u.guide.push({ p: f[1], ex: [] });
+    else if (tag === 'X') { if (!u.guide.length) u.guide.push({ p: '', ex: [] }); u.guide[u.guide.length - 1].ex.push({ t: f[1], en: f[2], rom: f[3] || '' }); }
+    else if (tag === 'L') {
+      l = { id: 'u' + u.n + 'l' + (u.lessons.length + 1), n: u.lessons.length + 1, title: f[1], script: f[2] === 'script', words: [], sentences: [], unit: u };
+      u.lessons.push(l); LESSONS.push(l);
+    }
+    else if (tag === 'w') {
+      let key = f[1].toLowerCase();
+      if (keys.has(key)) key += '#' + f[2];
+      keys.add(key);
+      const w = { key, t: f[1], en: f[2], note: f[3] || '', alts: splitAlts(f[4]), rom: f[5] || '', digit: f[6] || '', script: l.script, unit: u.n, lesson: l.id };
+      ALLW.push(w); l.words.push(w);
+    }
+    else if (tag === 's') {
+      const explicit = f[1].includes('=');
+      const s = { en: f[2], tAlts: splitAlts(f[3]), enAlts: splitAlts(f[4]), explicit, extras: f[5] ? parseTiles(f[5]) : null, unit: u.n, lesson: l.id };
+      if (explicit) { s.tiles = parseTiles(f[1]); s.text = s.tiles.map(x => x.t).join(' '); }
+      else s.text = f[1];
+      SENTS.push(s); l.sentences.push(s);
+    }
+  });
+})();
+
+/* tiles: keep capitals only on names and titles */
+const PROPER = { t: new Set(CFG.properBase || []), en: new Set(['I', 'OK']) };
+SENTS.forEach(s => {
+  if (!s.explicit) [s.text, ...s.tAlts].forEach(x => tok(x).slice(1).forEach(t => { if (/^[A-Z]/.test(t)) PROPER.t.add(t); }));
+  [s.en, ...s.enAlts].forEach(x => tok(x).slice(1).forEach(t => { if (/^[A-Z]/.test(t)) PROPER.en.add(t); }));
+});
+const keepCase = (t, lang) => PROPER[lang].has(t) || /^[A-Z]{2}/.test(t);
+const disp = (t, i, lang) => (i === 0 && !keepCase(t, lang)) ? t.charAt(0).toLowerCase() + t.slice(1) : t;
+const J = '\u0001';
+SENTS.forEach(s => {
+  if (!s.explicit) s.tiles = tok(s.text).map((t, i) => ({ t: disp(t, i, 't'), rom: '' }));
+  s.tTargets = [s.tiles.map(x => x.t).join(J).toLowerCase(), ...s.tAlts.map(a => tok(a).join(J).toLowerCase())];
+  s.enTiles = tok(s.en).map((t, i) => ({ t: disp(t, i, 'en'), rom: '' }));
+  s.enTargets = [s.enTiles.map(x => x.t).join(J).toLowerCase(), ...s.enAlts.map(a => tok(a).join(J).toLowerCase())];
+  s.rom = s.tiles.map(x => x.rom).filter(Boolean).join(' ');
+});
+
+/* skill tree rows: 1, 2, 1, 2 ... inside each section */
+const ROWS = [];
+SECTIONS.forEach(sec => {
+  let i = 0, wide = false;
+  while (i < sec.units.length) {
+    const n = Math.min(wide ? 2 : 1, sec.units.length - i);
+    const row = { sec, units: sec.units.slice(i, i + n), idx: ROWS.length };
+    row.units.forEach(u => { u.row = row.idx; });
+    ROWS.push(row); i += n; wide = !wide;
+  }
+});
+
+/* ---------- helpers ---------- */
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+function rich(s) {
+  let h = esc(s);
+  if (CFG.scriptRe) h = h.replace(CFG.scriptRe, m => '<span class="t">' + m + '</span>');
+  return h.replace(/\*(.+?)\*/g, '<b class="t em">$1</b>');
+}
+const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+const pad = n => String(n).padStart(2, '0');
+const dayKey = (d = new Date()) => d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate());
+const yesterdayKey = () => { const d = new Date(); d.setDate(d.getDate() - 1); return dayKey(d); };
+const GOAL = 30, MAXL = 5;
+const norm = s => s.toLowerCase().replace(/[-‐–]/g, ' ').replace(/[.,!?;:"“”'’()]/g, '').replace(/\s+/g, ' ').trim();
+const glossParts = en => en.toLowerCase().replace(/\(.*?\)/g, ' ').split(/[,;/]/).map(x => x.trim().replace(/^to /, '').replace(/[?!.]/g, '').trim()).filter(Boolean);
+const overlaps = (a, b) => { const pa = glossParts(a.en), pb = glossParts(b.en); return pa.some(p => pb.includes(p)); };
+const typeable = w => CFG.typing && !w.script && !/^\(/.test(w.en);
+function lev(a, b) {
+  if (Math.abs(a.length - b.length) > 1) return 2;
+  const d = Array.from({ length: a.length + 1 }, (_, i) => [i]);
+  for (let j = 1; j <= b.length; j++) d[0][j] = j;
+  for (let i = 1; i <= a.length; i++) for (let j = 1; j <= b.length; j++)
+    d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+  return d[a.length][b.length];
+}
+
+const ICON = {
+  flame: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.4 2.2c.5 3.2-1.7 4.6-1.7 7 0 1.1.7 1.9 1.6 1.9 1.4 0 2-1.3 1.7-3.3 2.4 1.7 4.2 4.5 4.2 7.4A7.2 7.2 0 0 1 12 22a7.2 7.2 0 0 1-7.2-6.9c0-3.5 2.2-5.7 4-7.5 1.8-1.8 3.6-3.4 4.6-5.4z"/></svg>',
+  star: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.6l2.8 5.9 6.5.8-4.8 4.5 1.3 6.4L12 17l-5.8 3.2 1.3-6.4-4.8-4.5 6.5-.8z"/></svg>',
+  crown: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M2.8 7.6l4.9 3.8L12 4.6l4.3 6.8 4.9-3.8-1.9 11.2H4.7z"/></svg>',
+  heart: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 21s-7.6-4.7-9.5-9.3C1.1 8.3 3.4 4.8 6.9 4.8c2 0 3.6 1.1 5.1 3 1.5-1.9 3.1-3 5.1-3 3.5 0 5.8 3.5 4.4 6.9C19.6 16.3 12 21 12 21z"/></svg>',
+  check: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.6l4.6 4.6L19.2 7.4" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  x: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/></svg>',
+  okCircle: '<svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="currentColor"/><path class="mk" d="M11.5 20.5l5.5 5.5 11.5-12" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  badCircle: '<svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="currentColor"/><path class="mk" d="M13.5 13.5l13 13M26.5 13.5l-13 13" fill="none" stroke-width="4" stroke-linecap="round"/></svg>',
+  speaker: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.5 9.2v5.6h3.8l5 4.2V5l-5 4.2z"/><path d="M15.6 8.6a4.8 4.8 0 0 1 0 6.8M18.2 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>',
+  tree: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="3.2" fill="currentColor"/><circle cx="6" cy="13" r="3.2" fill="currentColor"/><circle cx="18" cy="13" r="3.2" fill="currentColor"/><circle cx="12" cy="20" r="2.6" fill="currentColor"/></svg>',
+  book: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.5 5A1.8 1.8 0 0 1 5.3 3.2H11v17.6H5.3a1.8 1.8 0 0 1-1.8-1.8zM13 3.2h5.7A1.8 1.8 0 0 1 20.5 5v14a1.8 1.8 0 0 1-1.8 1.8H13z"/></svg>',
+  bulb: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.6 10.8c.7.6 1.1 1.3 1.1 2.2h5c0-.9.4-1.6 1.1-2.2A6 6 0 0 0 12 3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  lock: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2.5" fill="currentColor"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5" fill="none" stroke="currentColor" stroke-width="2.4"/></svg>',
+  flag: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 21V3.5M5.5 4h11.5l-2.4 4.2L17 12.5H5.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  dumbbell: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 7v10M17.5 7v10M3.5 9.5v5M20.5 9.5v5M6.5 12h11" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>',
+};
+/* skill icons: 24px stroke drawings */
+const SKILL_ICON = {
+  chat: '<path d="M4 4.5h16v11.5H10.5L5 20.5V16H4z"/>',
+  chats: '<path d="M2.5 3.5h12.5v8.5H8l-3.5 3v-3h-2z"/><path d="M18 8h3.5v8.5h-2v3l-3.5-3H10v-2"/>',
+  people: '<circle cx="9" cy="8" r="3.2"/><path d="M2.8 20c0-3.6 2.8-6.4 6.2-6.4s6.2 2.8 6.2 6.4"/><circle cx="17.2" cy="9" r="2.5"/><path d="M16.6 13.8c2.7.2 4.6 2.6 4.6 5.4"/>',
+  person: '<circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/>',
+  pin: '<path d="M12 21.2s-7-6.3-7-11.7a7 7 0 0 1 14 0c0 5.4-7 11.7-7 11.7z"/><circle cx="12" cy="9.5" r="2.6"/>',
+  clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5.2l3.4 2.1"/>',
+  bowl: '<path d="M3 11.5h18a9 9 0 0 1-18 0z"/><path d="M8.5 8c0-1.6 1.2-1.6 1.2-3.5M13.5 8c0-1.6 1.2-1.6 1.2-3.5"/>',
+  cup: '<path d="M4 8.5h12V14a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M16 10.2h1.8a2.6 2.6 0 0 1 0 5.2H16"/><path d="M8 3.5v2.2M12 3.5v2.2"/>',
+  hourglass: '<path d="M6.5 3h11M6.5 21h11M8 3v3.5L12 12l-4 5.5V21M16 3v3.5L12 12l4 5.5V21"/>',
+  bag: '<path d="M5 8h14l-1.2 13H6.2z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/>',
+  phone: '<rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18h2"/>',
+  stack: '<rect x="4" y="15" width="16" height="4.5" rx="1.2"/><rect x="6.2" y="9.5" width="11.6" height="4.5" rx="1.2"/><rect x="8.5" y="4" width="7" height="4.5" rx="1.2"/>',
+  blocks: '<rect x="2.5" y="7" width="8" height="10" rx="2"/><rect x="13.5" y="7" width="8" height="10" rx="2"/><path d="M10.5 12h3"/>',
+  puzzle: '<path d="M4 7.5h4a2.2 2.2 0 1 1 4.4 0H16.5v4a2.2 2.2 0 1 1 0 4.4v4.6H4v-4.6a2.2 2.2 0 1 0 0-4.4z"/>',
+  briefcase: '<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5.2c0-.7.5-1.2 1.2-1.2h3.6c.7 0 1.2.5 1.2 1.2V7M3 13h18"/>',
+  factory: '<path d="M3 21V10.5l5 3v-3l5 3v-3l5 3V3.5h3V21z"/>',
+  clipboard: '<rect x="5" y="4.5" width="14" height="16.5" rx="2"/><path d="M9 3h6v3.5H9zM8.5 11h7M8.5 15h5"/>',
+  spark: '<path d="M12 3v4.5M12 16.5V21M3 12h4.5M16.5 12H21M5.6 5.6l3.2 3.2M15.2 15.2l3.2 3.2M5.6 18.4l3.2-3.2M15.2 8.8l3.2-3.2"/>',
+  cross: '<path d="M9 3.5h6v5.5h5.5v6H15v5.5H9V15H3.5V9H9z"/>',
+};
+function skillIcon(name) {
+  if (name.startsWith('text:')) return '<span class="disc-text t">' + esc(name.slice(5)) + '</span>';
+  return '<svg class="disc-svg" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' + (SKILL_ICON[name] || SKILL_ICON.chat) + '</svg>';
+}
+
+/* ---------- audio: only when the device has a voice for this language ---------- */
+let voice = null;
+function findVoice() {
+  try {
+    const vs = window.speechSynthesis.getVoices();
+    voice = vs.find(v => CFG.voiceRe.test(v.lang)) || null;
+    document.body.classList.toggle('has-tts', !!voice);
+  } catch (e) { voice = null; }
+}
+if ('speechSynthesis' in window) { findVoice(); try { window.speechSynthesis.addEventListener('voiceschanged', findVoice); } catch (e) {} }
+function say(text, slow) {
+  if (!voice || !text) return;
+  try {
+    const u = new SpeechSynthesisUtterance(text);
+    u.voice = voice; u.lang = voice.lang; u.rate = slow ? 0.55 : 0.9;
+    speechSynthesis.cancel(); speechSynthesis.speak(u);
+  } catch (e) {}
+}
+const autoSay = text => { if (state.audio) say(text); };
+const tts = (text, cls) => `<button class="tts ${cls || ''}" data-a="say" data-t="${esc(text)}" aria-label="Play audio">${ICON.speaker}</button>`;
+let noListenUntil = 0;
+const canListen = () => !!voice && state.audio && Date.now() > noListenUntil;
+const speakText = s => s.includes('→') ? s.split('→').pop().trim() : s;
+
+/* ---------- progress: browser cache + private sync to the viewer's account ---------- */
+const blank = () => ({ v: 2, xp: 0, streak: 0, lastDay: null, skills: {}, unlocked: {}, str: {}, daily: {}, rom: true, audio: true, openAll: false, updatedAt: 0 });
+function normalize(o) {
+  const b = blank();
+  if (!o || typeof o !== 'object') return b;
+  o = JSON.parse(JSON.stringify(o));
+  const s = { ...b, ...o, skills: { ...(o.skills || {}) }, unlocked: { ...(o.unlocked || {}) }, str: { ...(o.str || {}) }, daily: { ...(o.daily || {}) },
+    rom: o.rom !== false, audio: o.audio !== false, openAll: !!o.openAll };
+  if (o.done && !o.skills) {
+    UNITS.forEach(u => {
+      let k = 0;
+      while (k < u.lessons.length && o.done[u.lessons[k].id]) k++;
+      if (k === u.lessons.length) s.skills[u.n] = { level: 1, step: 0 };
+      else if (k > 0) s.skills[u.n] = { level: 0, step: k };
+    });
+  }
+  if (CFG.legacyIds && o.v !== 2) {
+    const str = {};
+    Object.entries(s.str).forEach(([k, v]) => { const i = CFG.legacyIds.indexOf(k); str[i >= 0 && ALLW[i] ? ALLW[i].key : k] = v; });
+    s.str = str;
+  }
+  delete s.done; s.v = 2;
+  return s;
+}
+function loadLocal() { try { const r = localStorage.getItem(CFG.key); return r ? normalize(JSON.parse(r)) : blank(); } catch (e) { return blank(); } }
+function saveLocal() { try { localStorage.setItem(CFG.key, JSON.stringify(state)); } catch (e) {} }
+let state = loadLocal();
+
+/* sync adapters (sync-github.js or sync-claude.js) plug in through window.Sync */
+const SyncA = () => (typeof window !== 'undefined' && window.Sync) || null;
+function commit() { state.updatedAt = Date.now(); saveLocal(); const S = SyncA(); if (S) S.push(); }
+const stable = o => JSON.stringify(o, (k, v) => v && typeof v === 'object' && !Array.isArray(v) ? Object.keys(v).sort().reduce((a, x) => (a[x] = v[x], a), {}) : v);
+const rank = s => (s ? s.level * 1000 + s.step : 0);
+/* combine two copies of progress without losing work done on either device */
+function mergeStates(a, b) {
+  const m = normalize(a), n = normalize(b);
+  const newer = (m.updatedAt || 0) >= (n.updatedAt || 0) ? m : n, older = newer === m ? n : m;
+  const out = { ...newer };
+  out.xp = Math.max(m.xp || 0, n.xp || 0);
+  out.skills = {};
+  new Set([...Object.keys(m.skills), ...Object.keys(n.skills)]).forEach(k => { out.skills[k] = rank(m.skills[k]) >= rank(n.skills[k]) ? (m.skills[k] || n.skills[k]) : n.skills[k]; });
+  out.unlocked = { ...older.unlocked, ...newer.unlocked };
+  out.daily = { ...older.daily };
+  Object.entries(newer.daily).forEach(([k, v]) => { out.daily[k] = Math.max(v, out.daily[k] || 0); });
+  out.str = { ...older.str, ...newer.str };
+  if ((m.lastDay || '') !== (n.lastDay || '')) { const late = (m.lastDay || '') > (n.lastDay || '') ? m : n; out.lastDay = late.lastDay; out.streak = late.streak; }
+  else out.streak = Math.max(m.streak || 0, n.streak || 0);
+  out.updatedAt = Math.max(m.updatedAt || 0, n.updatedAt || 0);
+  return out;
+}
+function applyRemote(r) {
+  if (!r) return false;
+  const merged = mergeStates(state, r);
+  if (stable(merged) === stable(state)) return false;
+  state = merged; saveLocal();
+  if (!L) { renderTop(); if (view === 'learn') renderLearn(); } else renderTop();
+  return true;
+}
+
+const sk = u => state.skills[u.n] || { level: 0, step: 0 };
+const crowns = () => UNITS.reduce((a, u) => a + sk(u).level, 0);
+const liveStreak = () => (state.lastDay === dayKey() || state.lastDay === yesterdayKey()) ? state.streak : 0;
+const isUnlocked = u => state.openAll || !!state.unlocked[u.n] || UNITS.every(x => x.row >= u.row || sk(x).level >= 1);
+function learnedWords() {
+  const out = [];
+  UNITS.forEach(u => { const s = sk(u); u.lessons.forEach((l, i) => { if (s.level >= 1 || i < s.step) out.push(...l.words); }); });
+  return out;
+}
+const learnedLessons = () => LESSONS.filter(l => { const s = sk(l.unit); return s.level >= 1 || l.n <= s.step; });
+const romOn = w => CFG.romanization && state.rom && !(w && w.script);
+
+/* =========================================================
+   Home: top bar, skill tree, words
+   ========================================================= */
+let view = 'learn', sel = null, resetAsk = false, wordQuery = '', wordFilter = 'learned';
+
+function renderTop() {
+  const lit = state.lastDay === dayKey();
+  $('#topbar').innerHTML = `
+    <div class="brand">${esc(CFG.brand)} <span class="brand-sub t">${esc(CFG.brandSub)}</span></div>
+    <div class="chips">
+      <span class="chip chip-streak ${lit ? 'is-lit' : ''}" title="Day streak" aria-label="${liveStreak()} day streak">${ICON.flame}<b>${liveStreak()}</b></span>
+      <span class="chip chip-crown" title="Crowns" aria-label="${crowns()} crowns">${ICON.crown}<b>${crowns()}</b></span>
+      <span class="chip chip-xp" title="Total XP" aria-label="${state.xp} XP">${ICON.star}<b>${state.xp}</b></span>
+    </div>`;
+}
+function renderTabs() {
+  $('#tabs').innerHTML = `
+    <button class="tab ${view === 'learn' ? 'is-on' : ''}" data-a="tab" data-v="learn" ${view === 'learn' ? 'aria-current="page"' : ''}>${ICON.tree}Learn</button>
+    <button class="tab ${view === 'words' ? 'is-on' : ''}" data-a="tab" data-v="words" ${view === 'words' ? 'aria-current="page"' : ''}>${ICON.book}Words</button>`;
+}
+
+const RING = 2 * Math.PI * 46;
+function skillHTML(u) {
+  const s = sk(u), open = isUnlocked(u);
+  const max = s.level >= MAXL;
+  const frac = max ? 1 : s.step / u.lessons.length;
+  const cls = !open ? 'is-locked' : max ? 'is-max' : '';
+  const status = !open ? 'locked' : s.level ? `level ${s.level} of ${MAXL}` : s.step ? `lesson ${s.step + 1} of ${u.lessons.length}` : 'not started';
+  return `<button class="skill ${cls} ${sel === u.n ? 'is-sel' : ''}" data-a="skill" data-u="${u.n}" aria-expanded="${sel === u.n}" aria-label="${esc(u.title)}, ${status}" style="--uc:var(--u${(u.n - 1) % 6 + 1});--ud:var(--u${(u.n - 1) % 6 + 1}d)">
+    <span class="medal">
+      <svg class="ring" viewBox="0 0 100 100" aria-hidden="true"><circle class="ring-bg" cx="50" cy="50" r="46"/>${frac > 0 && open ? `<circle class="ring-fg" cx="50" cy="50" r="46" stroke-dasharray="${(frac * RING).toFixed(1)} ${RING.toFixed(1)}"/>` : ''}</svg>
+      <span class="disc">${open ? skillIcon(u.icon) : ICON.lock}</span>
+      ${s.level > 0 ? `<span class="crown">${ICON.crown}<b>${s.level}</b></span>` : ''}
+    </span>
+    <span class="skill-name">${esc(u.title)}</span>
+  </button>`;
+}
+function popHTML(u, row) {
+  const s = sk(u), open = isUnlocked(u), n = u.lessons.length;
+  const i = row.units.indexOf(u);
+  const ax = row.units.length === 1 ? 0 : (i === 0 ? -1 : 1) * 82;
+  const words = u.lessons.reduce((a, l) => a + l.words.length, 0);
+  let body;
+  if (!open) {
+    body = `<p class="pop-meta">Locked. Reach level 1 in the skills above to open it, or unlock it now if you already know that material.</p>
+      <div class="pop-btns"><button class="btn btn-brand" data-a="unlock" data-u="${u.n}">Unlock now</button><button class="btn btn-ghost" data-a="guide" data-u="${u.n}">${ICON.bulb}Tips</button></div>`;
+  } else {
+    const max = s.level >= MAXL;
+    const meta = s.level === 0 ? `Lesson ${s.step + 1} of ${n}` : max ? `Level ${MAXL} of ${MAXL}. Practice keeps it fresh.` : `Level ${s.level} · Lesson ${s.step + 1} of ${n} toward level ${s.level + 1}`;
+    const next = s.level === 0 ? u.lessons[s.step] : max ? null : u.lessons[s.step % n];
+    const pct = max ? 100 : s.step / n * 100;
+    body = `<p class="pop-meta">${meta}</p>
+      <div class="pop-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${Math.round(pct)}"><i style="width:${pct}%"></i></div>
+      ${next ? `<p class="pop-next">${s.level === 0 ? 'Next' : 'Review'}: <strong>${esc(next.title)}</strong> · ${next.words.length} ${next.script ? 'letters' : 'words'}</p>` : ''}
+      <div class="pop-btns"><button class="btn btn-brand" data-a="start" data-u="${u.n}">${s.level === 0 ? (s.step ? 'Continue' : 'Start') : max ? 'Practice' : 'Level up'}</button><button class="btn btn-ghost" data-a="guide" data-u="${u.n}">${ICON.bulb}Tips</button></div>`;
+  }
+  return `<div class="skill-pop" id="pop" style="--ax:${ax}px;--uc:var(--u${(u.n - 1) % 6 + 1})" role="region" aria-label="${esc(u.title)}">
+    <div class="pop-head"><h3>${esc(u.title)}</h3><span class="t">${esc(u.native)}</span></div>
+    <p class="pop-sub">${n} lessons · ${words} ${u.lessons.every(l => l.script) ? 'letters' : 'words'}</p>${body}</div>`;
+}
+
+function renderLearn() {
+  const today = state.daily[dayKey()] || 0;
+  const pct = Math.min(100, today / GOAL * 100);
+  const days = [];
+  for (let i = 6; i >= 0; i--) {
+    const d = new Date(); d.setDate(d.getDate() - i);
+    days.push({ l: 'SMTWTFS'[d.getDay()], on: (state.daily[dayKey(d)] || 0) > 0, today: i === 0 });
+  }
+  let h = `<section class="today" aria-label="Today">
+      ${CFG.mascot(today >= GOAL ? 'wow' : 'happy', 62)}
+      <div class="today-main">
+        <div class="row-between"><span class="eyebrow">Daily goal</span><span class="num">${today} / ${GOAL} XP</span></div>
+        <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="${GOAL}" aria-valuenow="${Math.min(today, GOAL)}"><i style="width:${pct}%"></i></div>
+        <ol class="week" aria-label="Last seven days">${days.map(d => `<li class="${d.on ? 'on' : ''} ${d.today ? 'is-today' : ''}"><span class="dot">${d.on ? ICON.check : ''}</span>${d.l}</li>`).join('')}</ol>
+      </div>
+    </section>`;
+  if (learnedWords().length >= 4) h += `<button class="practice-row" data-a="practice">${ICON.dumbbell}<div><strong>Practice weak words</strong><span>Review what you've learned · +10 XP</span></div><span class="go">Start</span></button>`;
+  SECTIONS.forEach(sec => {
+    const done = sec.units.filter(u => sk(u).level >= 1).length;
+    h += `<div class="sec-label"><span class="eyebrow">Section ${sec.n}</span><span>${esc(sec.title)}</span></div><div class="tree">`;
+    ROWS.filter(r => r.sec === sec).forEach(row => {
+      h += `<div class="tree-row">${row.units.map(skillHTML).join('')}</div>`;
+      const su = row.units.find(u => u.n === sel);
+      if (su) h += popHTML(su, row);
+    });
+    const all = done === sec.units.length;
+    h += `</div><div class="checkpoint ${all ? 'is-done' : ''}">
+      <span class="cp-icon">${all ? ICON.check : ICON.flag}</span>
+      <div><span class="eyebrow">Checkpoint ${sec.n}</span><strong>${esc(sec.title)}</strong><span class="cp-meta">${all ? 'Complete. Every skill here is at level 1 or higher.' : `${done} of ${sec.units.length} skills at level 1`}</span></div></div>`;
+  });
+  $('#main').innerHTML = h;
+}
+
+function renderWords() {
+  const learned = learnedWords();
+  const total = ALLW.length;
+  let h = `<h1 class="page-title">Words</h1>
+    <p class="lede">${learned.length} of ${total} learned. Gold bars show how well each one has stuck.</p>`;
+  if (learned.length >= 4) h += `<button class="practice-row" data-a="practice">${ICON.dumbbell}<div><strong>Practice weak words</strong><span>Your shakiest words, a match round, and two sentences</span></div><span class="go">Start</span></button>`;
+  h += `<div class="wtools">
+      <label class="sr" for="word-search">Search words</label>
+      <input id="word-search" class="search" type="search" placeholder="Search ${esc(CFG.target)} or English" value="${esc(wordQuery)}" autocomplete="off" spellcheck="false">
+      <div class="seg" role="group" aria-label="Which words">
+        <button class="${wordFilter === 'learned' ? 'is-on' : ''}" data-a="wf" data-v="learned" aria-pressed="${wordFilter === 'learned'}">Learned</button>
+        <button class="${wordFilter === 'all' ? 'is-on' : ''}" data-a="wf" data-v="all" aria-pressed="${wordFilter === 'all'}">All ${total}</button>
+      </div></div>
+    <div id="word-list"></div>
+    <section class="settings" aria-label="Settings">
+      <h2 class="set-title">Settings</h2>
+      ${CFG.romanization ? `<label class="switch" for="rom-toggle"><span><strong>Show romanization</strong><span class="set-sub">Turn off once you can read the script.</span></span><input type="checkbox" id="rom-toggle" ${state.rom ? 'checked' : ''}><span class="track"></span></label>` : ''}
+      <label class="switch tts-only" for="audio-toggle"><span><strong>Play audio automatically</strong><span class="set-sub">Uses your device's ${esc(CFG.target)} voice.</span></span><input type="checkbox" id="audio-toggle" ${state.audio ? 'checked' : ''}><span class="track"></span></label>
+      <label class="switch" for="open-toggle"><span><strong>Open every skill</strong><span class="set-sub">Skip the unlock order if you already know the basics.</span></span><input type="checkbox" id="open-toggle" ${state.openAll ? 'checked' : ''}><span class="track"></span></label>
+      ${SyncA() ? SyncA().settingsHTML() : '<p class="sync">Progress is saved in this browser.</p>'}
+      ${resetAsk
+        ? `<div class="reset-row"><p>Erase all XP, crowns, your streak, and word strength?</p><button class="btn btn-ghost" data-a="reset-no">Keep it</button><button class="btn btn-bad" data-a="reset-yes">Erase</button></div>`
+        : `<div><button class="btn-text" data-a="reset">Reset progress</button></div>`}
+    </section>`;
+  $('#main').innerHTML = h;
+  renderWordList();
+  if (SyncA()) SyncA().renderStatus();
+}
+function renderWordList() {
+  const box = $('#word-list');
+  if (!box) return;
+  const learnedSet = new Set(learnedWords().map(w => w.key));
+  const q = norm(wordQuery);
+  const match = w => !q || norm(w.t).includes(q) || norm(w.en).includes(q) || (w.rom && norm(w.rom).includes(q));
+  let h = '', shown = 0;
+  UNITS.forEach(u => {
+    const ws = u.lessons.flatMap(l => l.words).filter(w => (wordFilter === 'all' || learnedSet.has(w.key)) && match(w));
+    if (!ws.length) return;
+    shown += ws.length;
+    h += `<section class="wgroup"><h2>${esc(u.title)} <span class="t">${esc(u.native)}</span></h2><ul class="wlist">`;
+    ws.forEach(w => {
+      const s = state.str[w.key] || 0, known = learnedSet.has(w.key);
+      h += `<li class="wrow ${known ? '' : 'is-new'}">
+        <div class="w-t"><div><span class="t">${esc(w.digit ? w.digit + ' ' + w.t : w.t)}</span>${romOn(w) && w.rom ? `<span class="rom">${esc(w.rom)}</span>` : ''}</div>${tts(w.t)}</div>
+        <div class="w-en">${w.script ? 'sounds like <strong>' + esc(w.en) + '</strong>' : esc(w.en)}</div>
+        ${known ? `<div class="meter" role="img" aria-label="Strength ${s} of 5">${[0, 1, 2, 3, 4].map(i => `<i class="${i < s ? 'on' : ''}"></i>`).join('')}</div>` : `<span class="w-unit">Skill ${u.n}</span>`}</li>`;
+    });
+    h += '</ul></section>';
+  });
+  if (!shown) {
+    h = q ? `<p class="empty-line">No words match “${esc(wordQuery)}”.</p>`
+      : `<div class="empty">${CFG.mascot('happy', 56)}<p><strong>Your word list starts here.</strong> Finish the first lesson of “${esc(UNITS[0].title)}” and its words show up with their meanings and a strength meter. Switch to “All ${ALLW.length}” to browse the whole course.</p></div>`;
+  }
+  box.innerHTML = h;
+}
+
+function render() {
+  renderTop(); renderTabs();
+  if (view === 'learn') renderLearn(); else renderWords();
+}
+function toast(msg) {
+  const t = $('#toast'); t.textContent = msg; t.hidden = false;
+  clearTimeout(toast.timer); toast.timer = setTimeout(() => { t.hidden = true; }, 2600);
+}
+
+/* ---------- tips (unit guide) ---------- */
+function openGuide(n) {
+  const u = UNITS[n - 1];
+  const g = $('#guide');
+  g.innerHTML = `
+    <div class="l-head gutter"><button class="icon-btn" data-a="guide-close" aria-label="Close tips">${ICON.x}</button><span class="eyebrow">Skill ${u.n} tips</span></div>
+    <div class="l-body"><article class="l-body-in gutter guide-in">
+      <header><h1 class="guide-title">${esc(u.title)}</h1><div class="guide-native"><span class="t">${esc(u.native)}</span>${u.nativeRom && romOn() ? `<span class="rom">${esc(u.nativeRom)}</span>` : ''}</div></header>
+      <p class="guide-tip">${rich(u.tip)}</p>
+      ${u.guide.map(gp => `${gp.p ? `<p>${rich(gp.p)}</p>` : ''}${gp.ex.length ? `<div class="ex-list">${gp.ex.map(x => `<div class="ex-row"><div class="ex-t"><div><span class="t">${esc(x.t)}</span>${x.rom && romOn() ? `<span class="rom">${esc(x.rom)}</span>` : ''}</div>${tts(speakText(x.t))}</div><div class="ex-en">${esc(x.en)}</div></div>`).join('')}</div>` : ''}`).join('')}
+      <h2 class="guide-sub">In this skill</h2>
+      <ol class="guide-lessons">${u.lessons.map(l => `<li><strong>${esc(l.title)}</strong><span>${l.words.map(w => esc(w.t)).join(' · ')}</span></li>`).join('')}</ol>
+    </article></div>
+    <footer class="l-foot"><div class="l-foot-in gutter"><button class="btn btn-brand" data-a="guide-close" id="guide-done">Got it</button></div></footer>`;
+  g.hidden = false;
+  document.body.classList.add('locked');
+  const b = g.querySelector('.l-body'); if (b) b.scrollTop = 0;
+  const d = $('#guide-done'); if (d) d.focus({ preventScroll: true });
+}
+function closeGuide() {
+  const g = $('#guide'); g.hidden = true; g.innerHTML = '';
+  if (!L) document.body.classList.remove('locked');
+}
+
+/* =========================================================
+   Session engine
+   ========================================================= */
+let L = null;
+
+function distractors(w, n) {
+  const tl = w.t.toLowerCase();
+  const ok = x => x !== w && x.t.toLowerCase() !== tl && x.script === w.script && !overlaps(x, w);
+  const tiers = [
+    ALLW.filter(x => ok(x) && x.lesson === w.lesson),
+    ALLW.filter(x => ok(x) && x.unit === w.unit && x.lesson !== w.lesson),
+    ALLW.filter(x => ok(x) && x.unit !== w.unit),
+  ];
+  const out = [];
+  for (const tier of tiers) for (const x of shuffle(tier)) {
+    if (out.length >= n) return out;
+    if (!out.some(o => o.t.toLowerCase() === x.t.toLowerCase() || overlaps(o, x))) out.push(x);
+  }
+  return out;
+}
+function uniquePairs(ws) {
+  const out = [];
+  ws.forEach(w => { if (!out.some(o => o.t.toLowerCase() === w.t.toLowerCase() || overlaps(o, w))) out.push(w); });
+  return out;
+}
+function pickExtras(s, lang, n) {
+  if (lang === 't' && s.extras) return shuffle(s.extras).slice(0, n + 1);
+  const ans = (lang === 't' ? s.tiles : s.enTiles).map(x => x.t.toLowerCase());
+  const block = new Set(ans);
+  if (lang === 't') ans.forEach(t => (CFG.syn || []).forEach(g => { if (g.includes(t)) g.forEach(x => block.add(x)); }));
+  else ['a', 'an', 'the'].forEach(x => block.add(x));
+  const src = x => lang === 't' ? (x.explicit ? x.tiles : tok(x.text).map(t => ({ t, rom: '' }))) : tok(x.en).map(t => ({ t, rom: '' }));
+  const tiers = [SENTS.filter(x => x !== s && x.lesson === s.lesson), SENTS.filter(x => x.unit === s.unit && x.lesson !== s.lesson), SENTS.filter(x => x.unit !== s.unit)];
+  const out = [], seen = new Set();
+  for (const tier of tiers) for (const tile of shuffle(tier.flatMap(src))) {
+    const lo = tile.t.toLowerCase();
+    if (block.has(lo) || seen.has(lo)) continue;
+    seen.add(lo);
+    out.push({ t: keepCase(tile.t, lang) ? tile.t : tile.t.toLowerCase(), rom: tile.rom });
+    if (out.length >= n) return out;
+  }
+  return out;
+}
+const pickType = () => Math.random() < 0.5 ? 'pick-en' : 'pick-t';
+const withDigit = (w, p) => !!w.digit && Math.random() < (p || 0.45);
+function wordEx(w, prodP) {
+  if (withDigit(w, 0.3)) return { t: 'pick-en', w, digit: true };
+  if (Math.random() < prodP) return { t: typeable(w) && Math.random() < 0.6 ? 'type' : 'pick-t', w };
+  return { t: 'pick-en', w };
+}
+function listening(ws, sents) {
+  const q = [];
+  if (!canListen()) return q;
+  const w = shuffle(ws.filter(x => !x.script))[0] || shuffle(ws)[0];
+  if (w) q.push({ t: 'listen-pick', w });
+  if (sents.length) q.push({ t: 'listen-build', s: shuffle(sents)[0] });
+  return q;
+}
+
+/* level 0: a first-time lesson, new words introduced one at a time */
+function buildLesson(les) {
+  const ws = les.words, head = [], tail = [];
+  ws.forEach((w, i) => {
+    head.push({ t: 'intro', w });
+    if (i > 0) { const p = ws[i - 1]; const t = pickType(); head.push({ t, w: p, digit: t === 'pick-en' && withDigit(p) }); }
+  });
+  head.push({ t: 'pick-en', w: ws[ws.length - 1] });
+  const pairs = uniquePairs(shuffle(ws)).slice(0, 5);
+  if (pairs.length >= 3) tail.push({ t: 'match', ws: pairs });
+  les.sentences.forEach((s, i) => tail.push({ t: i % 2 ? 'build-en' : 'build-t', s }));
+  shuffle(ws.filter(typeable)).slice(0, 2).forEach(w => tail.push({ t: 'type', w }));
+  if (!ws.some(typeable)) shuffle(ws).slice(0, 2).forEach(w => tail.push({ t: 'pick-t', w }));
+  tail.push(...listening(ws, les.sentences));
+  return [...head, ...shuffle(tail)];
+}
+/* levels 1-4: review one lesson's words plus older ones, harder each level */
+function buildLevelUp(u, les, level) {
+  const all = u.lessons.flatMap(l => l.words);
+  const focus = les ? les.words : shuffle(all).slice(0, 6);
+  const review = shuffle(all.filter(w => !focus.includes(w))).slice(0, 3);
+  const ws = uniquePairs(shuffle([...focus, ...review]));
+  const prodP = Math.min(0.85, 0.25 + 0.15 * level);
+  const q = ws.map(w => wordEx(w, prodP));
+  const m = uniquePairs(shuffle(ws)).slice(0, 5);
+  if (m.length >= 3) q.splice(Math.min(3, q.length), 0, { t: 'match', ws: m });
+  const unitS = u.lessons.flatMap(l => l.sentences);
+  const sents = [...(les ? les.sentences : []), ...shuffle(unitS.filter(s => !les || s.lesson !== les.id)).slice(0, les ? 1 : 3)];
+  shuffle(sents).slice(0, 3).forEach(s => q.push({ t: Math.random() < prodP ? 'build-t' : 'build-en', s }));
+  q.push(...listening(ws, sents));
+  return q;
+}
+function buildPractice() {
+  const learned = uniquePairs(shuffle(learnedWords()).sort((a, b) => (state.str[a.key] || 0) - (state.str[b.key] || 0)));
+  const pick = learned.slice(0, 8);
+  const q = pick.map(w => wordEx(w, 0.5));
+  const m = uniquePairs(shuffle(pick)).slice(0, 5);
+  if (m.length >= 3) q.splice(Math.min(4, q.length), 0, { t: 'match', ws: m });
+  const sents = shuffle(learnedLessons().flatMap(l => l.sentences)).slice(0, 2);
+  sents.forEach((s, i) => q.push({ t: i ? 'build-en' : 'build-t', s }));
+  q.push(...listening(pick, []));
+  return q;
+}
+
+function prep(ex) {
+  const e = { ...ex, orig: ex };
+  if (e.t === 'pick-en' || e.t === 'pick-t' || e.t === 'listen-pick') { e.options = shuffle([e.w, ...distractors(e.w, 3)]); e.sel = -1; }
+  if (e.t === 'type') e.typed = '';
+  if (e.t === 'build-t' || e.t === 'build-en' || e.t === 'listen-build') {
+    const lang = e.t === 'build-en' ? 'en' : 't';
+    const tiles = lang === 'en' ? e.s.enTiles : e.s.tiles;
+    e.lang = lang;
+    e.targets = lang === 'en' ? e.s.enTargets : e.s.tTargets;
+    e.bank = shuffle([...tiles, ...pickExtras(e.s, lang, tiles.length >= 5 ? 3 : 2)].map((t, k) => ({ ...t, k })));
+    e.placed = [];
+  }
+  if (e.t === 'match') { e.left = shuffle(e.ws); e.right = shuffle(e.ws); e.selL = null; e.selR = null; e.matched = new Set(); e.bad = null; e.errors = 0; }
+  return e;
+}
+
+function startSkill(n) {
+  const u = UNITS[n - 1], s = sk(u);
+  if (s.level === 0) { const les = u.lessons[s.step]; openSession({ kind: 'lesson', u, les, q: buildLesson(les) }); }
+  else if (s.level < MAXL) { const les = u.lessons[s.step % u.lessons.length]; openSession({ kind: 'levelup', u, les, q: buildLevelUp(u, les, s.level) }); }
+  else openSession({ kind: 'skillpractice', u, les: null, q: buildLevelUp(u, null, MAXL) });
+}
+function startPractice() {
+  if (learnedWords().length < 4) { toast('Finish a lesson first to unlock practice.'); return; }
+  openSession({ kind: 'practice', u: null, les: null, q: buildPractice() });
+}
+function openSession(o) {
+  L = { ...o, queue: o.q, done: 0, hearts: 5, graded: 0, correct: 0, mistakes: 0, str: {}, start: Date.now(), phase: 'answer', ex: null, praise: Math.floor(Math.random() * CFG.praise.length), confirmQuit: false, anim: '' };
+  $('#lesson').hidden = false;
+  document.body.classList.add('locked');
+  next();
+}
+function next() {
+  if (!L.queue.length) { finish(); return; }
+  L.ex = prep(L.queue.shift());
+  L.phase = 'answer'; L.anim = '';
+  renderLesson();
+  const body = document.querySelector('#lesson .l-body'); if (body) body.scrollTop = 0;
+  const e = L.ex;
+  if (e.t === 'intro' || (e.t === 'pick-en' && !e.digit)) autoSay(e.w.t);
+  if (e.t === 'build-en') autoSay(e.s.text);
+  if (e.t === 'listen-pick') say(e.w.t);
+  if (e.t === 'listen-build') say(e.s.text);
+}
+function bump(key, d) { L.str[key] = (L.str[key] || 0) + d; }
+
+function typeTargets(w) {
+  const set = new Set([w.t, ...w.alts].map(norm));
+  if (!/\(/.test(w.en)) {
+    const parts = glossParts(w.en);
+    ALLW.forEach(x => { if (x !== w && !x.script && glossParts(x.en).some(p => parts.includes(p))) { set.add(norm(x.t)); x.alts.forEach(a => set.add(norm(a))); } });
+  }
+  return set;
+}
+function check() {
+  const e = L.ex;
+  if (L.phase !== 'answer') return;
+  let ok;
+  if (e.options) {
+    if (e.sel < 0) return;
+    ok = e.options[e.sel] === e.w;
+    bump(e.w.key, ok ? 1 : -2);
+  } else if (e.t === 'type') {
+    const v = norm(e.typed || '');
+    if (!v) return;
+    const targets = typeTargets(e.w);
+    e.typo = false; e.other = false;
+    if (targets.has(v)) { ok = true; e.other = v !== norm(e.w.t) && !e.w.alts.map(norm).includes(v); }
+    else if ([...targets].some(t => t.length >= 4 && lev(t, v) === 1)) { ok = true; e.typo = true; }
+    else ok = false;
+    bump(e.w.key, ok ? 1 : -2);
+  } else if (e.bank) {
+    if (!e.placed.length) return;
+    const got = e.placed.map(k => e.bank.find(t => t.k === k).t).join(J).toLowerCase();
+    ok = e.targets.includes(got);
+  } else return;
+  grade(ok);
+}
+function grade(ok) {
+  const e = L.ex;
+  L.graded++;
+  if (ok) {
+    L.correct++;
+    L.praise = (L.praise + 1) % CFG.praise.length;
+    if (e.t === 'pick-t' || e.t === 'type') autoSay(e.w.t);
+    if (e.t === 'build-t') autoSay(e.s.text);
+  } else { L.mistakes++; L.hearts--; L.queue.push(e.orig); }
+  L.phase = 'feedback'; L.lastOk = ok; L.anim = ok ? 'pop' : 'shake';
+  renderLesson();
+  const c = $('#cont'); if (c) c.focus({ preventScroll: true });
+}
+function cont() {
+  if (L.phase !== 'feedback') return;
+  if (L.hearts <= 0) { showFail(); return; }
+  L.done++;
+  next();
+}
+function tapMatch(side, key) {
+  const e = L.ex;
+  if (L.phase !== 'answer' || e.matched.has(key)) return;
+  if (side === 'L') { e.selL = e.selL === key ? null : key; const w = e.ws.find(x => x.key === key); if (e.selL && w) autoSay(w.t); }
+  else e.selR = e.selR === key ? null : key;
+  if (e.selL && e.selR) {
+    if (e.selL === e.selR) { e.matched.add(e.selL); bump(e.selL, 1); }
+    else {
+      e.errors++; L.mistakes++; bump(e.selL, -1);
+      const pair = [e.selL, e.selR]; e.bad = pair;
+      setTimeout(() => { if (L && L.ex === e && e.bad === pair) { e.bad = null; renderLesson(); } }, 500);
+    }
+    e.selL = e.selR = null;
+  }
+  if (e.matched.size === e.ws.length) {
+    L.graded++; if (!e.errors) L.correct++;
+    L.phase = 'feedback'; L.lastOk = true; L.anim = 'pop';
+    L.praise = (L.praise + 1) % CFG.praise.length;
+    renderLesson();
+    const c = $('#cont'); if (c) c.focus({ preventScroll: true });
+    return;
+  }
+  renderLesson();
+}
+function skipListening() {
+  noListenUntil = Date.now() + 15 * 60 * 1000;
+  L.queue = L.queue.filter(x => x.t !== 'listen-pick' && x.t !== 'listen-build');
+  toast('Listening exercises are off for 15 minutes.');
+  L.done++;
+  next();
+}
+
+/* ---------- exercise markup ---------- */
+const tHTML = (w, big) => `<span class="t ${big ? 't-xl' : ''}">${esc(w.t)}</span>`;
+const romHTML = (w, cls) => romOn(w) && w.rom ? `<span class="rom ${cls || ''}">${esc(w.rom)}</span>` : '';
+function optCls(e, i) {
+  if (L.phase === 'feedback') {
+    if (e.options[i] === e.w) return 'is-right';
+    if (i === e.sel) return 'is-wrong';
+    return '';
+  }
+  return e.sel === i ? 'is-sel' : '';
+}
+const listenBox = text => `<div class="listen"><button class="say-big" data-a="say" data-t="${esc(text)}" aria-label="Play again">${ICON.speaker}</button><button class="say-slow" data-a="say-slow" data-t="${esc(text)}">Slower</button></div>`;
+function tileHTML(t, where, fb) {
+  return `<button class="tile ${L.ex.lang === 't' ? 'is-t' : ''}" data-a="tile" data-where="${where}" data-k="${t.k}" ${fb ? 'disabled' : ''}><span class="${L.ex.lang === 't' ? 't' : ''}">${esc(t.t)}</span>${L.ex.lang === 't' && t.rom && CFG.romanization && state.rom ? `<span class="rom">${esc(t.rom)}</span>` : ''}</button>`;
+}
+function buildArea(e, fb) {
+  return `<div class="answer-line ${L.anim === 'shake' ? 'shake' : ''}" aria-label="Your answer">${e.placed.map(k => tileHTML(e.bank.find(t => t.k === k), 'line', fb)).join('')}</div>
+    <div class="bank" aria-label="Word tiles">${e.bank.map(t => e.placed.includes(t.k)
+      ? `<span class="tile ghost ${e.lang === 't' ? 'is-t' : ''}" aria-hidden="true"><span class="${e.lang === 't' ? 't' : ''}">${esc(t.t)}</span>${e.lang === 't' && t.rom && CFG.romanization && state.rom ? `<span class="rom">${esc(t.rom)}</span>` : ''}</span>`
+      : tileHTML(t, 'bank', fb)).join('')}</div>`;
+}
+function exHTML(e) {
+  const fb = L.phase === 'feedback';
+  if (e.t === 'intro') {
+    const w = e.w;
+    return `<div><span class="tag">${w.script ? 'New letter' : 'New word'}</span><h2 class="ex-label">${w.script ? 'Meet this letter' : 'Learn this word'}</h2></div>
+      <div class="intro">
+        <div class="head">${w.digit ? `<span class="digit t">${esc(w.digit)}</span>` : ''}${tHTML(w, true)}${tts(w.t)}</div>
+        ${romHTML(w, 'rom-lg')}
+        <div class="mean">${w.script ? 'Sounds like “' + esc(w.en) + '”' : esc(w.en)}</div>
+        ${w.note ? `<p class="note">${rich(w.note)}</p>` : ''}
+      </div>`;
+  }
+  if (e.t === 'pick-en') {
+    const w = e.w;
+    const label = w.script ? 'What sound does this letter make?' : e.digit ? 'What number is this?' : 'What does this mean?';
+    const prompt = e.digit ? `<div class="digit-xl t">${esc(w.digit)}</div>` : `<div>${tHTML(w, true)}${romHTML(w)}</div>${tts(w.t)}`;
+    return `<h2 class="ex-label">${label}</h2>
+      <div class="prompt ${L.anim === 'shake' ? 'shake' : ''}">${prompt}</div>
+      <div class="opts" role="group" aria-label="Answers">${e.options.map((o, i) => `<button class="opt ${optCls(e, i)}" data-a="opt" data-i="${i}" ${fb ? 'disabled' : ''} aria-pressed="${e.sel === i}"><span class="key">${i + 1}</span><span>${esc(o.en)}</span></button>`).join('')}</div>`;
+  }
+  if (e.t === 'pick-t' || e.t === 'listen-pick') {
+    const w = e.w, listen = e.t === 'listen-pick';
+    const label = listen ? 'What did you hear?' : w.script ? 'Which letter makes this sound?' : `Choose the ${esc(CFG.target)} for`;
+    const prompt = listen ? listenBox(w.t) : `<p class="prompt-en ${L.anim === 'shake' ? 'shake' : ''}">“${esc(w.en)}”</p>`;
+    return `<h2 class="ex-label">${label}</h2>${prompt}
+      <div class="opts ${w.script ? 'opts-letters' : ''}" role="group" aria-label="Answers">${e.options.map((o, i) => `<button class="opt ${optCls(e, i)}" data-a="opt" data-i="${i}" ${fb ? 'disabled' : ''} aria-pressed="${e.sel === i}"><span class="key">${i + 1}</span><span class="stack">${tHTML(o)}${listen ? '' : romHTML(o)}</span></button>`).join('')}</div>`;
+  }
+  if (e.t === 'type') {
+    const cls = fb ? (L.lastOk ? 'is-right' : 'is-wrong') : '';
+    return `<h2 class="ex-label">Type this in ${esc(CFG.target)}</h2>
+      <p class="prompt-en ${L.anim === 'shake' ? 'shake' : ''}">“${esc(e.w.en)}”</p>
+      <label class="sr" for="type-in">Your answer</label>
+      <input id="type-in" class="type-in t ${cls}" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="done" placeholder="Type in ${esc(CFG.target)}" value="${esc(e.typed || '')}" ${fb ? 'disabled' : ''}>`;
+  }
+  if (e.t === 'match') {
+    const cls = (side, w) => {
+      const s = side === 'L' ? e.selL : e.selR;
+      if (e.matched.has(w.key)) return 'is-done';
+      if (e.bad && e.bad[side === 'L' ? 0 : 1] === w.key) return 'is-wrong';
+      return s === w.key ? 'is-sel' : '';
+    };
+    return `<h2 class="ex-label">Tap the matching pairs</h2>
+      <div class="match">
+        <div class="mcol">${e.left.map(w => `<button class="mbtn ${w.script ? 'is-letter' : ''} ${cls('L', w)}" data-a="match" data-side="L" data-k="${esc(w.key)}" ${e.matched.has(w.key) || fb ? 'disabled' : ''}>${tHTML(w)}${romHTML(w)}</button>`).join('')}</div>
+        <div class="mcol">${e.right.map(w => `<button class="mbtn ${cls('R', w)}" data-a="match" data-side="R" data-k="${esc(w.key)}" ${e.matched.has(w.key) || fb ? 'disabled' : ''}>${esc(w.en)}</button>`).join('')}</div>
+      </div>`;
+  }
+  if (e.t === 'build-t') return `<h2 class="ex-label">Write this in ${esc(CFG.target)}</h2><p class="prompt-en">${esc(e.s.en)}</p>${buildArea(e, fb)}`;
+  if (e.t === 'build-en') return `<h2 class="ex-label">Write this in English</h2>
+      <div class="prompt"><div><span class="t t-lg">${esc(e.s.text)}</span>${romOn() && e.s.rom ? `<span class="rom">${esc(e.s.rom)}</span>` : ''}</div>${tts(e.s.text)}</div>${buildArea(e, fb)}`;
+  if (e.t === 'listen-build') return `<h2 class="ex-label">Tap what you hear</h2>${listenBox(e.s.text)}${buildArea(e, fb)}`;
+  return '';
+}
+
+function footHTML(e) {
+  if (L.phase === 'feedback') {
+    const ok = L.lastOk;
+    let title, detail = '';
+    const sentT = s => `<span class="t">${esc(s.text)}</span>${romOn() && s.rom ? `<br><span class="rom">${esc(s.rom)}</span>` : ''}`;
+    if (ok) {
+      const p = CFG.praise[L.praise];
+      title = `<span class="t">${esc(p[0])}</span> ${esc(p[1])}`;
+      if (e.t === 'build-t') detail = romOn() && e.s.rom ? `<span class="rom">${esc(e.s.rom)}</span>` : '';
+      else if (e.t === 'listen-build') detail = `${sentT(e.s)}<br>${esc(e.s.en)}`;
+      else if (e.t === 'match') detail = e.errors ? `All matched, with ${e.errors} slip${e.errors > 1 ? 's' : ''}.` : 'All pairs matched.';
+      else if (e.t === 'type' && e.typo) detail = `Watch the spelling: <span class="t">${esc(e.w.t)}</span>`;
+      else if (e.t === 'type' && e.other) detail = `Also correct: <span class="t">${esc(e.w.t)}</span>`;
+      else if (e.t === 'listen-pick') detail = `<span class="t">${esc(e.w.t)}</span> means “${esc(e.w.en)}.”`;
+      else if (e.w && e.w.note) detail = rich(e.w.note);
+    } else {
+      title = 'Correct answer:';
+      if (e.t === 'pick-en') detail = `<strong>${esc(e.w.en)}</strong>${e.w.note ? '<br>' + rich(e.w.note) : ''}`;
+      else if (e.t === 'pick-t' || e.t === 'type' || e.t === 'listen-pick') detail = `<span class="t">${esc(e.w.t)}</span>${romOn(e.w) && e.w.rom ? ` <span class="rom">${esc(e.w.rom)}</span>` : ''}${e.t === 'listen-pick' ? ` (${esc(e.w.en)})` : ''}`;
+      else if (e.t === 'build-t' || e.t === 'listen-build') detail = `${sentT(e.s)}${e.t === 'listen-build' ? '<br>' + esc(e.s.en) : ''}`;
+      else if (e.t === 'build-en') detail = `<strong>${esc(e.s.en)}</strong>`;
+    }
+    return `<footer class="l-foot ${ok ? 'ok' : 'bad'}"><div class="l-foot-in gutter">
+      <div class="fb" role="status">${ok ? ICON.okCircle : ICON.badCircle}<div><div class="fb-title">${title}</div>${detail ? `<div class="fb-detail">${detail}</div>` : ''}</div></div>
+      <button class="btn ${ok ? 'btn-ok' : 'btn-bad'}" data-a="continue" id="cont">Continue</button></div></footer>`;
+  }
+  if (e.t === 'intro') return `<footer class="l-foot"><div class="l-foot-in gutter"><button class="btn btn-brand" data-a="intro-next" id="cont">Continue</button></div></footer>`;
+  if (e.t === 'match') return `<footer class="l-foot"><div class="l-foot-in gutter"><p class="foot-hint">${e.matched.size} of ${e.ws.length} pairs matched</p></div></footer>`;
+  const ready = e.bank ? e.placed.length > 0 : e.t === 'type' ? !!(e.typed || '').trim() : e.sel >= 0;
+  const skip = (e.t === 'listen-pick' || e.t === 'listen-build') ? `<button class="btn-text btn-skip" data-a="nolisten">Can't listen now</button>` : '';
+  return `<footer class="l-foot"><div class="l-foot-in gutter">${skip}<button class="btn btn-brand" data-a="check" id="check-btn" ${ready ? '' : 'disabled'}>Check</button></div></footer>`;
+}
+
+function renderLesson() {
+  if (!L || L.phase === 'end') return;
+  const e = L.ex;
+  const answered = L.done + (L.phase === 'feedback' ? 1 : 0);
+  const total = L.done + 1 + L.queue.length;
+  const pct = Math.round(answered / total * 100);
+  $('#lesson').innerHTML = `
+    <div class="l-head gutter">
+      <button class="icon-btn" data-a="quit" aria-label="Quit lesson">${ICON.x}</button>
+      <div class="l-bar" role="progressbar" aria-label="Lesson progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${pct}"><i style="width:${pct}%"></i></div>
+      <span class="hearts" aria-label="${L.hearts} hearts left">${ICON.heart}<b>${L.hearts}</b></span>
+    </div>
+    <div class="l-body"><div class="l-body-in gutter">${exHTML(e)}</div></div>
+    ${footHTML(e)}
+    ${L.confirmQuit ? `<button class="scrim" data-a="quit-no" aria-label="Keep learning"></button>
+      <div class="sheet gutter" role="dialog" aria-modal="true" aria-labelledby="quit-title"><div class="sheet-in">
+        ${CFG.mascot('sad', 72)}<h2 id="quit-title">Quit this lesson?</h2><p>You'll lose the progress you've made in it.</p>
+        <button class="btn btn-brand" data-a="quit-no" id="keep-btn">Keep learning</button>
+        <button class="btn-text" data-a="quit-yes">Quit lesson</button></div></div>` : ''}`;
+  if (L.confirmQuit) { const k = $('#keep-btn'); if (k) k.focus({ preventScroll: true }); }
+  else if (e.t === 'type' && L.phase === 'answer') {
+    const inp = $('#type-in');
+    if (inp) { inp.focus({ preventScroll: true }); const n = inp.value.length; try { inp.setSelectionRange(n, n); } catch (err) {} }
+  }
+}
+
+function fmtTime(s) { return Math.floor(s / 60) + ':' + pad(s % 60); }
+function finish() {
+  const secs = Math.round((Date.now() - L.start) / 1000);
+  const acc = L.graded ? Math.round(L.correct / L.graded * 100) : 100;
+  const perfect = L.mistakes === 0;
+  const xp = L.kind === 'lesson' || L.kind === 'levelup' ? 10 + (perfect ? 5 : 0) : 10;
+  Object.entries(L.str).forEach(([k, d]) => { state.str[k] = Math.max(0, Math.min(5, (state.str[k] || 0) + d)); });
+  state.xp += xp;
+  const t = dayKey();
+  state.daily[t] = (state.daily[t] || 0) + xp;
+  const keys = Object.keys(state.daily).sort();
+  while (keys.length > 21) delete state.daily[keys.shift()];
+  let streakUp = false;
+  if (state.lastDay !== t) { state.streak = state.lastDay === yesterdayKey() ? state.streak + 1 : 1; state.lastDay = t; streakUp = true; }
+  let levelUp = 0, skillNote = '';
+  if (L.u && (L.kind === 'lesson' || L.kind === 'levelup')) {
+    const s = { ...sk(L.u) };
+    s.step++;
+    if (s.step >= L.u.lessons.length) { s.level++; s.step = 0; levelUp = s.level; }
+    state.skills[L.u.n] = s;
+    skillNote = levelUp ? '' : s.level === 0 ? `${L.u.title}: lesson ${s.step} of ${L.u.lessons.length} done` : `${L.u.title}: ${s.step} of ${L.u.lessons.length} toward level ${s.level + 1}`;
+  }
+  commit();
+  L.phase = 'end';
+  renderTop();
+  const title = levelUp ? `${esc(L.u.title)} is level ${levelUp}` : L.kind === 'practice' || L.kind === 'skillpractice' ? 'Practice complete' : perfect ? 'Perfect lesson' : 'Lesson complete';
+  $('#lesson').innerHTML = `
+    <div class="end"><div class="end-in gutter">
+      ${levelUp ? `<div class="crown-big">${ICON.crown}<b>${levelUp}</b></div>` : CFG.mascot('happy', 120)}
+      <h1 class="end-title">${title}</h1>
+      <p class="end-sub">${levelUp ? (levelUp >= MAXL ? 'Maximum level. That skill is solid.' : `Level ${levelUp + 1} adds more typing and sentence building.`) : `<span class="t">${esc(CFG.endWord[0])}</span> ${CFG.endWord[2] && romOn() ? `<span class="rom">${esc(CFG.endWord[2])}</span>` : ''} ${esc(CFG.endWord[1])}`}</p>
+      ${skillNote ? `<p class="end-note">${esc(skillNote)}</p>` : ''}
+      <div class="stats">
+        <div class="stat st-sun"><span class="stat-k">XP earned</span><span class="stat-v">+${xp}</span></div>
+        <div class="stat st-ok"><span class="stat-k">Accuracy</span><span class="stat-v">${acc}%</span></div>
+        <div class="stat st-sel"><span class="stat-k">Time</span><span class="stat-v">${fmtTime(secs)}</span></div>
+      </div>
+      ${streakUp ? `<p class="streak-note">${ICON.flame}${state.streak}-day streak</p>` : ''}
+    </div></div>
+    <footer class="l-foot"><div class="l-foot-in gutter"><button class="btn btn-brand" data-a="close" id="cont">Continue</button></div></footer>`;
+  const c = $('#cont'); if (c) c.focus({ preventScroll: true });
+}
+function showFail() {
+  L.phase = 'end';
+  Object.entries(L.str).forEach(([k, d]) => { if (d < 0) state.str[k] = Math.max(0, (state.str[k] || 0) + d); });
+  commit();
+  $('#lesson').innerHTML = `
+    <div class="end"><div class="end-in gutter">
+      ${CFG.mascot('sad', 120)}
+      <h1 class="end-title sad">Out of hearts</h1>
+      <p class="end-sub">Five misses ends a lesson. Run it again; the words that tripped you up will come first in practice.</p>
+    </div></div>
+    <footer class="l-foot"><div class="l-foot-in gutter end-btns">
+      <button class="btn btn-ghost" data-a="close">Back to skills</button>
+      <button class="btn btn-brand" data-a="retry" id="cont">Try again</button></div></footer>`;
+  const c = $('#cont'); if (c) c.focus({ preventScroll: true });
+}
+function closeLesson() {
+  const was = L && L.u ? L.u.n : null;
+  $('#lesson').hidden = true; $('#lesson').innerHTML = '';
+  document.body.classList.remove('locked');
+  L = null;
+  if (was) sel = was;
+  render();
+  if (view === 'learn') requestAnimationFrame(() => { const p = $('#pop'); if (p) p.scrollIntoView({ block: 'nearest' }); });
+}
+
+/* =========================================================
+   Events
+   ========================================================= */
+document.addEventListener('click', ev => {
+  const b = ev.target.closest('[data-a]');
+  if (!b) return;
+  const a = b.dataset.a;
+  if (a === 'say') { say(b.dataset.t); return; }
+  if (a === 'say-slow') { say(b.dataset.t, true); return; }
+  if (a === 'guide') { openGuide(+b.dataset.u); return; }
+  if (a === 'guide-close') { closeGuide(); return; }
+  if (a === 'tab') { view = b.dataset.v; resetAsk = false; render(); window.scrollTo(0, 0); return; }
+  if (a === 'skill') {
+    const n = +b.dataset.u;
+    sel = sel === n ? null : n;
+    renderLearn();
+    if (sel) requestAnimationFrame(() => { const p = $('#pop'); if (p) p.scrollIntoView({ block: 'nearest', behavior: 'smooth' }); });
+    return;
+  }
+  if (a === 'start') { startSkill(+b.dataset.u); return; }
+  if (a.startsWith('sync-') && SyncA()) { SyncA().action(a, b); return; }
+  if (a === 'unlock') { state.unlocked[+b.dataset.u] = true; commit(); renderLearn(); toast('Skill unlocked.'); return; }
+  if (a === 'practice') { startPractice(); return; }
+  if (a === 'wf') { wordFilter = b.dataset.v; renderWords(); return; }
+  if (a === 'reset') { resetAsk = true; renderWords(); return; }
+  if (a === 'reset-no') { resetAsk = false; renderWords(); return; }
+  if (a === 'reset-yes') { const keep = { rom: state.rom, audio: state.audio }; state = { ...blank(), ...keep }; resetAsk = false; sel = null; commit(); render(); toast('Progress erased.'); return; }
+  if (!L) return;
+  if (a === 'opt' && L.phase === 'answer') { L.ex.sel = +b.dataset.i; renderLesson(); return; }
+  if (a === 'tile' && L.phase === 'answer') {
+    const e = L.ex, k = +b.dataset.k;
+    if (b.dataset.where === 'bank') { e.placed.push(k); const t = e.bank.find(x => x.k === k); if (e.lang === 't' && t && e.t !== 'listen-build') autoSay(t.t); }
+    else e.placed = e.placed.filter(x => x !== k);
+    renderLesson(); return;
+  }
+  if (a === 'match') { tapMatch(b.dataset.side, b.dataset.k); return; }
+  if (a === 'check') { check(); return; }
+  if (a === 'continue') { cont(); return; }
+  if (a === 'intro-next') { L.done++; next(); return; }
+  if (a === 'nolisten') { skipListening(); return; }
+  if (a === 'quit') { L.confirmQuit = true; renderLesson(); return; }
+  if (a === 'quit-no') { L.confirmQuit = false; renderLesson(); return; }
+  if (a === 'quit-yes' || a === 'close') { closeLesson(); return; }
+  if (a === 'retry') {
+    const { kind, u } = L;
+    if (kind === 'practice') startPractice(); else startSkill(u.n);
+    return;
+  }
+});
+document.addEventListener('input', ev => {
+  const t = ev.target;
+  if (t.id === 'type-in' && L && L.ex && L.ex.t === 'type' && L.phase === 'answer') {
+    L.ex.typed = t.value;
+    const b = $('#check-btn'); if (b) b.disabled = !t.value.trim();
+  }
+  if (t.id === 'word-search') { wordQuery = t.value; renderWordList(); }
+});
+document.addEventListener('change', ev => {
+  const t = ev.target;
+  if (t.id === 'rom-toggle') { state.rom = t.checked; commit(); renderWordList(); }
+  if (t.id === 'audio-toggle') { state.audio = t.checked; commit(); }
+  if (t.id === 'open-toggle') { state.openAll = t.checked; commit(); }
+});
+document.addEventListener('keydown', ev => {
+  const g = $('#guide');
+  if (g && !g.hidden) { if (ev.key === 'Escape') closeGuide(); return; }
+  if (!L || $('#lesson').hidden || L.phase === 'end') return;
+  if (ev.key === 'Escape') { L.confirmQuit = !L.confirmQuit; renderLesson(); return; }
+  if (L.confirmQuit) return;
+  const e = L.ex;
+  const inInput = ev.target && ev.target.tagName === 'INPUT';
+  if (!inInput && L.phase === 'answer' && e.options && /^[1-9]$/.test(ev.key)) {
+    const i = +ev.key - 1; if (i < e.options.length) { e.sel = i; renderLesson(); } return;
+  }
+  if (ev.key === 'Enter') {
+    if (ev.target && ev.target.tagName === 'BUTTON' && ev.target.id !== 'cont' && ev.target.id !== 'check-btn') return;
+    ev.preventDefault();
+    if (L.phase === 'feedback') cont();
+    else if (e.t === 'intro') { L.done++; next(); }
+    else check();
+  }
+});
+
+render();
+if (SyncA()) setTimeout(() => SyncA().init(), 0);
+</script>
+<script>
+if ('serviceWorker' in navigator && location.protocol === 'https:') navigator.serviceWorker.register('../sw.js').catch(() => {});
+</script>
+</body>
+</html>

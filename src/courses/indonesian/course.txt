@@ -1,0 +1,961 @@
+S|Everyday basics|Dasar-dasar
+
+U|Greetings|Salam|chat|Add *Pak* (sir) or *Bu* (ma'am) when you greet anyone older or more senior than you.
+G|Greetings follow the time of day. *Pagi* runs until about 11 a.m., *siang* until about 3 p.m., *sore* until dusk, and *malam* after dark.
+X|Selamat pagi.|Good morning.
+X|Selamat siang.|Good afternoon (around midday).
+X|Selamat sore.|Good afternoon (late in the day).
+X|Selamat malam.|Good evening.
+G|*Bapak* (short form *Pak*) and *Ibu* (*Bu*) literally mean father and mother. They're the everyday words for sir and ma'am, and they double as a respectful "you."
+X|Terima kasih, Pak.|Thank you, sir.
+X|Ibu mau ke mana?|Where are you going, ma'am?
+G|For people about your age or younger, use *Mas* for men and *Mbak* for women. In shops and cafés, staff and customers often call each other *Kak*.
+L|Hello
+w|halo|hello|Casual, and also how people answer the phone.|hai
+w|selamat pagi|good morning|Until about 11 a.m.
+w|selamat siang|good afternoon (midday)|From late morning until about 3 p.m.
+w|selamat sore|good afternoon (late)|From about 3 p.m. until dusk.
+w|selamat malam|good evening|After dark. Also works as "good night."
+w|Pak|sir|Short for *Bapak*. Use it for any man older or more senior than you.|bapak
+w|Bu|ma'am|Short for *Ibu*. Use it for any woman older or more senior than you.|ibu
+s|Selamat pagi, Pak.|Good morning, sir.
+s|Halo, selamat malam.|Hello, good evening.
+s|Selamat sore, Bu.|Good afternoon, ma'am.
+L|How are you?
+w|apa kabar|how are you?|Literally "what news?"
+w|baik|good, well|The usual answer to *apa kabar*.
+w|terima kasih|thank you|Literally "receive love." Casual: *makasih*.|makasih
+w|sama-sama|you're welcome|Literally "same-same."
+w|saya|I, me|The neutral, polite "I." Safe in every situation.
+w|juga|also, too
+w|Anda|you (formal)|Polite and neutral. Common in business, service, and writing.
+s|Apa kabar, Bu?|How are you, ma'am?
+s|Baik, terima kasih.|Fine, thank you.
+s|Saya juga baik.|I am also fine.
+L|Polite words
+w|permisi|excuse me|For passing someone, getting attention, or entering a room.
+w|maaf|sorry|Also opens a polite question: *Maaf, Pak, ...*
+w|tolong|please (help me)|For requests: *Tolong tunggu.* (Please wait.)
+w|silakan|please (go ahead)|For offers: *Silakan duduk.* (Please have a seat.)|silahkan
+w|ya|yes|Also a soft "OK?" or "right?" at the end of a sentence.|iya
+w|tidak|no, not|Negates verbs and adjectives.|tak
+w|tidak apa-apa|no problem|The usual reply to *maaf*.|nggak apa-apa/gak apa-apa/enggak apa-apa
+s|Maaf, Pak.|Sorry, sir.
+s|Tidak apa-apa, Bu.|No problem, ma'am.
+s|Permisi, Pak.|Excuse me, sir.
+L|Nice to meet you
+w|nama|name
+w|siapa|who|*Siapa nama Anda?* is literally "who is your name?"
+w|senang|glad, happy
+w|bertemu|to meet|Casual: *ketemu*.|ketemu
+w|dengan|with|Casual: *sama*.
+w|sampai jumpa|see you|Literally "until we meet."
+w|selamat datang|welcome
+s|Nama saya Rina.|My name is Rina.
+s|Siapa nama Anda?|What is your name?
+s|Senang bertemu dengan Anda.|Nice to meet you.
+s|Selamat datang di Jakarta.|Welcome to Jakarta.
+L|Mas, Mbak, Kak
+w|Mas|young man (polite address)|Javanese for "older brother." Friendly and polite for men around your age.
+w|Mbak|young woman (polite address)|Javanese for "older sister." Friendly and polite for women around your age.
+w|Kak|friend (casual address)|From *kakak* (older sibling). Common in shops, cafés, and online.
+w|Dik|kid (to someone younger)|From *adik* (younger sibling). For children and teenagers.
+s|Terima kasih, Mas.|Thank you, Mas.
+s|Permisi, Mbak.|Excuse me, Mbak.
+
+U|People|Orang|people|There's usually no "to be": *Saya guru* means "I am a teacher."
+G|Indonesian usually skips "to be." Put the subject next to the noun or adjective and the sentence is complete.
+X|Saya guru.|I am a teacher.
+X|Dia sibuk.|She is busy. / He is busy.
+G|*Dia* means both he and she. Gender rarely shows up in Indonesian grammar.
+G|There are two words for "we." *Kita* includes the person you're talking to, and *kami* leaves them out. Talking to a client about your own team, say *kami*.
+X|Kita makan sekarang?|Shall we eat now? (you and me)
+X|Kami dari Amerika.|We're from America. (not you)
+G|Possessives come after the noun: *rumah saya* is "my house." The ending *-nya* means his, her, its, or simply "the."
+X|teman saya|my friend
+X|rumahnya|his house / her house / the house
+G|Negate nouns with *bukan* and everything else with *tidak*.
+X|Saya bukan dokter.|I'm not a doctor.
+X|Saya tidak sibuk.|I'm not busy.
+L|I, you, she
+w|aku|I (casual)|With friends and family. *Saya* is safer with people you don't know.
+w|kamu|you (casual)|For friends, or people younger than you.
+w|dia|he, she|One word for both.|ia
+w|ini|this
+w|itu|that|Also works like "the": *orang itu* (that person, the person).
+w|orang|person
+s|Ini Pak Budi.|This is Mr. Budi.
+s|Dia orang Indonesia.|She is Indonesian.
+L|We and they
+w|kami|we (not including you)
+w|kita|we (including you)
+w|mereka|they
+w|kalian|you all|Casual plural "you." In a formal speech: *Bapak-bapak dan Ibu-ibu*.
+w|teman|friend|Also *kawan*.|kawan
+w|tamu|guest
+s|Mereka teman saya.|They are my friends.
+s|Kami tamu.|We are guests.
+s|Kita teman.|We are friends.
+L|Not a teacher
+w|bukan|not (for nouns)|Also a tag like "isn't it?": *Ini kopi, bukan?*
+w|adalah|is, are (formal)|Optional. Mostly used in writing and definitions.
+w|guru|teacher
+w|dokter|doctor
+w|mahasiswa|university student
+w|sibuk|busy
+s|Saya bukan guru.|I am not a teacher.
+s|Dia tidak sibuk.|He is not busy.
+s|Mereka mahasiswa.|They are university students.
+L|My and your
+w|rumah|house, home
+w|suami|husband
+w|istri|wife||isteri
+w|anak|child
+w|punya|to have, own
+w|-nya|his, her, its, the|Attach it to a noun: *rumahnya* is "his house" or "the house."|nya
+s|Ini rumah saya.|This is my house.
+s|Itu suami saya.|That is my husband.
+s|Istrinya guru.|His wife is a teacher.
+
+U|Numbers|Angka|text:123|Learn 1 to 10 plus three patterns: *belas* for teens, *puluh* for tens, and *se-* for "one."
+G|Teens add *belas*, tens add *puluh*, hundreds *ratus*, and thousands *ribu*. The prefix *se-* replaces *satu* (one) in front of them: *sepuluh* (10), *sebelas* (11), *seratus* (100), *seribu* (1,000).
+X|dua belas|12
+X|tiga puluh lima|35
+X|seratus dua puluh|120
+X|dua ribu lima ratus|2,500
+G|Prices in rupiah run into the thousands, so *ribu* is the number word you'll hear most. At a food stall people often drop it: *dua puluh lima* means Rp25.000.
+G|Indonesian writes a period where English uses a comma, and a comma for decimals. Rp25.000 is twenty-five thousand rupiah, and 2,5 is two and a half.
+L|One to five
+w|nol|zero|Also *kosong* (empty) when reading out phone numbers.|kosong
+w|satu|one (1)
+w|dua|two (2)
+w|tiga|three (3)
+w|empat|four (4)
+w|lima|five (5)
+s|Saya punya dua anak.|I have two children.
+s|Tiga orang.|Three people.
+L|Six to ten
+w|enam|six (6)
+w|tujuh|seven (7)
+w|delapan|eight (8)
+w|sembilan|nine (9)
+w|sepuluh|ten (10)
+s|Kami tujuh orang.|There are seven of us.
+s|Dia punya lima anak.|She has five children.
+L|Teens and tens
+w|sebelas|eleven (11)
+w|dua belas|twelve (12)
+w|lima belas|fifteen (15)
+w|dua puluh|twenty (20)
+w|lima puluh|fifty (50)
+w|seratus|one hundred (100)
+s|Tamunya lima belas orang.|There are fifteen guests.
+s|Teman saya dua puluh orang.|I have twenty friends.
+L|Thousands and millions
+w|ribu|thousand|*Seribu* is one thousand; *dua ribu* is two thousand.
+w|seribu|one thousand (1,000)
+w|juta|million
+w|miliar|billion||milyar
+w|berapa|how many, how much
+w|nomor|number (in a series)|For phone, room, and house numbers.
+w|rupiah|rupiah|Indonesia's currency, written Rp.
+s|Berapa orang?|How many people?
+s|Dua ribu rupiah.|Two thousand rupiah.
+s|Lima juta rupiah.|Five million rupiah.
+
+U|Getting around|Jalan|pin|Three little words do most of the work: *di* (at), *ke* (to), and *dari* (from).
+G|*Di*, *ke*, and *dari* go in front of a place. Add *mana* (where) to make a question.
+X|Di mana?|Where (at)?
+X|Ke mana?|Where to?
+X|Dari mana?|Where from?
+G|*Ke mana?* is also a casual greeting, like "where are you headed?" A vague answer is fine: *Jalan-jalan.* (Just out and about.)
+G|*Mau* (want) often stands in for a verb of motion: *Saya mau ke bandara* is "I want to go to the airport."
+G|In Jakarta, *macet* (jammed) is the word you'll hear most. Leave more time than the map says, and expect drivers to ask *Lewat tol?* (Take the toll road?)
+L|Where is it?
+w|di|at, in, on
+w|di mana|where (location)|Often at the end in speech: *Hotelnya di mana?*
+w|ada|there is, to be present|*Pak Budi ada?* asks whether Mr. Budi is in.
+w|kamar kecil|restroom|Literally "small room." *Toilet* works too.|toilet/wc
+w|sini|here|Usually with *di*: *di sini*.
+w|sana|over there|Usually with *di*: *di sana*.
+s|Kamar kecil di mana?|Where is the restroom?|Di mana kamar kecil?
+s|Pak Budi ada?|Is Mr. Budi in?
+s|Hotel saya di sana.|My hotel is over there.
+L|Coming and going
+w|ke|to (a place)
+w|dari|from
+w|pergi|to go
+w|datang|to come
+w|pulang|to go home|Also "go back," as in back to your hotel or your country.
+w|mau|to want, be going to
+w|ke mana|where to
+s|Saya mau ke hotel.|I want to go to the hotel.
+s|Anda dari mana?|Where are you from?|Dari mana Anda?
+s|Saya dari Amerika.|I am from America.
+L|Left and right
+w|kiri|left
+w|kanan|right (direction)
+w|lurus|straight
+w|belok|to turn
+w|terus|keep going, continue|Also "and then."
+w|berhenti|to stop|In a car, people also just say *stop* or *kiri*.
+s|Belok kiri, Pak.|Turn left, sir.
+s|Berhenti di sini.|Stop here.
+s|Lurus terus.|Keep going straight.
+L|Taking a ride
+w|naik|to ride, take (transport); to go up
+w|mobil|car
+w|taksi|taxi
+w|ojek|motorbike taxi|Booked by app, it's an *ojol* (*ojek online*).
+w|bandara|airport
+w|stasiun|train station
+s|Saya naik taksi ke bandara.|I take a taxi to the airport.
+s|Stasiunnya di mana?|Where is the station?|Di mana stasiunnya?
+L|Traffic and distance
+w|jalan|street, road; to walk
+w|macet|jammed (traffic)
+w|dekat|near, close
+w|jauh|far
+w|berapa lama|how long (time)
+w|sampai|to arrive; until
+s|Jalannya macet.|The road is jammed.
+s|Hotelnya dekat.|The hotel is close.
+s|Berapa lama ke bandara?|How long to the airport?
+
+U|Time and days|Waktu|clock|*Jam* before a number is a time of day; after a number it's a length: *jam dua* is 2 o'clock, *dua jam* is two hours.
+G|Word order changes the meaning. *Jam tiga* is three o'clock and *tiga jam* is three hours. Days work the same way: *hari Senin* is Monday, *dua hari* is two days.
+G|Half hours count toward the next hour: *setengah tiga* is 2:30 ("half to three"). Use *lewat* (past) and *kurang* (to) for minutes.
+X|jam tujuh pagi|7:00 a.m.
+X|jam setengah sembilan|8:30
+X|jam empat lewat sepuluh|4:10
+X|jam lima kurang seperempat|4:45
+G|*Tadi* is earlier today and *nanti* is later today. You'll hear both constantly: *Nanti saya telepon* (I'll call you later).
+G|*Jam karet* ("rubber time") is the running joke about flexible timing. Business meetings in Jakarta usually start on time; social plans often don't.
+L|What time is it?
+w|jam|hour, o'clock; clock
+w|jam berapa|what time
+w|menit|minute
+w|setengah|half
+w|lewat|past (the hour); via
+w|kurang|less; to (the hour)
+w|sekarang|now
+s|Jam berapa sekarang?|What time is it now?|Sekarang jam berapa?
+s|Sekarang jam tiga.|It is three o'clock now.||Now it is three o'clock.
+s|Jam setengah sepuluh.|Half past nine.
+L|Monday to Friday
+w|hari|day
+w|hari ini|today
+w|Senin|Monday
+w|Selasa|Tuesday
+w|Rabu|Wednesday
+w|Kamis|Thursday
+w|Jumat|Friday||jum'at
+s|Hari ini hari Senin.|Today is Monday.
+s|Saya sibuk hari Jumat.|I am busy on Friday.|Hari Jumat saya sibuk.|On Friday I am busy.
+L|Weeks and months
+w|Sabtu|Saturday
+w|Minggu|Sunday
+w|minggu|week|Same word as Sunday, written lowercase.
+w|bulan|month; moon
+w|tahun|year
+w|depan|next; front|*Minggu depan* is next week.
+w|lalu|last, ago|*Tahun lalu* is last year.
+s|Saya sibuk minggu depan.|I am busy next week.|Minggu depan saya sibuk.|Next week I am busy.
+s|Tahun lalu saya di Bali.|I was in Bali last year.|Saya di Bali tahun lalu.|Last year I was in Bali.
+L|Yesterday and tomorrow
+w|kemarin|yesterday
+w|besok|tomorrow
+w|lusa|the day after tomorrow
+w|tadi|earlier (today)|*Tadi pagi* is this morning, said later in the day.
+w|nanti|later (today)|*Nanti malam* is tonight.
+w|pagi|morning
+w|malam|night, evening
+s|Sampai jumpa besok.|See you tomorrow.
+s|Nanti malam saya sibuk.|I am busy tonight.|Saya sibuk nanti malam.|Tonight I am busy.
+s|Kemarin jalannya macet.|Yesterday the road was jammed.||The road was jammed yesterday.
+
+U|Food and drink|Makan|bowl|Order with *Saya mau...* (I'd like...) and put the number after the dish: *sate ayam dua*.
+G|Ordering is simple: *Saya mau...* (I'd like...) or *Saya pesan...* (I'll order...). Put the number after the dish: *sate ayam dua* (two chicken satay).
+X|Es teh manis satu.|One sweet iced tea.
+X|Tidak pakai sambal.|No chili sauce.
+X|Makan di sini atau dibungkus?|Eat here or take away?
+G|Ask for *tidak pedas* (not spicy) or *jangan terlalu pedas* (not too spicy). When a cook says something is *pedas*, believe them.
+G|*Makan* covers having a meal as well as eating. *Sudah makan?* (Have you eaten?) is a friendly check-in, not an invitation.
+G|*Minta* (ask for) is the polite way to request things: *Minta bonnya, Mas* (The bill, please).
+L|Hungry and thirsty
+w|makan|to eat
+w|minum|to drink
+w|nasi|cooked rice
+w|air|water
+w|lapar|hungry
+w|haus|thirsty
+s|Saya lapar.|I am hungry.
+s|Saya mau minum air.|I want to drink water.
+s|Anda mau makan?|Do you want to eat?
+L|Ordering
+w|pesan|to order; a message
+w|minta|to ask for
+w|lagi|more, again|Also "currently" in casual speech: *lagi makan* (eating right now).
+w|saja|just, only|Casual: *aja*.
+w|enak|delicious, tasty
+w|goreng|fried
+s|Saya pesan nasi goreng.|I will order fried rice.
+s|Minta air satu lagi.|One more water, please.
+s|Nasi gorengnya enak.|The fried rice is delicious.
+s|Ini saja.|Just this.
+L|On the menu
+w|ayam|chicken
+w|ikan|fish
+w|sate|satay|Grilled skewers, usually with peanut sauce.
+w|mi|noodles||mie
+w|sayur|vegetables
+w|telur|egg
+w|daging sapi|beef|*Daging* is meat and *sapi* is cow.
+s|Saya mau sate ayam.|I want chicken satay.
+s|Saya tidak makan daging sapi.|I do not eat beef.
+L|Coffee and tea
+w|kopi|coffee
+w|teh|tea
+w|es|ice; iced|*Es teh* is iced tea.
+w|manis|sweet
+w|susu|milk
+w|gula|sugar
+w|tanpa|without
+s|Es teh manis satu.|One sweet iced tea.
+s|Kopi susu tanpa gula.|Milk coffee without sugar.
+s|Saya minum teh.|I drink tea.
+L|Spicy, and the bill
+w|pedas|spicy
+w|sambal|chili sauce
+w|jangan|don't
+w|terlalu|too (much)
+w|dibungkus|to take away (food)|Literally "wrapped."|bungkus
+w|bayar|to pay
+w|atau|or
+s|Jangan terlalu pedas.|Not too spicy.
+s|Makan di sini atau dibungkus?|Eat here or take away?
+s|Bayar di mana?|Where do I pay?
+
+S|Grammar and daily life|Tata bahasa
+
+U|Sudah or belum?|Sudah atau belum?|hourglass|Verbs never change form. Small words like *sudah*, *sedang*, and *akan* carry the time.
+G|Indonesian verbs have no tenses. *Saya makan* can mean I eat, I ate, or I'm eating. When timing matters, add a marker before the verb or a time word like *kemarin* or *besok*.
+X|Saya sudah makan.|I've eaten. / I already ate.
+X|Saya belum makan.|I haven't eaten yet.
+X|Saya sedang makan.|I'm eating (right now).
+X|Saya akan makan.|I will eat.
+X|Saya pernah makan durian.|I've eaten durian (at some point).
+G|*Belum* (not yet) is the polite answer to *sudah* questions, even when the real answer is no: *Sudah menikah?* *Belum.* (Married? Not yet.)
+G|Question words can go first or, in conversation, right where the answer would be: *Anda pulang kapan?* (You go home when?) Yes/no questions just use rising intonation, or *apakah* at the start in formal speech.
+G|*Karena* (because), *tapi* (but), *kalau* (if), and *jadi* (so) join clauses just like their English equivalents.
+L|Already and not yet
+w|sudah|already|Casual: *udah*.
+w|belum|not yet
+w|selesai|finished, done
+w|mulai|to start
+w|tunggu|to wait|Formal: *menunggu*.|menunggu
+w|sebentar|a moment
+s|Saya sudah makan.|I already ate.
+s|Belum selesai.|It is not finished yet.
+s|Tolong tunggu sebentar.|Please wait a moment.
+L|Now and later
+w|sedang|in the middle of (doing)|Casual: *lagi*.
+w|akan|will
+w|masih|still
+w|baru|just (recently); new
+w|pernah|ever, have been|*Belum pernah* is "never (yet)."
+s|Saya sedang makan.|I am eating.
+s|Saya baru sampai.|I just arrived.
+s|Anda pernah ke Bali?|Have you ever been to Bali?
+s|Dia masih sibuk.|She is still busy.
+L|Question words
+w|apa|what|Also opens yes/no questions in speech: *Apa Anda sibuk?*
+w|kapan|when
+w|kenapa|why|Formal: *mengapa*.|mengapa
+w|bagaimana|how|Casual: *gimana*.
+w|yang mana|which one
+w|apakah|(formal yes/no question)|Opens a formal yes/no question. In speech, rising intonation does the job.
+s|Kapan Anda pulang?|When are you going home?|Anda pulang kapan?
+s|Apa ini?|What is this?|Ini apa?
+s|Yang mana?|Which one?
+s|Kenapa macet?|Why is it jammed?
+L|Must, need, like
+w|harus|must, have to
+w|ingin|to wish, want (formal)
+w|perlu|to need
+w|suka|to like
+w|mungkin|maybe
+w|tahu|to know|Casual: *tau*.|tau
+s|Saya harus pergi sekarang.|I have to go now.
+s|Saya suka kopi Indonesia.|I like Indonesian coffee.
+s|Saya tidak tahu.|I do not know.
+s|Mungkin besok.|Maybe tomorrow.
+L|Because, but, if
+w|karena|because
+w|tapi|but|Formal: *tetapi*.|tetapi
+w|kalau|if; as for
+w|jadi|so; to become
+w|terlambat|late|Casual: *telat*.|telat
+s|Maaf, saya terlambat karena macet.|Sorry, I am late because of the traffic.
+s|Pedas, tapi enak.|Spicy, but delicious.
+s|Kalau macet, saya naik ojek.|If there is traffic, I take a motorbike taxi.
+
+U|Shopping|Belanja|bag|Bargaining is normal at markets and with street vendors, but not in malls or minimarts.
+G|Ask the price with *Berapa harganya?* or just *Berapa?* Then try *Bisa kurang?* (Can it be less?) At markets, a friendly counteroffer well below the first price is a normal opening.
+X|Berapa harganya?|How much is it?
+X|Mahal sekali!|That's very expensive!
+X|Bisa kurang, Bu?|Can you go lower, ma'am?
+X|Harga pas.|Fixed price.
+G|*Ada* asks whether something is available: *Ada ukuran besar?* (Do you have a large size?) The answer is *ada* (yes, there is) or *tidak ada* (no, there isn't).
+G|*Yang* turns an adjective into "the one that's...": *yang merah* is "the red one," *yang murah* is "the cheap one."
+L|How much?
+w|harga|price
+w|mahal|expensive
+w|murah|cheap
+w|sekali|very; once|Comes after the adjective: *mahal sekali*.
+w|bisa|can, be able to
+w|uang|money
+w|bagus|good, nice (quality, looks)
+s|Berapa harganya?|How much is it?
+s|Mahal sekali!|That is very expensive.
+s|Bisa kurang?|Can it be less?
+s|Bagus sekali.|Very nice.
+L|Buying
+w|beli|to buy|Formal: *membeli*.|membeli
+w|jual|to sell|Formal: *menjual*.|menjual
+w|cari|to look for|Formal: *mencari*.|mencari
+w|ambil|to take
+w|coba|to try
+w|boleh|may, be allowed
+s|Saya mau beli dua.|I want to buy two.
+s|Boleh saya coba?|May I try it?
+s|Saya ambil ini.|I will take this.
+L|Clothes and sizes
+w|baju|clothes, shirt
+w|sepatu|shoes
+w|tas|bag
+w|ukuran|size
+w|warna|color
+w|besar|big
+w|kecil|small
+s|Ada ukuran besar?|Do you have a large size?
+s|Tas ini terlalu kecil.|This bag is too small.
+s|Sepatunya bagus.|The shoes are nice.
+L|Colors
+w|merah|red
+w|putih|white
+w|hitam|black
+w|biru|blue
+w|hijau|green
+w|kuning|yellow
+w|yang|the one that, which|*Yang merah* is "the red one."
+s|Saya mau yang merah.|I want the red one.
+s|Ada yang hitam?|Is there a black one?
+s|Bajunya biru.|The shirt is blue.
+L|Paying
+w|tunai|cash|People also say *cash*.
+w|kartu|card
+w|kembalian|change (money back)
+w|pas|exact, just right|*Uangnya pas* means you're paying the exact amount.
+w|habis|sold out, used up
+w|pakai|to use; with|*Bayar pakai kartu* is "pay by card." Formal: *memakai*.|memakai
+s|Bisa bayar pakai kartu?|Can I pay by card?
+s|Kopinya habis.|The coffee is sold out.
+s|Saya bayar tunai.|I will pay in cash.
+
+U|Hotel and phone|Hotel|phone|*Bisa minta...?* (Could I have...?) handles almost any request at a front desk.
+G|Hotel staff will usually call you *Bapak* or *Ibu*, or *Kak* in newer hotels. *Bisa minta...?* (Could I have...?) and *Tolong...* (Please...) cover most requests.
+X|Bisa minta handuk tambahan?|Could I have an extra towel?
+X|Tolong bersihkan kamarnya.|Please clean the room.
+X|AC-nya mati.|The air conditioning is off.
+G|WhatsApp is the default for everything from booking a driver to confirming a meeting. *Di-WA aja* ("just WhatsApp me") and *Siap!* ("Will do!") are worth knowing.
+X|Nanti saya kabari.|I'll let you know.
+X|Ditunggu, ya.|I'll be waiting. / Looking forward to it.
+L|Checking in
+w|kamar|room
+w|kunci|key
+w|sarapan|breakfast
+w|lantai|floor (level)
+w|AC|air conditioning|Said "ah-seh."
+w|mati|off (device); dead
+s|Saya sudah pesan kamar.|I have booked a room.
+s|Sarapan jam berapa?|What time is breakfast?
+s|AC-nya mati.|The air conditioning is off.
+s|Kamar saya di lantai lima.|My room is on the fifth floor.
+L|Requests
+w|handuk|towel
+w|tambahan|extra, additional
+w|ganti|to change, replace
+w|bersih|clean
+w|kotor|dirty
+w|bantal|pillow
+w|untuk|for
+s|Bisa minta handuk tambahan?|Could I have an extra towel?
+s|Kamarnya kotor.|The room is dirty.
+s|Tolong ganti bantalnya.|Please change the pillow.
+s|Ini untuk Anda.|This is for you.
+L|Phone and messages
+w|HP|cell phone|Said "hah-peh," from *handphone*.|handphone
+w|telepon|phone; to call|Formal verb: *menelepon*.|menelepon
+w|sinyal|signal
+w|WA|WhatsApp|Said "weh-ah." *Di-WA aja* is "just WhatsApp me."|whatsapp
+w|kata sandi|password|People also say *password*.
+w|kabari|to let (someone) know|From *kabar* (news).|kabarin
+s|Berapa nomor HP Anda?|What is your cell number?
+s|Kata sandi wifinya apa?|What is the wifi password?|Apa kata sandi wifinya?
+s|Nanti saya kabari lewat WA.|I will let you know on WhatsApp later.
+L|Quick replies
+w|siap|ready; will do|*Siap, Pak!* is a crisp "Will do, sir!"
+w|ditunggu|looking forward (to it)|Literally "being waited for."
+w|sebentar lagi|soon, in a moment
+w|otw|on the way|From English, said "oh-teh-weh."
+w|hati-hati|be careful, take care
+w|selamat jalan|have a safe trip|Said to someone who's leaving.
+s|Siap, Pak.|Will do, sir.
+s|Saya otw ke hotel.|I am on the way to the hotel.
+s|Hati-hati di jalan.|Take care on the road.
+
+U|Counting things|Berapa banyak?|stack|Counting words go between the number and the noun: *dua gelas teh* (two glasses of tea).
+G|Formal Indonesian puts a counting word between the number and the noun. *Orang* is for people, *ekor* ("tail") for animals, *buah* ("fruit") for most objects, and *lembar* ("sheet") for paper and other flat things. In speech, most people only keep *orang*.
+X|tiga orang karyawan|three employees
+X|dua ekor kucing|two cats
+X|sebuah mobil|a car
+X|lima lembar kertas|five sheets of paper
+G|Containers work like English: *dua gelas teh* (two glasses of tea), *sebotol air* (a bottle of water). In a warung you'll often hear the order flipped: *teh dua gelas*.
+G|Plurals are optional. *Buku* is book or books. Doubling (*buku-buku*) stresses that there are many, but you don't double after a number or *banyak*: *banyak buku*, not *banyak buku-buku*.
+L|Counting words
+w|buah|fruit; (counter for objects)|*Sebuah* means "one" or "a."
+w|ekor|tail; (counter for animals)
+w|lembar|sheet; (counter for paper)
+w|gelas|glass
+w|botol|bottle
+w|piring|plate
+s|Teh dua gelas.|Two glasses of tea.|Dua gelas teh.
+s|Air satu botol.|One bottle of water.|Satu botol air.
+s|Nasi goreng dua piring.|Two plates of fried rice.|Dua piring nasi goreng.
+L|How much, how many
+w|banyak|many, a lot
+w|sedikit|a little, a few
+w|semua|all, everyone
+w|beberapa|several, some
+w|setiap|every, each
+w|cukup|enough; fairly
+s|Semua orang di sini.|Everyone is here.
+s|Sedikit saja.|Just a little.
+s|Itu cukup, terima kasih.|That is enough, thank you.
+L|Things and plurals
+w|buku|book
+w|kertas|paper
+w|barang|goods, things
+w|meja|table, desk
+w|kursi|chair
+w|anak-anak|children|Doubling makes the plural clear.
+s|Barangnya banyak sekali.|There are so many things.
+s|Anak-anak di rumah.|The children are at home.
+s|Bukunya di meja.|The book is on the table.
+
+U|Verbs with ber- and me-|Kata kerja|blocks|Many verbs are a root plus a prefix. Learn the root and you can recognize the whole family.
+G|*Ber-* verbs usually describe an activity or a state with no object: *bekerja* (to work), *berbicara* (to speak). *Me-* verbs usually take an object: *membaca buku* (to read a book).
+G|*Me-* changes shape to fit the first sound of the root, and some first letters drop away. That's why you'll find *menulis* in the dictionary under *tulis*.
+X|me + baca → membaca|to read
+X|me + tulis → menulis|to write (the t drops)
+X|me + kirim → mengirim|to send
+X|me + pakai → memakai|to use (the p drops)
+X|me + sapu → menyapu|to sweep (the s drops)
+G|In casual speech the prefix often disappears: people say *Saya beli kopi* rather than *Saya membeli kopi*. Use the full forms when reading and in meetings.
+L|Ber- verbs
+w|bekerja|to work|From *kerja* (work).|kerja
+w|belajar|to study, learn|From *ajar* (teach).
+w|berbicara|to speak|From *bicara*. Casual: *ngomong*.|bicara
+w|bertanya|to ask (a question)|From *tanya*.|tanya
+w|berangkat|to depart, leave
+w|bahasa|language
+s|Saya bekerja di Jakarta.|I work in Jakarta.
+s|Saya belajar bahasa Indonesia.|I am learning Indonesian.
+s|Kami berangkat besok pagi.|We leave tomorrow morning.|Besok pagi kami berangkat.|Tomorrow morning we leave.
+L|Me- verbs
+w|membaca|to read|From *baca*.|baca
+w|menulis|to write|From *tulis*.|tulis
+w|mengirim|to send|From *kirim*.|kirim
+w|membuat|to make|From *buat*.|buat
+w|mengerti|to understand|Also *paham*.|ngerti/paham
+w|membantu|to help|From *bantu*.|bantu
+s|Dia sedang membaca buku.|She is reading a book.
+s|Saya akan mengirim email besok.|I will send the email tomorrow.|Besok saya akan mengirim email.|Tomorrow I will send the email.
+s|Saya tidak mengerti.|I do not understand.
+s|Bisa bantu saya?|Can you help me?
+L|More me- verbs
+w|melihat|to see, look at|From *lihat*.|lihat
+w|mendengar|to hear|From *dengar*.|dengar
+w|menjemput|to pick (someone) up|From *jemput*.|jemput
+w|mengantar|to take (someone) somewhere|From *antar*. Also "to deliver."|antar
+w|mengajar|to teach|Same root as *belajar*.|ajar
+w|sopir|driver||supir
+s|Saya akan menjemput Anda di hotel.|I will pick you up at the hotel.
+s|Sopir akan mengantar Anda.|The driver will take you.
+s|Dia mengajar bahasa Inggris.|She teaches English.
+
+U|More affixes|Imbuhan|puzzle|*Di-* makes a verb passive, and Indonesian uses the passive far more than English does.
+G|Put *di-* on a root to make a passive verb. Indonesian prefers the passive when the thing matters more than who did it, so you'll see it on signs, in emails, and in reports.
+X|Emailnya sudah dikirim.|The email has been sent.
+X|Pintu ini harus ditutup.|This door must be kept closed.
+X|Dilarang merokok.|No smoking.
+G|*-an* turns a root into a thing: *makan* → *makanan* (food), *minum* → *minuman* (drink), *lapor* → *laporan* (report). *Pe-* makes the person who does it: *pembeli* (buyer), *penjual* (seller), *pekerja* (worker).
+G|*Ke-...-an* wraps a root into an abstract noun: *sehat* (healthy) → *kesehatan* (health), *uang* (money) → *keuangan* (finance), *untung* (profit) → *keuntungan* (profit, gain).
+G|*-kan* often means "make it so" or "do it for someone": *jelas* (clear) → *menjelaskan* (to explain), *siap* (ready) → *menyiapkan* (to prepare).
+L|Passive di-
+w|dikirim|sent, to be sent
+w|dibuat|made, to be made
+w|ditutup|closed, to be closed
+w|dibuka|opened, to be opened
+w|dijual|for sale, to be sold
+w|dilarang|forbidden
+s|Emailnya sudah dikirim.|The email has been sent.
+s|Tokonya sudah ditutup.|The shop is already closed.
+s|Rumah ini dijual.|This house is for sale.
+s|Dilarang merokok.|No smoking.
+L|Things with -an
+w|makanan|food
+w|minuman|drink, beverage
+w|laporan|report|From *lapor* (report).
+w|pertanyaan|question|From *tanya* (ask).
+w|jawaban|answer|From *jawab* (answer).
+w|bantuan|help, assistance
+s|Makanan Indonesia enak.|Indonesian food is delicious.
+s|Saya punya satu pertanyaan.|I have one question.
+s|Terima kasih atas bantuannya.|Thank you for your help.
+L|People with pe-
+w|pembeli|buyer
+w|penjual|seller
+w|pekerja|worker
+w|pengusaha|businessperson
+w|pemilik|owner
+w|pelanggan|customer
+s|Pemiliknya ada?|Is the owner in?
+s|Dia pengusaha dari Surabaya.|He is a businessman from Surabaya.
+s|Pelanggannya banyak.|There are many customers.
+L|Ke-an and -kan
+w|kesehatan|health
+w|keuangan|finance
+w|keuntungan|profit, gain
+w|kesempatan|opportunity, chance
+w|menjelaskan|to explain|From *jelas* (clear).|jelaskan
+w|menyiapkan|to prepare|From *siap* (ready).|siapkan
+s|Bisa dijelaskan lagi?|Could you explain it again?
+s|Terima kasih atas kesempatannya.|Thank you for the opportunity.
+s|Saya akan menyiapkan laporannya.|I will prepare the report.
+
+S|Work and the city|Kerja dan kota
+
+U|Small talk|Ngobrol|chats|Personal questions about marriage and kids are normal small talk. *Belum* (not yet) is a graceful answer.
+G|Expect *Sudah menikah?* (Are you married?), *Sudah punya anak?* (Do you have kids?), and *Tinggal di mana?* (Where do you live?) early in a conversation. They're friendly, not nosy, so ask them back.
+X|Sudah menikah?|Are you married?
+X|Sudah, anak saya dua.|Yes, I have two kids.
+X|Belum.|Not yet.
+G|Compliments on the city and the food go a long way: *Kotanya bagus* (the city is nice), *Makanannya enak sekali* (the food is really good).
+L|Family
+w|keluarga|family
+w|menikah|to marry, be married
+w|orang tua|parents|Literally "old people."
+w|ayah|father|Casual: *bapak*, *papa*.
+w|kakak|older sibling
+w|adik|younger sibling
+s|Anda sudah menikah?|Are you married?
+s|Saya punya satu adik.|I have one younger sibling.
+s|Keluarga saya di Amerika.|My family is in America.
+L|Where you live
+w|tinggal|to live, stay
+w|asal|origin|*Asalnya dari mana?* is "Where are you from originally?"
+w|kota|city, town
+w|negara|country
+w|lahir|born
+w|luar negeri|abroad|Literally "outside the country."
+s|Anda tinggal di mana?|Where do you live?|Di mana Anda tinggal?
+s|Saya lahir di Amerika.|I was born in America.
+s|Kotanya bagus.|The city is nice.
+L|Weather
+w|cuaca|weather
+w|panas|hot
+w|hujan|rain; to rain
+w|dingin|cold
+w|cerah|sunny, clear
+w|banjir|flood
+w|musim|season|Indonesia has two: *musim hujan* (rainy season) and *musim kemarau* (dry season).
+s|Hari ini panas sekali.|It is very hot today.||Today it is very hot.
+s|Sekarang musim hujan.|It is the rainy season now.||Now it is the rainy season.
+s|Jalannya banjir.|The road is flooded.
+L|Free time
+w|hobi|hobby
+w|olahraga|sport, exercise
+w|jalan-jalan|to go out, travel around
+w|libur|holiday, day off
+w|main|to play; to hang out|*Main ke rumah* is "come over to my place."
+w|film|movie
+s|Hobi saya olahraga.|My hobby is sport.
+s|Kami mau jalan-jalan ke Bandung.|We want to take a trip to Bandung.
+s|Besok libur.|Tomorrow is a day off.
+
+U|Business meetings|Rapat|briefcase|Open and close with thanks: *Terima kasih atas waktunya* (thank you for your time) carries a lot of weight.
+G|Business Indonesian leans formal: *saya* for I, *Bapak* or *Ibu* for you, and *kami* for your side. Greet the most senior person first, and hand over business cards with your right hand or both hands.
+G|A flat "no" is rare in meetings. *Akan kami pertimbangkan* (we'll consider it) or *Mungkin agak sulit* (that may be a little difficult) often mean no. Listen for hesitation as much as for words.
+X|Mohon maaf atas keterlambatannya.|We apologize for the delay.
+X|Bagaimana menurut Bapak?|What do you think, sir?
+X|Akan kami pertimbangkan.|We'll consider it.
+G|*Mohon* is a formal "please" for requests in meetings and writing, usually with a passive verb: *Mohon dikirim hari ini* (please send it today).
+L|At the office
+w|kantor|office
+w|perusahaan|company
+w|rapat|meeting
+w|jadwal|schedule
+w|kartu nama|business card
+w|direktur|director
+w|manajer|manager
+s|Rapatnya jam sepuluh.|The meeting is at ten o'clock.
+s|Ini kartu nama saya.|This is my business card.
+s|Kantornya di lantai lima.|The office is on the fifth floor.
+L|Introductions
+w|perkenalkan|let me introduce|*Perkenalkan, nama saya...* opens a formal self-introduction.
+w|bagian|department; part
+w|mewakili|to represent
+w|kerja sama|cooperation; to work together|As a verb, formally: *bekerja sama*.|bekerja sama
+w|bertanggung jawab|to be responsible
+w|peneliti|researcher|From *teliti* (careful, thorough).
+s|Perkenalkan, nama saya Rina.|Let me introduce myself, my name is Rina.
+s|Saya mewakili perusahaan kami.|I represent our company.
+s|Saya peneliti dari universitas.|I am a researcher from a university.
+s|Kami ingin kerja sama.|We would like to work together.
+L|Formal requests
+w|mohon|please (formal)
+w|segera|soon, right away
+w|menurut|according to|*Menurut saya* is "in my opinion."
+w|setuju|to agree
+w|usul|proposal, suggestion
+w|terlampir|attached|For emails: *Terlampir laporannya.* (The report is attached.)
+s|Mohon segera dikirim.|Please send it soon.
+s|Saya setuju.|I agree.
+s|Bagaimana menurut Bapak?|What do you think, sir?
+s|Laporannya terlampir.|The report is attached.
+L|Deals
+w|kontrak|contract
+w|penawaran|offer, quote
+w|diskon|discount
+w|tanda tangan|signature; to sign
+w|sulit|difficult
+w|agak|somewhat, a bit
+w|mempertimbangkan|to consider|From *timbang* (weigh).|pertimbangkan
+s|Kami akan mempertimbangkan penawarannya.|We will consider the offer.
+s|Mungkin agak sulit.|It might be a bit difficult.
+s|Kontraknya sudah ditandatangani.|The contract has been signed.
+L|Wrapping up
+w|waktu|time; when|*Waktu itu* is "at that time."
+w|janji|appointment; promise
+w|menghubungi|to contact|From *hubung* (connect).|hubungi
+w|semoga|hopefully
+w|lancar|smooth, fluent|*Bahasa Indonesianya lancar!* is "Your Indonesian is fluent!"
+w|sampai bertemu lagi|until next time|More formal than *sampai jumpa*.
+s|Terima kasih atas waktunya.|Thank you for your time.
+s|Semoga lancar.|Hopefully it goes smoothly.
+s|Saya akan menghubungi Anda minggu depan.|I will contact you next week.|Minggu depan saya akan menghubungi Anda.|Next week I will contact you.
+
+U|On the factory floor|Pabrik|factory|Shop floors mix formal Indonesian with English loanwords: *target*, *sif* (shift), *QC*.
+G|Much of the manufacturing vocabulary is borrowed and respelled: *produksi* (production), *kualitas* (quality), *ekspor* (export), *mesin* (machine). If you know the English word, try it with Indonesian spelling and vowels.
+G|Pay is usually discussed per month (*per bulan*), and the minimum wage (*UMK* or *UMR*) is set by region. *Lembur* (overtime) and *borongan* (piece-rate pay) come up in almost any conversation about pay.
+X|Gajinya berapa per bulan?|What's the monthly wage?
+X|Ada lembur?|Is there overtime?
+X|Dibayar borongan.|Paid by the piece.
+L|The plant
+w|pabrik|factory
+w|mesin|machine
+w|produksi|production
+w|gudang|warehouse
+w|bahan baku|raw materials
+w|rusak|broken
+s|Pabriknya di Bekasi.|The factory is in Bekasi.
+s|Mesinnya rusak.|The machine is broken.
+s|Bahan bakunya dari mana?|Where do the raw materials come from?
+L|The workforce
+w|karyawan|employee
+w|buruh|laborer
+w|mandor|foreman
+w|atasan|supervisor, boss
+w|sif|shift||shift
+w|pelatihan|training
+s|Berapa karyawan di sini?|How many employees are here?
+s|Ada tiga sif.|There are three shifts.
+s|Mandornya sedang rapat.|The foreman is in a meeting.
+L|Pay
+w|gaji|salary, wage
+w|upah|pay (daily or hourly)|Often used for daily or hourly pay.
+w|lembur|overtime
+w|borongan|piece rate
+w|tunjangan|allowance, benefit
+w|sering|often
+w|turun|to go down, fall; to get off
+s|Gajinya naik tahun ini.|Wages went up this year.||This year wages went up.
+s|Mereka sering lembur.|They often work overtime.
+s|Upahnya turun.|Pay went down.
+L|Output and quality
+w|target|target
+w|kualitas|quality
+w|cacat|defective, defect
+w|hasil|result, output
+w|cepat|fast
+w|tinggi|high, tall
+w|rendah|low
+s|Kualitasnya bagus.|The quality is good.
+s|Targetnya terlalu tinggi.|The target is too high.
+s|Ada barang yang cacat.|There are defective goods.
+L|Supply chain
+w|pemasok|supplier
+w|ekspor|export
+w|impor|import
+w|pengiriman|shipment, delivery
+w|pesanan|order (from a customer)
+w|tepat waktu|on time
+s|Pesanannya sudah dikirim.|The order has been shipped.
+s|Pengirimannya tepat waktu.|The delivery is on time.
+s|Kami ekspor ke Jepang.|We export to Japan.
+
+U|Fieldwork interviews|Wawancara|clipboard|Ask permission first: *Boleh saya bertanya sedikit?* (May I ask a few questions?)
+G|Polite questions often start with *boleh* (may I) or *bisa* (could you). *Kira-kira* (roughly) softens a question and makes numbers easier to give: *Kira-kira berapa?* (About how many?)
+X|Boleh saya bertanya sedikit?|May I ask a few questions?
+X|Sudah berapa lama bekerja di sini?|How long have you worked here?
+X|Kira-kira berapa persen?|Roughly what percent?
+X|Menurut Bapak, apa masalah utamanya?|In your view, what's the main problem?
+G|Answers like *tergantung* (it depends) and *lumayan* (not bad, fairly) are common and deserve a follow-up: *Tergantung apa?* (Depends on what?)
+G|Promise confidentiality in plain words: *Datanya rahasia dan hanya untuk penelitian* (the data is confidential and only for research).
+L|Asking
+w|wawancara|interview
+w|survei|survey
+w|data|data
+w|rahasia|confidential; secret
+w|izin|permission|*Minta izin* is "ask permission."
+w|kira-kira|roughly, about
+w|penelitian|research
+s|Boleh saya bertanya sedikit?|May I ask a few questions?
+s|Datanya rahasia.|The data is confidential.
+s|Kira-kira berapa orang?|Roughly how many people?
+s|Ini untuk penelitian.|This is for research.
+L|How long, how often
+w|sudah berapa lama|how long (so far)
+w|sejak|since
+w|dulu|before, in the past; first|*Saya dulu...* is "I used to..."
+w|biasanya|usually
+w|persen|percent
+w|rata-rata|average, on average
+s|Sudah berapa lama bekerja di sini?|How long have you worked here?
+s|Biasanya jam tujuh pagi.|Usually at seven in the morning.
+s|Rata-rata sepuluh persen.|Ten percent on average.||On average ten percent.
+L|Problems
+w|masalah|problem
+w|biaya|cost
+w|listrik|electricity
+w|pesaing|competitor
+w|utama|main
+w|tergantung|it depends
+w|lumayan|not bad, fairly
+s|Apa masalah utamanya?|What is the main problem?
+s|Biaya listriknya naik.|The cost of electricity went up.
+s|Tergantung harganya.|It depends on the price.
+s|Lumayan bagus.|Pretty good.
+L|Sales and profit
+w|penjualan|sales
+w|untung|lucky; a profit|*Untung* alone also means "luckily."
+w|rugi|loss; to lose money
+w|modal|capital
+w|pasar|market
+w|permintaan|demand; request
+w|meningkat|to increase
+s|Penjualannya turun.|Sales went down.
+s|Tahun lalu kami rugi.|Last year we made a loss.|Kami rugi tahun lalu.|We made a loss last year.
+s|Permintaannya meningkat.|Demand is increasing.
+
+U|Jakarta slang|Bahasa gaul|spark|Among friends in Jakarta, *gue* and *lo* replace *saya* and *kamu*. Never use them with elders or clients.
+G|Jakarta's casual speech borrows from Betawi and is everywhere: in shops, on TV, and in WhatsApp chats. You'll hear it far more than you'll need to speak it, so aim to understand it first.
+X|Gue nggak tahu.|I don't know.
+X|Lo udah makan belum?|Have you eaten yet?
+X|Mahal banget!|So expensive!
+X|Gimana, dong?|So what do we do?
+G|Particles add tone more than meaning. *Dong* pushes ("come on"), *kok* signals surprise ("how come?"), *sih* softens or emphasizes, *deh* gives in ("fine, OK"), and *kan* asks for agreement ("right?").
+G|Casual verbs often swap the *me-* prefix for *n-*, *ng-*, or *ny-*: *nunggu* (wait), *ngomong* (talk), *nyari* (look for).
+L|Gue and lo
+w|gue|I (Jakarta slang)|Also spelled *gua* or *gw*.|gua/gw
+w|lo|you (Jakarta slang)|Also spelled *lu* or *loe*.|lu/loe
+w|nggak|no, not (casual)|Also *gak* or *enggak*.|gak/enggak/ga/ngga
+w|udah|already (casual)
+w|aja|just (casual)
+w|banget|very, really (casual)|Comes after the word: *enak banget*.
+s|Gue nggak tahu.|I do not know.
+s|Lo udah makan?|Have you eaten?
+s|Mahal banget!|So expensive!
+L|Little words with attitude
+w|sih|(softener or emphasis)|*Kenapa sih?* is "Why, though?"
+w|dong|(come on!)|*Ayo dong!* is "Come on!"
+w|kok|how come?|Shows surprise: *Kok mahal?*
+w|deh|(giving in: fine, OK)|*Oke deh* is "OK, fine."
+w|kan|right? (asking agreement)|*Enak, kan?* is "It's good, right?"
+w|ayo|come on, let's|Also *yuk*: *Makan yuk!* (Let's eat!)|yuk/yok/ayok
+s|Kok mahal?|How come it is expensive?
+s|Ayo dong!|Come on!
+s|Enak, kan?|It is good, right?
+s|Oke deh.|OK, fine.
+L|Casual verbs
+w|gimana|how (casual)
+w|ngapain|doing what|*Lagi ngapain?* is "What are you up to?"
+w|ngomong|to talk (casual)
+w|nunggu|to wait (casual)
+w|nyari|to look for (casual)
+w|emang|really, indeed (casual)|From *memang*. *Emang kenapa?* is "Why, what's up?"|memang
+s|Lagi ngapain?|What are you doing?
+s|Gue lagi nunggu teman.|I am waiting for a friend.
+s|Gimana kabarnya?|How are you doing?
+L|Everyday slang
+w|capek|tired||capai
+w|santai|relaxed; take it easy
+w|keren|cool
+w|seru|fun, exciting
+w|kayak|like, similar to|From *seperti*.|seperti
+w|cuma|only, just|Also *cuman*.|cuman
+w|mending|better to, might as well
+s|Santai aja.|Just relax.
+s|Capek banget.|I am so tired.
+s|Mending naik ojek.|Better to take a motorbike taxi.
+
+U|Health and emergencies|Darurat|cross|Learn *Tolong!* (Help!) and the emergency number, 112.
+G|*Sakit* means both sick and hurt: *Saya sakit* (I'm sick), *Kepala saya sakit* (my head hurts). Put the body part first, then *sakit*.
+X|Saya sakit.|I'm sick.
+X|Perut saya sakit.|My stomach hurts.
+X|Saya perlu dokter.|I need a doctor.
+G|Pharmacies (*apotek*) are everywhere, and pharmacists will often recommend something for common problems. For anything serious, ask for the nearest hospital: *Rumah sakit terdekat di mana?*
+G|The general emergency number is 112, and the police are 110.
+L|Feeling sick
+w|sakit|sick; to hurt
+w|pusing|dizzy; headache
+w|demam|fever
+w|batuk|cough
+w|obat|medicine
+w|perut|stomach
+s|Saya sakit perut.|I have a stomachache.
+s|Dia demam sejak kemarin.|She has had a fever since yesterday.
+s|Saya perlu obat.|I need medicine.
+L|Getting help
+w|rumah sakit|hospital|Literally "sick house."
+w|apotek|pharmacy||apotik
+w|darurat|emergency
+w|polisi|police
+w|hilang|lost, missing
+w|dompet|wallet
+w|panggil|to call (someone over)|Formal: *memanggil*.|memanggil
+s|Di mana apotek terdekat?|Where is the nearest pharmacy?|Apotek terdekat di mana?
+s|Dompet saya hilang.|My wallet is missing.
+s|Tolong panggil polisi!|Please call the police!
+L|Body and allergies
+w|kepala|head
+w|tangan|hand, arm
+w|kaki|foot, leg
+w|gigi|tooth
+w|alergi|allergy, allergic
+w|luka|wound, injured
+s|Kepala saya sakit.|My head hurts.
+s|Saya alergi kacang.|I am allergic to peanuts.
+s|Tangannya luka.|His hand is injured.

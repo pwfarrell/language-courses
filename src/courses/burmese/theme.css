@@ -1,0 +1,60 @@
+/* Layout: one narrow app column. Skills sit in rows of one and two like an old-style skill tree, separated by checkpoints; lessons and tips open as full-screen sheets. Palette from lacquerware and pagoda gold; the guide is the round letter ဝ. */
+:root{
+  --ground:#EEF1EA; --surface:#FFFFFF; --sunk:#E1E5DC; --line:#D3D8CC;
+  --ink:#231C2A; --muted:#625B6B;
+  --brand:#E3A22A; --brand-deep:#AC7410; --on-brand:#2A1D06;
+  --sun:#E3A22A; --sun-deep:#AC7410; --sun-text:#94630B; --on-sun:#2A1D06;
+  --ok:#278657; --ok-deep:#1B5E3D; --ok-soft:#D9F0E2; --on-ok:#FFFFFF;
+  --bad:#C0392B; --bad-deep:#8C2418; --bad-soft:#F8DFDA; --on-bad:#FFFFFF;
+  --sel:#1E6B8A; --sel-deep:#134D65; --sel-soft:#DBEAF1;
+  --flame:#E2622A;
+  --locked:#D5D9CF; --locked-deep:#BBC0B4; --locked-ink:#868B82;
+  --thanaka:#F1D697;
+  --scrim:rgba(18,12,24,.5);
+  --u1:#1E6B8A; --u1d:#134D65;
+  --u2:#B03546; --u2d:#7E2331;
+  --u3:#A15628; --u3d:#733C1B;
+  --u4:#6A3E8C; --u4d:#4A2A63;
+  --u5:#33519A; --u5d:#223970;
+  --u6:#25796A; --u6d:#18574C;
+  --f-display:"Bricolage Grotesque","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --f-body:"Atkinson Hyperlegible","Segoe UI",system-ui,-apple-system,sans-serif;
+  --f-target:"Padauk","Noto Sans Myanmar","Myanmar Text","Myanmar MN","Myanmar Sangam MN",sans-serif;
+  --t-weight:400; --t-weight-bold:700; --t-lh:1.85;
+  --t-xl:2.9rem; --t-lg:1.7rem; --t-opt:1.6rem; --t-tile:1.38rem; --t-row:1.28rem; --t-fb:1.3rem; --t-ex:1.25rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#16131B; --surface:#211D27; --sunk:#2B2632; --line:#37313F;
+    --ink:#F1EDF4; --muted:#A79FB1;
+    --brand:#E9AE3B; --brand-deep:#996811; --on-brand:#2A1D06;
+    --sun:#E9AE3B; --sun-deep:#996811; --sun-text:#EDB64A; --on-sun:#2A1D06;
+    --ok:#4CB884; --ok-deep:#2A7A53; --ok-soft:#16302A; --on-ok:#0D2017;
+    --bad:#EC6957; --bad-deep:#A43A2B; --bad-soft:#3A1E1C; --on-bad:#2A0C08;
+    --sel:#63B3D5; --sel-deep:#3A86A8; --sel-soft:#172F3A;
+    --flame:#F28A4C;
+    --locked:#36313E; --locked-deep:#27232D; --locked-ink:#807A8A;
+    --thanaka:#CDAF6D;
+    --scrim:rgba(0,0,0,.6);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#16131B; --surface:#211D27; --sunk:#2B2632; --line:#37313F;
+  --ink:#F1EDF4; --muted:#A79FB1;
+  --brand:#E9AE3B; --brand-deep:#996811; --on-brand:#2A1D06;
+  --sun:#E9AE3B; --sun-deep:#996811; --sun-text:#EDB64A; --on-sun:#2A1D06;
+  --ok:#4CB884; --ok-deep:#2A7A53; --ok-soft:#16302A; --on-ok:#0D2017;
+  --bad:#EC6957; --bad-deep:#A43A2B; --bad-soft:#3A1E1C; --on-bad:#2A0C08;
+  --sel:#63B3D5; --sel-deep:#3A86A8; --sel-soft:#172F3A;
+  --flame:#F28A4C;
+  --locked:#36313E; --locked-deep:#27232D; --locked-ink:#807A8A;
+  --thanaka:#CDAF6D;
+  --scrim:rgba(0,0,0,.6);
+  color-scheme:dark;
+}
+.mascot .ring{fill:var(--surface);stroke:var(--ink)}
+.mascot .ink{fill:var(--ink)}
+.mascot .cheek{fill:var(--thanaka)}
+.mascot .mouth{fill:none;stroke:var(--ink);stroke-width:4.5;stroke-linecap:round}
+.brand-sub{font-weight:700}

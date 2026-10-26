@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Language Courses</title>
+<meta name="description" content="Indonesian and Burmese courses with synced progress.">
+<link rel="icon" type="image/png" href="indonesian/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@600;800&family=Lexend:wght@400;600&family=Padauk:wght@700&display=swap">
+<style>
+/* Layout: a single centered column with one card per course. */
+:root{
+  --ground:#F1F2EF; --surface:#FFFFFF; --line:#D6D8D2; --ink:#1D1C24; --muted:#5D5E68;
+  --indigo:#3A4BC4; --gold:#E3A22A; --gold-ink:#2A1D06;
+  --f-display:"Gabarito","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --f-body:"Lexend","Segoe UI",system-ui,sans-serif;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root{ --ground:#141419; --surface:#1E1E26; --line:#34343F; --ink:#EFEFF4; --muted:#A5A5B2; --indigo:#6F7CEB; color-scheme:dark; }
+}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font:400 16px/1.55 var(--f-body)}
+main{max-width:560px;margin:0 auto;padding-block:48px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:16px}
+h1{margin:0 0 4px;font:800 2.4rem/1.05 var(--f-display);letter-spacing:-.03em}
+.lede{margin:0 0 12px;color:var(--muted)}
+.course{display:flex;gap:16px;align-items:center;padding:16px;background:var(--surface);border:2px solid var(--line);border-bottom-width:5px;border-radius:22px;color:inherit;text-decoration:none;transition:transform .08s ease}
+.course:active{transform:translateY(3px)}
+.course:focus-visible{outline:3px solid var(--indigo);outline-offset:3px}
+.course img{flex:none;width:76px;height:76px;border-radius:18px}
+.course div{min-width:0;display:flex;flex-direction:column;gap:2px}
+.course strong{font:800 1.35rem/1.15 var(--f-display)}
+.course .native{font-weight:600;color:var(--muted)}
+.course .native.my{font-family:"Padauk","Noto Sans Myanmar","Myanmar Text","Myanmar MN",sans-serif;line-height:1.5}
+.course .meta{font-size:.88rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.note{margin:12px 0 0;font-size:.9rem;color:var(--muted);max-width:52ch}
+</style>
+</head>
+<body>
+<main>
+  <h1>Language Courses</h1>
+  <p class="lede">Short daily lessons in a skill tree. Progress syncs between devices through GitHub.</p>
+  <a class="course" href="indonesian/">
+    <img src="indonesian/icon-180.png" alt="">
+    <div><strong>Kancil Indonesian</strong><span class="native">bahasa Indonesia</span><span class="meta">18 skills · 76 lessons · 478 words</span></div>
+  </a>
+  <a class="course" href="burmese/">
+    <img src="burmese/icon-180.png" alt="">
+    <div><strong>Zaga Burmese</strong><span class="native my">မြန်မာစကား</span><span class="meta">6 skills · 16 lessons · 80 words and letters</span></div>
+  </a>
+  <p class="note">To sync, open a course, go to Words, and connect under Settings. Add each course to your home screen from Safari's Share menu to use it like an app.</p>
+</main>
+<script>
+if ('serviceWorker' in navigator && location.protocol === 'https:') navigator.serviceWorker.register('sw.js').catch(() => {});
+</script>
+</body>
+</html>
