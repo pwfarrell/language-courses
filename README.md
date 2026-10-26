@@ -9,7 +9,7 @@ Progress syncs between devices through a private GitHub repo (`language-progress
 
 ## One-time setup
 
-1. **Turn on Pages:** this repo → Settings → Pages → Build and deployment → Source: *Deploy from a branch* → Branch: `main`, folder `/ (root)` → Save. The site appears at `https://<username>.github.io/language-courses/` after a minute or two.
+1. **Turn on Pages:** this repo → Settings → Pages → Build and deployment → Source: *Deploy from a branch* → Branch: `main`, folder `/ (root)` → Save. The site appears at https://pwfarrell.github.io/language-courses/ after a minute or two.
 2. **Make a sync token:** github.com → Settings → Developer settings → Personal access tokens → *Fine-grained tokens* → Generate new token.
    - Repository access: *Only select repositories* → `language-progress`
    - Repository permissions: *Contents* → *Read and write*
